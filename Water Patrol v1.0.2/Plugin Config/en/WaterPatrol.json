@@ -1,0 +1,1044 @@
+{
+  "List of patrol boat presets": [
+    {
+      "Chase Range": 400.0,
+      "Sense Range": 200.0,
+      "Minimum": 6,
+      "Maximum": 6,
+      "Marker configuration on the map": {
+        "Enabled? [true/false]": false,
+        "Name": "Water Patrol",
+        "Radius": 0.4,
+        "Alpha": 0.6,
+        "Marker color": {
+          "r": 0.81,
+          "g": 0.25,
+          "b": 0.15
+        }
+      },
+      "Engine power": 2000.0,
+      "Crate setting": {
+        "Which loot table should the plugin use? (0 - own; 1 - loot table of the Rust objects; 2 - combine the 1 and 2 methods)": 2,
+        "Loot table from prefabs (if the loot table type is 1 or 2)": {
+          "Minimum numbers of prefabs": 1,
+          "Maximum numbers of prefabs": 1,
+          "Use minimum and maximum values? [true/false]": false,
+          "List of prefabs": [
+            {
+              "Chance [0.0-100.0]": 100.0,
+              "The path to the prefab": "assets/rust.ai/agents/npcplayer/humannpc/scientist/scientistnpc_oilrig.prefab"
+            },
+            {
+              "Chance [0.0-100.0]": 100.0,
+              "The path to the prefab": "assets/bundled/prefabs/radtown/crate_normal_2.prefab"
+            },
+            {
+              "Chance [0.0-100.0]": 100.0,
+              "The path to the prefab": "assets/bundled/prefabs/radtown/underwater_labs/tech_parts_2.prefab"
+            },
+            {
+              "Chance [0.0-100.0]": 100.0,
+              "The path to the prefab": "assets/bundled/prefabs/radtown/underwater_labs/crate_fuel.prefab"
+            },
+            {
+              "Chance [0.0-100.0]": 100.0,
+              "The path to the prefab": "assets/bundled/prefabs/radtown/crate_normal.prefab"
+            }
+          ]
+        },
+        "Own loot table (if the loot table type is 0 or 2)": {
+          "Minimum numbers of items": 1,
+          "Maximum numbers of items": 1,
+          "Use minimum and maximum values? [true/false]": false,
+          "List of items": [
+            {
+              "ShortName": "diesel_barrel",
+              "Minimum": 1,
+              "Maximum": 1,
+              "Chance [0.0-100.0]": 50.0,
+              "Is this a blueprint? [true/false]": false,
+              "SkinID (0 - default)": 0,
+              "Name (empty - default)": ""
+            },
+            {
+              "ShortName": "scrap",
+              "Minimum": 50,
+              "Maximum": 100,
+              "Chance [0.0-100.0]": 100.0,
+              "Is this a blueprint? [true/false]": false,
+              "SkinID (0 - default)": 0,
+              "Name (empty - default)": ""
+            },
+            {
+              "ShortName": "syringe.medical",
+              "Minimum": 1,
+              "Maximum": 2,
+              "Chance [0.0-100.0]": 100.0,
+              "Is this a blueprint? [true/false]": false,
+              "SkinID (0 - default)": 0,
+              "Name (empty - default)": ""
+            }
+          ]
+        }
+      },
+      "Driver setting": {
+        "Name": "Driver",
+        "Health": 200.0,
+        "Wear items": [
+          {
+            "ShortName": "shoes.boots",
+            "SkinID (0 - default)": 826587881
+          },
+          {
+            "ShortName": "pants",
+            "SkinID (0 - default)": 1552705077
+          },
+          {
+            "ShortName": "hoodie",
+            "SkinID (0 - default)": 1552703337
+          },
+          {
+            "ShortName": "burlap.gloves",
+            "SkinID (0 - default)": 1552705918
+          },
+          {
+            "ShortName": "roadsign.kilt",
+            "SkinID (0 - default)": 1624102935
+          },
+          {
+            "ShortName": "metal.plate.torso",
+            "SkinID (0 - default)": 2843462369
+          },
+          {
+            "ShortName": "metal.facemask",
+            "SkinID (0 - default)": 2843464348
+          }
+        ]
+      },
+      "NPCs setting - 1": {
+        "Name": "Patrolman",
+        "Health": 125.0,
+        "Attack Range Multiplier": 1.5,
+        "Target Memory Duration [sec.]": 20.0,
+        "Scale damage": 0.7,
+        "Aim Cone Scale": 1.5,
+        "Wear items": [
+          {
+            "ShortName": "shoes.boots",
+            "SkinID (0 - default)": 826587881
+          },
+          {
+            "ShortName": "pants",
+            "SkinID (0 - default)": 1552705077
+          },
+          {
+            "ShortName": "hoodie",
+            "SkinID (0 - default)": 1552703337
+          },
+          {
+            "ShortName": "burlap.gloves",
+            "SkinID (0 - default)": 1552705918
+          },
+          {
+            "ShortName": "roadsign.kilt",
+            "SkinID (0 - default)": 1624102935
+          },
+          {
+            "ShortName": "roadsign.jacket",
+            "SkinID (0 - default)": 1624100124
+          },
+          {
+            "ShortName": "coffeecan.helmet",
+            "SkinID (0 - default)": 1624104393
+          }
+        ],
+        "Belt items": [
+          {
+            "ShortName": "rifle.lr300",
+            "Amount": 1,
+            "SkinID (0 - default)": 0,
+            "Mods": [
+              "weapon.mod.flashlight",
+              "weapon.mod.holosight"
+            ],
+            "Ammo": ""
+          },
+          {
+            "ShortName": "rocket.launcher",
+            "Amount": 1,
+            "SkinID (0 - default)": 0,
+            "Mods": [],
+            "Ammo": ""
+          },
+          {
+            "ShortName": "syringe.medical",
+            "Amount": 3,
+            "SkinID (0 - default)": 0,
+            "Mods": [],
+            "Ammo": ""
+          }
+        ],
+        "Kit (it is recommended to use the previous 2 settings to improve performance)": ""
+      },
+      "NPCs setting - 2": {
+        "Name": "Patrolman",
+        "Health": 125.0,
+        "Attack Range Multiplier": 1.5,
+        "Target Memory Duration [sec.]": 20.0,
+        "Scale damage": 0.7,
+        "Aim Cone Scale": 1.5,
+        "Wear items": [
+          {
+            "ShortName": "shoes.boots",
+            "SkinID (0 - default)": 826587881
+          },
+          {
+            "ShortName": "pants",
+            "SkinID (0 - default)": 1552705077
+          },
+          {
+            "ShortName": "hoodie",
+            "SkinID (0 - default)": 1552703337
+          },
+          {
+            "ShortName": "burlap.gloves",
+            "SkinID (0 - default)": 1552705918
+          },
+          {
+            "ShortName": "roadsign.kilt",
+            "SkinID (0 - default)": 1624102935
+          },
+          {
+            "ShortName": "roadsign.jacket",
+            "SkinID (0 - default)": 1624100124
+          },
+          {
+            "ShortName": "coffeecan.helmet",
+            "SkinID (0 - default)": 1624104393
+          }
+        ],
+        "Belt items": [
+          {
+            "ShortName": "rifle.lr300",
+            "Amount": 1,
+            "SkinID (0 - default)": 0,
+            "Mods": [
+              "weapon.mod.flashlight",
+              "weapon.mod.holosight"
+            ],
+            "Ammo": ""
+          },
+          {
+            "ShortName": "rocket.launcher",
+            "Amount": 1,
+            "SkinID (0 - default)": 0,
+            "Mods": [],
+            "Ammo": ""
+          },
+          {
+            "ShortName": "syringe.medical",
+            "Amount": 3,
+            "SkinID (0 - default)": 0,
+            "Mods": [],
+            "Ammo": ""
+          }
+        ],
+        "Kit (it is recommended to use the previous 2 settings to improve performance)": ""
+      },
+      "NPCs setting - 3": {
+        "Name": "Patrolman",
+        "Health": 125.0,
+        "Attack Range Multiplier": 1.5,
+        "Target Memory Duration [sec.]": 20.0,
+        "Scale damage": 0.7,
+        "Aim Cone Scale": 1.5,
+        "Wear items": [
+          {
+            "ShortName": "shoes.boots",
+            "SkinID (0 - default)": 826587881
+          },
+          {
+            "ShortName": "pants",
+            "SkinID (0 - default)": 1552705077
+          },
+          {
+            "ShortName": "hoodie",
+            "SkinID (0 - default)": 1552703337
+          },
+          {
+            "ShortName": "burlap.gloves",
+            "SkinID (0 - default)": 1552705918
+          },
+          {
+            "ShortName": "roadsign.kilt",
+            "SkinID (0 - default)": 1624102935
+          },
+          {
+            "ShortName": "roadsign.jacket",
+            "SkinID (0 - default)": 1624100124
+          },
+          {
+            "ShortName": "coffeecan.helmet",
+            "SkinID (0 - default)": 1624104393
+          }
+        ],
+        "Belt items": [
+          {
+            "ShortName": "rifle.lr300",
+            "Amount": 1,
+            "SkinID (0 - default)": 0,
+            "Mods": [
+              "weapon.mod.flashlight",
+              "weapon.mod.holosight"
+            ],
+            "Ammo": ""
+          },
+          {
+            "ShortName": "rocket.launcher",
+            "Amount": 1,
+            "SkinID (0 - default)": 0,
+            "Mods": [],
+            "Ammo": ""
+          },
+          {
+            "ShortName": "syringe.medical",
+            "Amount": 3,
+            "SkinID (0 - default)": 0,
+            "Mods": [],
+            "Ammo": ""
+          }
+        ],
+        "Kit (it is recommended to use the previous 2 settings to improve performance)": ""
+      },
+      "NPCs setting - 4": {
+        "Name": "Patrolman",
+        "Health": 125.0,
+        "Attack Range Multiplier": 1.5,
+        "Target Memory Duration [sec.]": 20.0,
+        "Scale damage": 0.7,
+        "Aim Cone Scale": 1.5,
+        "Wear items": [
+          {
+            "ShortName": "shoes.boots",
+            "SkinID (0 - default)": 826587881
+          },
+          {
+            "ShortName": "pants",
+            "SkinID (0 - default)": 1552705077
+          },
+          {
+            "ShortName": "hoodie",
+            "SkinID (0 - default)": 1552703337
+          },
+          {
+            "ShortName": "burlap.gloves",
+            "SkinID (0 - default)": 1552705918
+          },
+          {
+            "ShortName": "roadsign.kilt",
+            "SkinID (0 - default)": 1624102935
+          },
+          {
+            "ShortName": "roadsign.jacket",
+            "SkinID (0 - default)": 1624100124
+          },
+          {
+            "ShortName": "coffeecan.helmet",
+            "SkinID (0 - default)": 1624104393
+          }
+        ],
+        "Belt items": [
+          {
+            "ShortName": "rifle.lr300",
+            "Amount": 1,
+            "SkinID (0 - default)": 0,
+            "Mods": [
+              "weapon.mod.flashlight",
+              "weapon.mod.holosight"
+            ],
+            "Ammo": ""
+          },
+          {
+            "ShortName": "rocket.launcher",
+            "Amount": 1,
+            "SkinID (0 - default)": 0,
+            "Mods": [],
+            "Ammo": ""
+          },
+          {
+            "ShortName": "syringe.medical",
+            "Amount": 3,
+            "SkinID (0 - default)": 0,
+            "Mods": [],
+            "Ammo": ""
+          }
+        ],
+        "Kit (it is recommended to use the previous 2 settings to improve performance)": ""
+      },
+      "NPCs setting - 5": {
+        "Name": "Patrolman",
+        "Health": 125.0,
+        "Attack Range Multiplier": 1.5,
+        "Target Memory Duration [sec.]": 20.0,
+        "Scale damage": 0.7,
+        "Aim Cone Scale": 1.5,
+        "Wear items": [
+          {
+            "ShortName": "shoes.boots",
+            "SkinID (0 - default)": 826587881
+          },
+          {
+            "ShortName": "pants",
+            "SkinID (0 - default)": 1552705077
+          },
+          {
+            "ShortName": "hoodie",
+            "SkinID (0 - default)": 1552703337
+          },
+          {
+            "ShortName": "burlap.gloves",
+            "SkinID (0 - default)": 1552705918
+          },
+          {
+            "ShortName": "roadsign.kilt",
+            "SkinID (0 - default)": 1624102935
+          },
+          {
+            "ShortName": "roadsign.jacket",
+            "SkinID (0 - default)": 1624100124
+          },
+          {
+            "ShortName": "coffeecan.helmet",
+            "SkinID (0 - default)": 1624104393
+          }
+        ],
+        "Belt items": [
+          {
+            "ShortName": "rifle.lr300",
+            "Amount": 1,
+            "SkinID (0 - default)": 0,
+            "Mods": [
+              "weapon.mod.flashlight",
+              "weapon.mod.holosight"
+            ],
+            "Ammo": ""
+          },
+          {
+            "ShortName": "rocket.launcher",
+            "Amount": 1,
+            "SkinID (0 - default)": 0,
+            "Mods": [],
+            "Ammo": ""
+          },
+          {
+            "ShortName": "syringe.medical",
+            "Amount": 3,
+            "SkinID (0 - default)": 0,
+            "Mods": [],
+            "Ammo": ""
+          }
+        ],
+        "Kit (it is recommended to use the previous 2 settings to improve performance)": ""
+      }
+    },
+    {
+      "Chase Range": 400.0,
+      "Sense Range": 200.0,
+      "Minimum": 4,
+      "Maximum": 4,
+      "Marker configuration on the map": {
+        "Enabled? [true/false]": false,
+        "Name": "Water Patrol",
+        "Radius": 0.4,
+        "Alpha": 0.6,
+        "Marker color": {
+          "r": 0.81,
+          "g": 0.25,
+          "b": 0.15
+        }
+      },
+      "Engine power": 2000.0,
+      "Crate setting": {
+        "Which loot table should the plugin use? (0 - own; 1 - loot table of the Rust objects; 2 - combine the 1 and 2 methods)": 2,
+        "Loot table from prefabs (if the loot table type is 1 or 2)": {
+          "Minimum numbers of prefabs": 1,
+          "Maximum numbers of prefabs": 1,
+          "Use minimum and maximum values? [true/false]": false,
+          "List of prefabs": [
+            {
+              "Chance [0.0-100.0]": 100.0,
+              "The path to the prefab": "assets/rust.ai/agents/npcplayer/humannpc/scientist/scientistnpc_oilrig.prefab"
+            },
+            {
+              "Chance [0.0-100.0]": 100.0,
+              "The path to the prefab": "assets/bundled/prefabs/radtown/crate_elite.prefab"
+            },
+            {
+              "Chance [0.0-100.0]": 100.0,
+              "The path to the prefab": "assets/bundled/prefabs/radtown/underwater_labs/tech_parts_2.prefab"
+            },
+            {
+              "Chance [0.0-100.0]": 100.0,
+              "The path to the prefab": "assets/bundled/prefabs/radtown/underwater_labs/crate_fuel.prefab"
+            },
+            {
+              "Chance [0.0-100.0]": 100.0,
+              "The path to the prefab": "assets/bundled/prefabs/radtown/crate_normal.prefab"
+            }
+          ]
+        },
+        "Own loot table (if the loot table type is 0 or 2)": {
+          "Minimum numbers of items": 1,
+          "Maximum numbers of items": 1,
+          "Use minimum and maximum values? [true/false]": false,
+          "List of items": [
+            {
+              "ShortName": "diesel_barrel",
+              "Minimum": 1,
+              "Maximum": 1,
+              "Chance [0.0-100.0]": 100.0,
+              "Is this a blueprint? [true/false]": false,
+              "SkinID (0 - default)": 0,
+              "Name (empty - default)": ""
+            },
+            {
+              "ShortName": "scrap",
+              "Minimum": 50,
+              "Maximum": 100,
+              "Chance [0.0-100.0]": 100.0,
+              "Is this a blueprint? [true/false]": false,
+              "SkinID (0 - default)": 0,
+              "Name (empty - default)": ""
+            },
+            {
+              "ShortName": "syringe.medical",
+              "Minimum": 1,
+              "Maximum": 2,
+              "Chance [0.0-100.0]": 100.0,
+              "Is this a blueprint? [true/false]": false,
+              "SkinID (0 - default)": 0,
+              "Name (empty - default)": ""
+            }
+          ]
+        }
+      },
+      "Driver setting": {
+        "Name": "Driver",
+        "Health": 400.0,
+        "Wear items": [
+          {
+            "ShortName": "shoes.boots",
+            "SkinID (0 - default)": 971729488
+          },
+          {
+            "ShortName": "pants",
+            "SkinID (0 - default)": 963501284
+          },
+          {
+            "ShortName": "hoodie",
+            "SkinID (0 - default)": 963496340
+          },
+          {
+            "ShortName": "burlap.gloves",
+            "SkinID (0 - default)": 1552705918
+          },
+          {
+            "ShortName": "roadsign.kilt",
+            "SkinID (0 - default)": 1624102935
+          },
+          {
+            "ShortName": "metal.plate.torso",
+            "SkinID (0 - default)": 1192804139
+          },
+          {
+            "ShortName": "metal.facemask",
+            "SkinID (0 - default)": 1121237616
+          }
+        ]
+      },
+      "NPCs setting - 1": {
+        "Name": "Patrolman",
+        "Health": 200.0,
+        "Attack Range Multiplier": 1.5,
+        "Target Memory Duration [sec.]": 20.0,
+        "Scale damage": 0.7,
+        "Aim Cone Scale": 1.5,
+        "Wear items": [
+          {
+            "ShortName": "shoes.boots",
+            "SkinID (0 - default)": 971729488
+          },
+          {
+            "ShortName": "pants",
+            "SkinID (0 - default)": 963501284
+          },
+          {
+            "ShortName": "hoodie",
+            "SkinID (0 - default)": 963496340
+          },
+          {
+            "ShortName": "burlap.gloves",
+            "SkinID (0 - default)": 1552705918
+          },
+          {
+            "ShortName": "roadsign.kilt",
+            "SkinID (0 - default)": 1624102935
+          },
+          {
+            "ShortName": "metal.plate.torso",
+            "SkinID (0 - default)": 1192804139
+          },
+          {
+            "ShortName": "metal.facemask",
+            "SkinID (0 - default)": 1121237616
+          }
+        ],
+        "Belt items": [
+          {
+            "ShortName": "rifle.ak.ice",
+            "Amount": 1,
+            "SkinID (0 - default)": 0,
+            "Mods": [
+              "weapon.mod.flashlight",
+              "weapon.mod.holosight"
+            ],
+            "Ammo": ""
+          },
+          {
+            "ShortName": "rocket.launcher",
+            "Amount": 1,
+            "SkinID (0 - default)": 0,
+            "Mods": [],
+            "Ammo": ""
+          },
+          {
+            "ShortName": "syringe.medical",
+            "Amount": 1,
+            "SkinID (0 - default)": 0,
+            "Mods": [],
+            "Ammo": ""
+          }
+        ],
+        "Kit (it is recommended to use the previous 2 settings to improve performance)": ""
+      },
+      "NPCs setting - 2": {
+        "Name": "Patrolman",
+        "Health": 200.0,
+        "Attack Range Multiplier": 1.5,
+        "Target Memory Duration [sec.]": 20.0,
+        "Scale damage": 0.7,
+        "Aim Cone Scale": 1.5,
+        "Wear items": [
+          {
+            "ShortName": "shoes.boots",
+            "SkinID (0 - default)": 971729488
+          },
+          {
+            "ShortName": "pants",
+            "SkinID (0 - default)": 963501284
+          },
+          {
+            "ShortName": "hoodie",
+            "SkinID (0 - default)": 963496340
+          },
+          {
+            "ShortName": "burlap.gloves",
+            "SkinID (0 - default)": 1552705918
+          },
+          {
+            "ShortName": "roadsign.kilt",
+            "SkinID (0 - default)": 1624102935
+          },
+          {
+            "ShortName": "metal.plate.torso",
+            "SkinID (0 - default)": 1192804139
+          },
+          {
+            "ShortName": "metal.facemask",
+            "SkinID (0 - default)": 1121237616
+          }
+        ],
+        "Belt items": [
+          {
+            "ShortName": "rifle.ak.ice",
+            "Amount": 1,
+            "SkinID (0 - default)": 0,
+            "Mods": [
+              "weapon.mod.flashlight",
+              "weapon.mod.holosight"
+            ],
+            "Ammo": ""
+          },
+          {
+            "ShortName": "rocket.launcher",
+            "Amount": 1,
+            "SkinID (0 - default)": 0,
+            "Mods": [],
+            "Ammo": ""
+          },
+          {
+            "ShortName": "syringe.medical",
+            "Amount": 1,
+            "SkinID (0 - default)": 0,
+            "Mods": [],
+            "Ammo": ""
+          }
+        ],
+        "Kit (it is recommended to use the previous 2 settings to improve performance)": ""
+      },
+      "NPCs setting - 3": null,
+      "NPCs setting - 4": {
+        "Name": "Patrolman",
+        "Health": 200.0,
+        "Attack Range Multiplier": 1.5,
+        "Target Memory Duration [sec.]": 20.0,
+        "Scale damage": 0.7,
+        "Aim Cone Scale": 1.5,
+        "Wear items": [
+          {
+            "ShortName": "shoes.boots",
+            "SkinID (0 - default)": 971729488
+          },
+          {
+            "ShortName": "pants",
+            "SkinID (0 - default)": 963501284
+          },
+          {
+            "ShortName": "hoodie",
+            "SkinID (0 - default)": 963496340
+          },
+          {
+            "ShortName": "burlap.gloves",
+            "SkinID (0 - default)": 1552705918
+          },
+          {
+            "ShortName": "roadsign.kilt",
+            "SkinID (0 - default)": 1624102935
+          },
+          {
+            "ShortName": "metal.plate.torso",
+            "SkinID (0 - default)": 1192804139
+          },
+          {
+            "ShortName": "metal.facemask",
+            "SkinID (0 - default)": 1121237616
+          }
+        ],
+        "Belt items": [
+          {
+            "ShortName": "multiplegrenadelauncher",
+            "Amount": 1,
+            "SkinID (0 - default)": 0,
+            "Mods": [
+              "weapon.mod.flashlight",
+              "weapon.mod.holosight"
+            ],
+            "Ammo": ""
+          },
+          {
+            "ShortName": "rocket.launcher",
+            "Amount": 1,
+            "SkinID (0 - default)": 0,
+            "Mods": [],
+            "Ammo": ""
+          },
+          {
+            "ShortName": "syringe.medical",
+            "Amount": 1,
+            "SkinID (0 - default)": 0,
+            "Mods": [],
+            "Ammo": ""
+          }
+        ],
+        "Kit (it is recommended to use the previous 2 settings to improve performance)": ""
+      },
+      "NPCs setting - 5": null
+    },
+    {
+      "Chase Range": 200.0,
+      "Sense Range": 100.0,
+      "Minimum": 8,
+      "Maximum": 8,
+      "Marker configuration on the map": {
+        "Enabled? [true/false]": false,
+        "Name": "Water Patrol",
+        "Radius": 0.4,
+        "Alpha": 0.6,
+        "Marker color": {
+          "r": 0.81,
+          "g": 0.25,
+          "b": 0.15
+        }
+      },
+      "Engine power": 2000.0,
+      "Crate setting": {
+        "Which loot table should the plugin use? (0 - own; 1 - loot table of the Rust objects; 2 - combine the 1 and 2 methods)": 2,
+        "Loot table from prefabs (if the loot table type is 1 or 2)": {
+          "Minimum numbers of prefabs": 1,
+          "Maximum numbers of prefabs": 1,
+          "Use minimum and maximum values? [true/false]": false,
+          "List of prefabs": [
+            {
+              "Chance [0.0-100.0]": 100.0,
+              "The path to the prefab": "assets/rust.ai/agents/npcplayer/humannpc/scientist/scientistnpc_oilrig.prefab"
+            },
+            {
+              "Chance [0.0-100.0]": 100.0,
+              "The path to the prefab": "assets/bundled/prefabs/radtown/crate_normal_2.prefab"
+            },
+            {
+              "Chance [0.0-100.0]": 100.0,
+              "The path to the prefab": "assets/bundled/prefabs/radtown/underwater_labs/crate_fuel.prefab"
+            },
+            {
+              "Chance [0.0-100.0]": 100.0,
+              "The path to the prefab": "assets/bundled/prefabs/radtown/crate_tools.prefab"
+            }
+          ]
+        },
+        "Own loot table (if the loot table type is 0 or 2)": {
+          "Minimum numbers of items": 1,
+          "Maximum numbers of items": 1,
+          "Use minimum and maximum values? [true/false]": false,
+          "List of items": [
+            {
+              "ShortName": "scrap",
+              "Minimum": 25,
+              "Maximum": 50,
+              "Chance [0.0-100.0]": 100.0,
+              "Is this a blueprint? [true/false]": false,
+              "SkinID (0 - default)": 0,
+              "Name (empty - default)": ""
+            },
+            {
+              "ShortName": "syringe.medical",
+              "Minimum": 1,
+              "Maximum": 2,
+              "Chance [0.0-100.0]": 100.0,
+              "Is this a blueprint? [true/false]": false,
+              "SkinID (0 - default)": 0,
+              "Name (empty - default)": ""
+            }
+          ]
+        }
+      },
+      "Driver setting": {
+        "Name": "Driver",
+        "Health": 150.0,
+        "Wear items": [
+          {
+            "ShortName": "shoes.boots",
+            "SkinID (0 - default)": 826587881
+          },
+          {
+            "ShortName": "pants",
+            "SkinID (0 - default)": 1552705077
+          },
+          {
+            "ShortName": "hoodie",
+            "SkinID (0 - default)": 1552703337
+          },
+          {
+            "ShortName": "burlap.gloves",
+            "SkinID (0 - default)": 1552705918
+          },
+          {
+            "ShortName": "roadsign.kilt",
+            "SkinID (0 - default)": 1624102935
+          },
+          {
+            "ShortName": "metal.plate.torso",
+            "SkinID (0 - default)": 2843462369
+          },
+          {
+            "ShortName": "metal.facemask",
+            "SkinID (0 - default)": 2843464348
+          }
+        ]
+      },
+      "NPCs setting - 1": {
+        "Name": "Patrolman",
+        "Health": 100.0,
+        "Attack Range Multiplier": 1.5,
+        "Target Memory Duration [sec.]": 20.0,
+        "Scale damage": 0.7,
+        "Aim Cone Scale": 1.5,
+        "Wear items": [
+          {
+            "ShortName": "shoes.boots",
+            "SkinID (0 - default)": 2570215282
+          },
+          {
+            "ShortName": "burlap.shirt",
+            "SkinID (0 - default)": 2556987808
+          },
+          {
+            "ShortName": "burlap.trousers",
+            "SkinID (0 - default)": 2556988996
+          },
+          {
+            "ShortName": "hat.boonie",
+            "SkinID (0 - default)": 2557702256
+          }
+        ],
+        "Belt items": [
+          {
+            "ShortName": "smg.thompson",
+            "Amount": 1,
+            "SkinID (0 - default)": 0,
+            "Mods": [
+              "weapon.mod.flashlight",
+              "weapon.mod.holosight"
+            ],
+            "Ammo": ""
+          },
+          {
+            "ShortName": "rocket.launcher",
+            "Amount": 1,
+            "SkinID (0 - default)": 0,
+            "Mods": [],
+            "Ammo": ""
+          },
+          {
+            "ShortName": "syringe.medical",
+            "Amount": 3,
+            "SkinID (0 - default)": 0,
+            "Mods": [],
+            "Ammo": ""
+          }
+        ],
+        "Kit (it is recommended to use the previous 2 settings to improve performance)": ""
+      },
+      "NPCs setting - 2": {
+        "Name": "Patrolman",
+        "Health": 100.0,
+        "Attack Range Multiplier": 1.5,
+        "Target Memory Duration [sec.]": 20.0,
+        "Scale damage": 0.7,
+        "Aim Cone Scale": 1.5,
+        "Wear items": [
+          {
+            "ShortName": "shoes.boots",
+            "SkinID (0 - default)": 2570215282
+          },
+          {
+            "ShortName": "burlap.shirt",
+            "SkinID (0 - default)": 2556987808
+          },
+          {
+            "ShortName": "burlap.trousers",
+            "SkinID (0 - default)": 2556988996
+          },
+          {
+            "ShortName": "hat.boonie",
+            "SkinID (0 - default)": 2557702256
+          }
+        ],
+        "Belt items": [
+          {
+            "ShortName": "smg.thompson",
+            "Amount": 1,
+            "SkinID (0 - default)": 0,
+            "Mods": [
+              "weapon.mod.flashlight",
+              "weapon.mod.holosight"
+            ],
+            "Ammo": ""
+          },
+          {
+            "ShortName": "rocket.launcher",
+            "Amount": 1,
+            "SkinID (0 - default)": 0,
+            "Mods": [],
+            "Ammo": ""
+          },
+          {
+            "ShortName": "syringe.medical",
+            "Amount": 3,
+            "SkinID (0 - default)": 0,
+            "Mods": [],
+            "Ammo": ""
+          }
+        ],
+        "Kit (it is recommended to use the previous 2 settings to improve performance)": ""
+      },
+      "NPCs setting - 3": {
+        "Name": "Patrolman",
+        "Health": 100.0,
+        "Attack Range Multiplier": 1.5,
+        "Target Memory Duration [sec.]": 20.0,
+        "Scale damage": 0.7,
+        "Aim Cone Scale": 1.5,
+        "Wear items": [
+          {
+            "ShortName": "shoes.boots",
+            "SkinID (0 - default)": 2570215282
+          },
+          {
+            "ShortName": "burlap.shirt",
+            "SkinID (0 - default)": 2556987808
+          },
+          {
+            "ShortName": "burlap.trousers",
+            "SkinID (0 - default)": 2556988996
+          },
+          {
+            "ShortName": "hat.boonie",
+            "SkinID (0 - default)": 2557702256
+          }
+        ],
+        "Belt items": [
+          {
+            "ShortName": "smg.thompson",
+            "Amount": 1,
+            "SkinID (0 - default)": 0,
+            "Mods": [
+              "weapon.mod.flashlight",
+              "weapon.mod.holosight"
+            ],
+            "Ammo": ""
+          },
+          {
+            "ShortName": "rocket.launcher",
+            "Amount": 1,
+            "SkinID (0 - default)": 0,
+            "Mods": [],
+            "Ammo": ""
+          },
+          {
+            "ShortName": "syringe.medical",
+            "Amount": 3,
+            "SkinID (0 - default)": 0,
+            "Mods": [],
+            "Ammo": ""
+          }
+        ],
+        "Kit (it is recommended to use the previous 2 settings to improve performance)": ""
+      },
+      "NPCs setting - 4": null,
+      "NPCs setting - 5": null
+    }
+  ],
+  "NPC Turret Damage Multiplier": 1.0,
+  "Prefix of chat messages": "[WaterPatrol]",
+  "Do you use the chat? [true/false]": true,
+  "GUI Announcements setting": {
+    "Do you use the GUI Announcements? [true/false]": false,
+    "Banner color": "Orange",
+    "Text color": "White",
+    "Adjust Vertical Position": 0.03
+  },
+  "Notify setting": {
+    "Do you use the Notify? [true/false]": false,
+    "Type": "0"
+  },
+  "The time before the patrol boat explodes when it hits the ground [sec.]": 3.0,
+  "The time of existence of the patrol boat before its destroy [sec.]": 120.0,
+  "Prevent players from dealing damage to NPCs if they are out of the patrol boat's Sense Range? [true/false]": true,
+  "Minimum water depth where a patrol boat can appear": 15.0,
+  "Configuration version": {
+    "Major": 1,
+    "Minor": 0,
+    "Patch": 2
+  }
+}

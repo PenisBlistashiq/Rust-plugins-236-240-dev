@@ -1,0 +1,1522 @@
+{
+  "Command List": [
+    "qr",
+    "quarry",
+    "quarries",
+    "vq",
+    "virtualquarry",
+    "virtualquarries"
+  ],
+  "Enable Console Logs": true,
+  "Require Permission For Use": false,
+  "Mining Quarry/Pump Jack Limit Permissions": {
+    "virtualquarries.default": {
+      "quarry": 3,
+      "pumpjack": 1,
+      "goldmine": 1,
+      "sawmill": 1
+    },
+    "virtualquarries.supporter": {
+      "quarry": 4,
+      "pumpjack": 1,
+      "goldmine": 1,
+      "sawmill": 1
+    },
+    "virtualquarries.supporterplus": {
+      "quarry": 4,
+      "pumpjack": 2,
+      "goldmine": 1,
+      "sawmill": 1
+    },
+    "virtualquarries.donator": {
+      "quarry": 5,
+      "pumpjack": 2,
+      "goldmine": 1,
+      "sawmill": 1
+    },
+    "virtualquarries.somnuz": {
+      "quarry": 5,
+      "pumpjack": 6,
+      "goldmine": 1,
+      "sawmill": 1
+    }
+  },
+  "Sharing - Require Permission": false,
+  "Data - Enable Data Wipe On Server Wipe": false,
+  "Data - Store Container Data In File And Restore On Server Wipe": false,
+  "Data - Store Container Interval (in seconds)": 1800,
+  "Quarry Tick (how often quarries dig resources, in seconds)": 60,
+  "Survey Charge - Allow Throwing Survey Charges": false,
+  "Survey Charget Types": {
+    "survey": {
+      "Effect Path": "assets/bundled/prefabs/fx/survey_explosion.prefab",
+      "Required Permission (empty, if not required)": "",
+      "Chance For Resources (0-100)": 90,
+      "Displayed Survey Title Translation Key": "SurveyCharge",
+      "Required Item": {
+        "Shortname": "surveycharge",
+        "Skin": 0,
+        "Amount": 1,
+        "Icon URL": ""
+      }
+    },
+    "map": {
+      "Effect Path": "assets/content/nature/treesprefabs/trees/effects/tree_marking_spawn.prefab",
+      "Required Permission (empty, if not required)": "virtualquarries.sawmill",
+      "Chance For Resources (0-100)": 75,
+      "Displayed Survey Title Translation Key": "ForestMap",
+      "Required Item": {
+        "Shortname": "map",
+        "Skin": 0,
+        "Amount": 1,
+        "Icon URL": ""
+      }
+    }
+  },
+  "Upgrades - Used Economy Plugin (0 - None, See Website For More Info)": 2,
+  "Removing Quarries - Refund Items": true,
+  "Go Back Button - Position (1-2)": 1,
+  "Upgrade UI - Responsive Position": true,
+  "Quarry Profiles": {
+    "quarry": {
+      "Required Permission (empty, if not required)": "",
+      "Displayed Icon": {
+        "Shortname": "mining.quarry",
+        "Skin": 0,
+        "Amount": 1,
+        "Icon URL": ""
+      },
+      "Survey Type": "survey",
+      "Displayed Quarry Title Translation Key": "QuarryTitle",
+      "Chance": 95,
+      "Minimal Resources Per Node": 1,
+      "Maximal Resources Per Node": 3,
+      "Fuel Required Per Tick": {
+        "Shortname": "lowgradefuel",
+        "Skin": 0,
+        "Amount": 6
+      },
+      "Enable Upgrades": true,
+      "Items Required To Place": [
+        {
+          "Shortname": "mining.quarry",
+          "Skin": 0,
+          "Amount": 1,
+          "Icon URL": ""
+        }
+      ],
+      "Resources": {
+        "stone": {
+          "Output Item - Shortname": "stones",
+          "Output Item - Skin": 0,
+          "Output Item - Display Name": "",
+          "Output Item - Icon URL (Required if Skin not 0)": "",
+          "Include Always": true,
+          "Required Permission (empty if not required)": "",
+          "Chance": 0,
+          "Minimal Output Per Tick": 90.0,
+          "Maximal Output Per Tick": 180.0,
+          "Additional Items Required To Place": []
+        },
+        "metal": {
+          "Output Item - Shortname": "metal.ore",
+          "Output Item - Skin": 0,
+          "Output Item - Display Name": "",
+          "Output Item - Icon URL (Required if Skin not 0)": "",
+          "Include Always": false,
+          "Required Permission (empty if not required)": "",
+          "Chance": 40,
+          "Minimal Output Per Tick": 54.0,
+          "Maximal Output Per Tick": 108.0,
+          "Additional Items Required To Place": []
+        },
+        "sulfur": {
+          "Output Item - Shortname": "sulfur.ore",
+          "Output Item - Skin": 0,
+          "Output Item - Display Name": "",
+          "Output Item - Icon URL (Required if Skin not 0)": "",
+          "Include Always": false,
+          "Required Permission (empty if not required)": "",
+          "Chance": 40,
+          "Minimal Output Per Tick": 27.0,
+          "Maximal Output Per Tick": 54.0,
+          "Additional Items Required To Place": []
+        },
+        "hq": {
+          "Output Item - Shortname": "hq.metal.ore",
+          "Output Item - Skin": 0,
+          "Output Item - Display Name": "",
+          "Output Item - Icon URL (Required if Skin not 0)": "",
+          "Include Always": false,
+          "Required Permission (empty if not required)": "",
+          "Chance": 20,
+          "Minimal Output Per Tick": 0.18,
+          "Maximal Output Per Tick": 0.36,
+          "Additional Items Required To Place": []
+        }
+      },
+      "Upgrades": [
+        {
+          "Required Items": [],
+          "Required Currency (0 to disable)": 0,
+          "Capacity": 6,
+          "Gather Multiplier": 1.0,
+          "Fuel Usage Multiplier": 1.0
+        },
+        {
+          "Required Items": [
+            {
+              "Shortname": "stones",
+              "Skin": 0,
+              "Amount": 32500,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "metal.fragments",
+              "Skin": 0,
+              "Amount": 20000,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "metal.refined",
+              "Skin": 0,
+              "Amount": 65,
+              "Icon URL": ""
+            }
+          ],
+          "Required Currency (0 to disable)": 17000,
+          "Capacity": 9,
+          "Gather Multiplier": 1.5,
+          "Fuel Usage Multiplier": 1.25
+        },
+        {
+          "Required Items": [
+            {
+              "Shortname": "stones",
+              "Skin": 0,
+              "Amount": 100000,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "metal.fragments",
+              "Skin": 0,
+              "Amount": 60000,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "metal.refined",
+              "Skin": 0,
+              "Amount": 200,
+              "Icon URL": ""
+            }
+          ],
+          "Required Currency (0 to disable)": 34000,
+          "Capacity": 12,
+          "Gather Multiplier": 2.0,
+          "Fuel Usage Multiplier": 1.5
+        },
+        {
+          "Required Items": [
+            {
+              "Shortname": "stones",
+              "Skin": 0,
+              "Amount": 260000,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "metal.fragments",
+              "Skin": 0,
+              "Amount": 155000,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "metal.refined",
+              "Skin": 0,
+              "Amount": 520,
+              "Icon URL": ""
+            }
+          ],
+          "Required Currency (0 to disable)": 51000,
+          "Capacity": 15,
+          "Gather Multiplier": 2.5,
+          "Fuel Usage Multiplier": 1.75
+        },
+        {
+          "Required Items": [
+            {
+              "Shortname": "coal",
+              "Skin": 2361215175,
+              "Amount": 2,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "coal",
+              "Skin": 2361215805,
+              "Amount": 2,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "coal",
+              "Skin": 2361216417,
+              "Amount": 2,
+              "Icon URL": ""
+            }
+          ],
+          "Required Currency (0 to disable)": 0,
+          "Capacity": 18,
+          "Gather Multiplier": 3.0,
+          "Fuel Usage Multiplier": 2.0
+        },
+        {
+          "Required Items": [
+            {
+              "Shortname": "coal",
+              "Skin": 2361215175,
+              "Amount": 4,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "coal",
+              "Skin": 2361215805,
+              "Amount": 4,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "coal",
+              "Skin": 2361216417,
+              "Amount": 4,
+              "Icon URL": ""
+            }
+          ],
+          "Required Currency (0 to disable)": 0,
+          "Capacity": 21,
+          "Gather Multiplier": 3.5,
+          "Fuel Usage Multiplier": 2.25
+        },
+        {
+          "Required Items": [
+            {
+              "Shortname": "coal",
+              "Skin": 2361215175,
+              "Amount": 6,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "coal",
+              "Skin": 2361215805,
+              "Amount": 6,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "coal",
+              "Skin": 2361216417,
+              "Amount": 6,
+              "Icon URL": ""
+            }
+          ],
+          "Required Currency (0 to disable)": 0,
+          "Capacity": 24,
+          "Gather Multiplier": 4.0,
+          "Fuel Usage Multiplier": 2.5
+        },
+        {
+          "Required Items": [
+            {
+              "Shortname": "coal",
+              "Skin": 2361215271,
+              "Amount": 7,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "coal",
+              "Skin": 2361215875,
+              "Amount": 7,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "coal",
+              "Skin": 2361216488,
+              "Amount": 7,
+              "Icon URL": ""
+            }
+          ],
+          "Required Currency (0 to disable)": 0,
+          "Capacity": 27,
+          "Gather Multiplier": 4.5,
+          "Fuel Usage Multiplier": 2.75
+        },
+        {
+          "Required Items": [
+            {
+              "Shortname": "coal",
+              "Skin": 2361215271,
+              "Amount": 9,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "coal",
+              "Skin": 2361215875,
+              "Amount": 9,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "coal",
+              "Skin": 2361216488,
+              "Amount": 9,
+              "Icon URL": ""
+            }
+          ],
+          "Required Currency (0 to disable)": 0,
+          "Capacity": 30,
+          "Gather Multiplier": 5.0,
+          "Fuel Usage Multiplier": 3.0
+        },
+        {
+          "Required Items": [
+            {
+              "Shortname": "coal",
+              "Skin": 2361215271,
+              "Amount": 11,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "coal",
+              "Skin": 2361215875,
+              "Amount": 11,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "coal",
+              "Skin": 2361216488,
+              "Amount": 11,
+              "Icon URL": ""
+            }
+          ],
+          "Required Currency (0 to disable)": 0,
+          "Capacity": 33,
+          "Gather Multiplier": 5.5,
+          "Fuel Usage Multiplier": 3.25
+        },
+        {
+          "Required Items": [
+            {
+              "Shortname": "coal",
+              "Skin": 2361215357,
+              "Amount": 13,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "coal",
+              "Skin": 2361224613,
+              "Amount": 13,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "coal",
+              "Skin": 2361216566,
+              "Amount": 13,
+              "Icon URL": ""
+            }
+          ],
+          "Required Currency (0 to disable)": 0,
+          "Capacity": 36,
+          "Gather Multiplier": 6.0,
+          "Fuel Usage Multiplier": 3.5
+        },
+        {
+          "Required Items": [
+            {
+              "Shortname": "coal",
+              "Skin": 2361215357,
+              "Amount": 14,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "coal",
+              "Skin": 2361224613,
+              "Amount": 14,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "coal",
+              "Skin": 2361216566,
+              "Amount": 14,
+              "Icon URL": ""
+            }
+          ],
+          "Required Currency (0 to disable)": 0,
+          "Capacity": 39,
+          "Gather Multiplier": 6.5,
+          "Fuel Usage Multiplier": 3.75
+        },
+        {
+          "Required Items": [
+            {
+              "Shortname": "coal",
+              "Skin": 2361215357,
+              "Amount": 16,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "coal",
+              "Skin": 2361224613,
+              "Amount": 16,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "coal",
+              "Skin": 2361216566,
+              "Amount": 16,
+              "Icon URL": ""
+            }
+          ],
+          "Required Currency (0 to disable)": 0,
+          "Capacity": 42,
+          "Gather Multiplier": 7.0,
+          "Fuel Usage Multiplier": 4.0
+        },
+        {
+          "Required Items": [
+            {
+              "Shortname": "coal",
+              "Skin": 2361215456,
+              "Amount": 18,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "coal",
+              "Skin": 2361216011,
+              "Amount": 18,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "coal",
+              "Skin": 2361216641,
+              "Amount": 18,
+              "Icon URL": ""
+            }
+          ],
+          "Required Currency (0 to disable)": 0,
+          "Capacity": 42,
+          "Gather Multiplier": 7.5,
+          "Fuel Usage Multiplier": 4.25
+        },
+        {
+          "Required Items": [
+            {
+              "Shortname": "coal",
+              "Skin": 2361215456,
+              "Amount": 19,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "coal",
+              "Skin": 2361216011,
+              "Amount": 19,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "coal",
+              "Skin": 2361216641,
+              "Amount": 19,
+              "Icon URL": ""
+            }
+          ],
+          "Required Currency (0 to disable)": 0,
+          "Capacity": 42,
+          "Gather Multiplier": 8.0,
+          "Fuel Usage Multiplier": 4.5
+        },
+        {
+          "Required Items": [
+            {
+              "Shortname": "coal",
+              "Skin": 2361215456,
+              "Amount": 21,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "coal",
+              "Skin": 2361216011,
+              "Amount": 21,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "coal",
+              "Skin": 2361216641,
+              "Amount": 21,
+              "Icon URL": ""
+            }
+          ],
+          "Required Currency (0 to disable)": 0,
+          "Capacity": 42,
+          "Gather Multiplier": 8.5,
+          "Fuel Usage Multiplier": 4.75
+        },
+        {
+          "Required Items": [
+            {
+              "Shortname": "coal",
+              "Skin": 2361215535,
+              "Amount": 23,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "coal",
+              "Skin": 2361216090,
+              "Amount": 23,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "coal",
+              "Skin": 2361216696,
+              "Amount": 23,
+              "Icon URL": ""
+            }
+          ],
+          "Required Currency (0 to disable)": 0,
+          "Capacity": 42,
+          "Gather Multiplier": 9.0,
+          "Fuel Usage Multiplier": 5.0
+        },
+        {
+          "Required Items": [
+            {
+              "Shortname": "coal",
+              "Skin": 2361215535,
+              "Amount": 25,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "coal",
+              "Skin": 2361216090,
+              "Amount": 25,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "coal",
+              "Skin": 2361216696,
+              "Amount": 25,
+              "Icon URL": ""
+            }
+          ],
+          "Required Currency (0 to disable)": 0,
+          "Capacity": 42,
+          "Gather Multiplier": 9.5,
+          "Fuel Usage Multiplier": 5.25
+        },
+        {
+          "Required Items": [
+            {
+              "Shortname": "coal",
+              "Skin": 2361215535,
+              "Amount": 26,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "coal",
+              "Skin": 2361216090,
+              "Amount": 26,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "coal",
+              "Skin": 2361216696,
+              "Amount": 26,
+              "Icon URL": ""
+            }
+          ],
+          "Required Currency (0 to disable)": 0,
+          "Capacity": 42,
+          "Gather Multiplier": 10.0,
+          "Fuel Usage Multiplier": 5.5
+        }
+      ]
+    },
+    "pumpjack": {
+      "Required Permission (empty, if not required)": "",
+      "Displayed Icon": {
+        "Shortname": "mining.pumpjack",
+        "Skin": 0,
+        "Amount": 1,
+        "Icon URL": ""
+      },
+      "Survey Type": "survey",
+      "Displayed Quarry Title Translation Key": "PumpjackTitle",
+      "Chance": 5,
+      "Minimal Resources Per Node": 1,
+      "Maximal Resources Per Node": 1,
+      "Fuel Required Per Tick": {
+        "Shortname": "lowgradefuel",
+        "Skin": 0,
+        "Amount": 1
+      },
+      "Enable Upgrades": true,
+      "Items Required To Place": [
+        {
+          "Shortname": "mining.pumpjack",
+          "Skin": 0,
+          "Amount": 1,
+          "Icon URL": ""
+        }
+      ],
+      "Resources": {
+        "crude": {
+          "Output Item - Shortname": "crude.oil",
+          "Output Item - Skin": 0,
+          "Output Item - Display Name": "",
+          "Output Item - Icon URL (Required if Skin not 0)": "",
+          "Include Always": true,
+          "Required Permission (empty if not required)": "",
+          "Chance": 0,
+          "Minimal Output Per Tick": 9.0,
+          "Maximal Output Per Tick": 18.0,
+          "Additional Items Required To Place": []
+        }
+      },
+      "Upgrades": [
+        {
+          "Required Items": [],
+          "Required Currency (0 to disable)": 0,
+          "Capacity": 6,
+          "Gather Multiplier": 1.0,
+          "Fuel Usage Multiplier": 1.0
+        },
+        {
+          "Required Items": [
+            {
+              "Shortname": "stones",
+              "Skin": 0,
+              "Amount": 65000,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "metal.fragments",
+              "Skin": 0,
+              "Amount": 40000,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "metal.refined",
+              "Skin": 0,
+              "Amount": 130,
+              "Icon URL": ""
+            }
+          ],
+          "Required Currency (0 to disable)": 34000,
+          "Capacity": 9,
+          "Gather Multiplier": 1.5,
+          "Fuel Usage Multiplier": 1.5
+        },
+        {
+          "Required Items": [
+            {
+              "Shortname": "stones",
+              "Skin": 0,
+              "Amount": 200000,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "metal.fragments",
+              "Skin": 0,
+              "Amount": 115000,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "metal.refined",
+              "Skin": 0,
+              "Amount": 400,
+              "Icon URL": ""
+            }
+          ],
+          "Required Currency (0 to disable)": 68000,
+          "Capacity": 12,
+          "Gather Multiplier": 2.0,
+          "Fuel Usage Multiplier": 2.0
+        },
+        {
+          "Required Items": [
+            {
+              "Shortname": "stones",
+              "Skin": 0,
+              "Amount": 518000,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "metal.fragments",
+              "Skin": 0,
+              "Amount": 311000,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "metal.refined",
+              "Skin": 0,
+              "Amount": 1000,
+              "Icon URL": ""
+            }
+          ],
+          "Required Currency (0 to disable)": 102000,
+          "Capacity": 15,
+          "Gather Multiplier": 2.5,
+          "Fuel Usage Multiplier": 2.5
+        },
+        {
+          "Required Items": [
+            {
+              "Shortname": "coal",
+              "Skin": 2361215175,
+              "Amount": 4,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "coal",
+              "Skin": 2361215805,
+              "Amount": 4,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "coal",
+              "Skin": 2361216417,
+              "Amount": 4,
+              "Icon URL": ""
+            }
+          ],
+          "Required Currency (0 to disable)": 0,
+          "Capacity": 18,
+          "Gather Multiplier": 3.0,
+          "Fuel Usage Multiplier": 3.0
+        },
+        {
+          "Required Items": [
+            {
+              "Shortname": "coal",
+              "Skin": 2361215175,
+              "Amount": 7,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "coal",
+              "Skin": 2361215805,
+              "Amount": 7,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "coal",
+              "Skin": 2361216417,
+              "Amount": 7,
+              "Icon URL": ""
+            }
+          ],
+          "Required Currency (0 to disable)": 0,
+          "Capacity": 21,
+          "Gather Multiplier": 3.5,
+          "Fuel Usage Multiplier": 3.5
+        },
+        {
+          "Required Items": [
+            {
+              "Shortname": "coal",
+              "Skin": 2361215175,
+              "Amount": 11,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "coal",
+              "Skin": 2361215805,
+              "Amount": 11,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "coal",
+              "Skin": 2361216417,
+              "Amount": 11,
+              "Icon URL": ""
+            }
+          ],
+          "Required Currency (0 to disable)": 0,
+          "Capacity": 24,
+          "Gather Multiplier": 4.0,
+          "Fuel Usage Multiplier": 4.0
+        },
+        {
+          "Required Items": [
+            {
+              "Shortname": "coal",
+              "Skin": 2361215271,
+              "Amount": 14,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "coal",
+              "Skin": 2361215875,
+              "Amount": 14,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "coal",
+              "Skin": 2361216488,
+              "Amount": 14,
+              "Icon URL": ""
+            }
+          ],
+          "Required Currency (0 to disable)": 0,
+          "Capacity": 27,
+          "Gather Multiplier": 4.5,
+          "Fuel Usage Multiplier": 4.5
+        },
+        {
+          "Required Items": [
+            {
+              "Shortname": "coal",
+              "Skin": 2361215271,
+              "Amount": 18,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "coal",
+              "Skin": 2361215875,
+              "Amount": 18,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "coal",
+              "Skin": 2361216488,
+              "Amount": 18,
+              "Icon URL": ""
+            }
+          ],
+          "Required Currency (0 to disable)": 0,
+          "Capacity": 30,
+          "Gather Multiplier": 5.0,
+          "Fuel Usage Multiplier": 5.0
+        },
+        {
+          "Required Items": [
+            {
+              "Shortname": "coal",
+              "Skin": 2361215271,
+              "Amount": 21,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "coal",
+              "Skin": 2361215875,
+              "Amount": 21,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "coal",
+              "Skin": 2361216488,
+              "Amount": 21,
+              "Icon URL": ""
+            }
+          ],
+          "Required Currency (0 to disable)": 0,
+          "Capacity": 33,
+          "Gather Multiplier": 5.5,
+          "Fuel Usage Multiplier": 5.5
+        },
+        {
+          "Required Items": [
+            {
+              "Shortname": "coal",
+              "Skin": 2361215357,
+              "Amount": 25,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "coal",
+              "Skin": 2361224613,
+              "Amount": 25,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "coal",
+              "Skin": 2361216566,
+              "Amount": 25,
+              "Icon URL": ""
+            }
+          ],
+          "Required Currency (0 to disable)": 0,
+          "Capacity": 36,
+          "Gather Multiplier": 6.0,
+          "Fuel Usage Multiplier": 6.0
+        },
+        {
+          "Required Items": [
+            {
+              "Shortname": "coal",
+              "Skin": 2361215357,
+              "Amount": 28,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "coal",
+              "Skin": 2361224613,
+              "Amount": 28,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "coal",
+              "Skin": 2361216566,
+              "Amount": 28,
+              "Icon URL": ""
+            }
+          ],
+          "Required Currency (0 to disable)": 0,
+          "Capacity": 39,
+          "Gather Multiplier": 6.5,
+          "Fuel Usage Multiplier": 6.5
+        },
+        {
+          "Required Items": [
+            {
+              "Shortname": "coal",
+              "Skin": 2361215357,
+              "Amount": 31,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "coal",
+              "Skin": 2361224613,
+              "Amount": 31,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "coal",
+              "Skin": 2361216566,
+              "Amount": 31,
+              "Icon URL": ""
+            }
+          ],
+          "Required Currency (0 to disable)": 0,
+          "Capacity": 42,
+          "Gather Multiplier": 7.0,
+          "Fuel Usage Multiplier": 7.0
+        },
+        {
+          "Required Items": [
+            {
+              "Shortname": "coal",
+              "Skin": 2361215456,
+              "Amount": 35,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "coal",
+              "Skin": 2361216011,
+              "Amount": 35,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "coal",
+              "Skin": 2361216641,
+              "Amount": 35,
+              "Icon URL": ""
+            }
+          ],
+          "Required Currency (0 to disable)": 0,
+          "Capacity": 42,
+          "Gather Multiplier": 7.5,
+          "Fuel Usage Multiplier": 7.5
+        },
+        {
+          "Required Items": [
+            {
+              "Shortname": "coal",
+              "Skin": 2361215456,
+              "Amount": 38,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "coal",
+              "Skin": 2361216011,
+              "Amount": 38,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "coal",
+              "Skin": 2361216641,
+              "Amount": 38,
+              "Icon URL": ""
+            }
+          ],
+          "Required Currency (0 to disable)": 0,
+          "Capacity": 42,
+          "Gather Multiplier": 8.0,
+          "Fuel Usage Multiplier": 8.0
+        },
+        {
+          "Required Items": [
+            {
+              "Shortname": "coal",
+              "Skin": 2361215456,
+              "Amount": 42,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "coal",
+              "Skin": 2361216011,
+              "Amount": 42,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "coal",
+              "Skin": 2361216641,
+              "Amount": 42,
+              "Icon URL": ""
+            }
+          ],
+          "Required Currency (0 to disable)": 0,
+          "Capacity": 42,
+          "Gather Multiplier": 8.5,
+          "Fuel Usage Multiplier": 8.5
+        },
+        {
+          "Required Items": [
+            {
+              "Shortname": "coal",
+              "Skin": 2361215535,
+              "Amount": 45,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "coal",
+              "Skin": 2361216090,
+              "Amount": 45,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "coal",
+              "Skin": 2361216696,
+              "Amount": 45,
+              "Icon URL": ""
+            }
+          ],
+          "Required Currency (0 to disable)": 0,
+          "Capacity": 42,
+          "Gather Multiplier": 9.0,
+          "Fuel Usage Multiplier": 9.0
+        },
+        {
+          "Required Items": [
+            {
+              "Shortname": "coal",
+              "Skin": 2361215535,
+              "Amount": 49,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "coal",
+              "Skin": 2361216090,
+              "Amount": 49,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "coal",
+              "Skin": 2361216696,
+              "Amount": 49,
+              "Icon URL": ""
+            }
+          ],
+          "Required Currency (0 to disable)": 0,
+          "Capacity": 42,
+          "Gather Multiplier": 9.5,
+          "Fuel Usage Multiplier": 9.5
+        },
+        {
+          "Required Items": [
+            {
+              "Shortname": "coal",
+              "Skin": 2361215535,
+              "Amount": 52,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "coal",
+              "Skin": 2361216090,
+              "Amount": 52,
+              "Icon URL": ""
+            },
+            {
+              "Shortname": "coal",
+              "Skin": 2361216696,
+              "Amount": 52,
+              "Icon URL": ""
+            }
+          ],
+          "Required Currency (0 to disable)": 0,
+          "Capacity": 42,
+          "Gather Multiplier": 10.0,
+          "Fuel Usage Multiplier": 10.0
+        }
+      ]
+    },
+    "goldmine": {
+      "Required Permission (empty, if not required)": "virtualquarries.goldmine",
+      "Displayed Icon": {
+        "Shortname": "mining.quarry",
+        "Skin": 2813440105,
+        "Amount": 1,
+        "Icon URL": "https://images.pvrust.eu/custom/mining.quarry/2813440105.png"
+      },
+      "Survey Type": "survey",
+      "Displayed Quarry Title Translation Key": "GoldMineTitle",
+      "Chance": 1,
+      "Minimal Resources Per Node": 2,
+      "Maximal Resources Per Node": 2,
+      "Fuel Required Per Tick": {
+        "Shortname": "crude.oil",
+        "Skin": 0,
+        "Amount": 6
+      },
+      "Enable Upgrades": false,
+      "Items Required To Place": [
+        {
+          "Shortname": "mining.quarry",
+          "Skin": 2813440105,
+          "Amount": 1,
+          "Icon URL": ""
+        }
+      ],
+      "Resources": {
+        "stone": {
+          "Output Item - Shortname": "stones",
+          "Output Item - Skin": 0,
+          "Output Item - Display Name": "",
+          "Output Item - Icon URL (Required if Skin not 0)": "",
+          "Include Always": true,
+          "Required Permission (empty if not required)": "",
+          "Chance": 0,
+          "Minimal Output Per Tick": 90.0,
+          "Maximal Output Per Tick": 180.0,
+          "Additional Items Required To Place": []
+        },
+        "goldore": {
+          "Output Item - Shortname": "hq.metal.ore",
+          "Output Item - Skin": 2812908176,
+          "Output Item - Display Name": "Gold Ore",
+          "Output Item - Icon URL (Required if Skin not 0)": "https://images.pvrust.eu/custom/coal/2812908176.png",
+          "Include Always": true,
+          "Required Permission (empty if not required)": "",
+          "Chance": 0,
+          "Minimal Output Per Tick": 0.01,
+          "Maximal Output Per Tick": 0.07,
+          "Additional Items Required To Place": []
+        }
+      },
+      "Upgrades": [
+        {
+          "Required Items": [],
+          "Required Currency (0 to disable)": 0,
+          "Capacity": 6,
+          "Gather Multiplier": 1.0,
+          "Fuel Usage Multiplier": 1.0
+        }
+      ]
+    },
+    "sawmill": {
+      "Required Permission (empty, if not required)": "virtualquarries.sawmill",
+      "Displayed Icon": {
+        "Shortname": "mining.quarry",
+        "Skin": 2813452238,
+        "Amount": 1,
+        "Icon URL": "https://images.pvrust.eu/custom/mining.quarry/2813452238.png"
+      },
+      "Survey Type": "map",
+      "Displayed Quarry Title Translation Key": "SawmillTitle",
+      "Chance": 5,
+      "Minimal Resources Per Node": 1,
+      "Maximal Resources Per Node": 1,
+      "Fuel Required Per Tick": {
+        "Shortname": "lowgradefuel",
+        "Skin": 0,
+        "Amount": 6
+      },
+      "Enable Upgrades": true,
+      "Items Required To Place": [
+        {
+          "Shortname": "mining.quarry",
+          "Skin": 2813452238,
+          "Amount": 1,
+          "Icon URL": ""
+        }
+      ],
+      "Resources": {
+        "wood": {
+          "Output Item - Shortname": "wood",
+          "Output Item - Skin": 0,
+          "Output Item - Display Name": "",
+          "Output Item - Icon URL (Required if Skin not 0)": "",
+          "Include Always": true,
+          "Required Permission (empty if not required)": "",
+          "Chance": 0,
+          "Minimal Output Per Tick": 90.0,
+          "Maximal Output Per Tick": 180.0,
+          "Additional Items Required To Place": []
+        }
+      },
+      "Upgrades": [
+        {
+          "Required Items": [],
+          "Required Currency (0 to disable)": 0,
+          "Capacity": 6,
+          "Gather Multiplier": 1.0,
+          "Fuel Usage Multiplier": 1.0
+        },
+        {
+          "Required Items": [
+            {
+              "Shortname": "wood",
+              "Skin": 0,
+              "Amount": 65000,
+              "Icon URL": ""
+            }
+          ],
+          "Required Currency (0 to disable)": 24000,
+          "Capacity": 9,
+          "Gather Multiplier": 1.5,
+          "Fuel Usage Multiplier": 1.5
+        },
+        {
+          "Required Items": [
+            {
+              "Shortname": "wood",
+              "Skin": 0,
+              "Amount": 200000,
+              "Icon URL": ""
+            }
+          ],
+          "Required Currency (0 to disable)": 48000,
+          "Capacity": 12,
+          "Gather Multiplier": 2.0,
+          "Fuel Usage Multiplier": 2.0
+        },
+        {
+          "Required Items": [
+            {
+              "Shortname": "wood",
+              "Skin": 0,
+              "Amount": 520000,
+              "Icon URL": ""
+            }
+          ],
+          "Required Currency (0 to disable)": 72000,
+          "Capacity": 15,
+          "Gather Multiplier": 2.5,
+          "Fuel Usage Multiplier": 2.5
+        },
+        {
+          "Required Items": [
+            {
+              "Shortname": "coal",
+              "Skin": 2325417548,
+              "Amount": 10,
+              "Icon URL": ""
+            }
+          ],
+          "Required Currency (0 to disable)": 0,
+          "Capacity": 18,
+          "Gather Multiplier": 3.0,
+          "Fuel Usage Multiplier": 3.0
+        },
+        {
+          "Required Items": [
+            {
+              "Shortname": "coal",
+              "Skin": 2325417548,
+              "Amount": 20,
+              "Icon URL": ""
+            }
+          ],
+          "Required Currency (0 to disable)": 0,
+          "Capacity": 21,
+          "Gather Multiplier": 3.5,
+          "Fuel Usage Multiplier": 3.5
+        },
+        {
+          "Required Items": [
+            {
+              "Shortname": "coal",
+              "Skin": 2325417548,
+              "Amount": 30,
+              "Icon URL": ""
+            }
+          ],
+          "Required Currency (0 to disable)": 0,
+          "Capacity": 24,
+          "Gather Multiplier": 4.0,
+          "Fuel Usage Multiplier": 4.0
+        },
+        {
+          "Required Items": [
+            {
+              "Shortname": "coal",
+              "Skin": 2325419313,
+              "Amount": 40,
+              "Icon URL": ""
+            }
+          ],
+          "Required Currency (0 to disable)": 0,
+          "Capacity": 27,
+          "Gather Multiplier": 4.5,
+          "Fuel Usage Multiplier": 4.5
+        },
+        {
+          "Required Items": [
+            {
+              "Shortname": "coal",
+              "Skin": 2325419313,
+              "Amount": 50,
+              "Icon URL": ""
+            }
+          ],
+          "Required Currency (0 to disable)": 0,
+          "Capacity": 30,
+          "Gather Multiplier": 5.0,
+          "Fuel Usage Multiplier": 5.0
+        },
+        {
+          "Required Items": [
+            {
+              "Shortname": "coal",
+              "Skin": 2325419313,
+              "Amount": 60,
+              "Icon URL": ""
+            }
+          ],
+          "Required Currency (0 to disable)": 0,
+          "Capacity": 33,
+          "Gather Multiplier": 5.5,
+          "Fuel Usage Multiplier": 5.5
+        },
+        {
+          "Required Items": [
+            {
+              "Shortname": "coal",
+              "Skin": 2325419634,
+              "Amount": 70,
+              "Icon URL": ""
+            }
+          ],
+          "Required Currency (0 to disable)": 0,
+          "Capacity": 36,
+          "Gather Multiplier": 6.0,
+          "Fuel Usage Multiplier": 6.0
+        },
+        {
+          "Required Items": [
+            {
+              "Shortname": "coal",
+              "Skin": 2325419634,
+              "Amount": 80,
+              "Icon URL": ""
+            }
+          ],
+          "Required Currency (0 to disable)": 0,
+          "Capacity": 39,
+          "Gather Multiplier": 6.5,
+          "Fuel Usage Multiplier": 6.5
+        },
+        {
+          "Required Items": [
+            {
+              "Shortname": "coal",
+              "Skin": 2325419634,
+              "Amount": 90,
+              "Icon URL": ""
+            }
+          ],
+          "Required Currency (0 to disable)": 0,
+          "Capacity": 42,
+          "Gather Multiplier": 7.0,
+          "Fuel Usage Multiplier": 7.0
+        },
+        {
+          "Required Items": [
+            {
+              "Shortname": "coal",
+              "Skin": 2325419915,
+              "Amount": 100,
+              "Icon URL": ""
+            }
+          ],
+          "Required Currency (0 to disable)": 0,
+          "Capacity": 42,
+          "Gather Multiplier": 7.5,
+          "Fuel Usage Multiplier": 7.5
+        },
+        {
+          "Required Items": [
+            {
+              "Shortname": "coal",
+              "Skin": 2325419915,
+              "Amount": 110,
+              "Icon URL": ""
+            }
+          ],
+          "Required Currency (0 to disable)": 0,
+          "Capacity": 42,
+          "Gather Multiplier": 8.0,
+          "Fuel Usage Multiplier": 8.0
+        },
+        {
+          "Required Items": [
+            {
+              "Shortname": "coal",
+              "Skin": 2325419915,
+              "Amount": 120,
+              "Icon URL": ""
+            }
+          ],
+          "Required Currency (0 to disable)": 0,
+          "Capacity": 42,
+          "Gather Multiplier": 8.5,
+          "Fuel Usage Multiplier": 8.5
+        },
+        {
+          "Required Items": [
+            {
+              "Shortname": "coal",
+              "Skin": 2325420129,
+              "Amount": 130,
+              "Icon URL": ""
+            }
+          ],
+          "Required Currency (0 to disable)": 0,
+          "Capacity": 42,
+          "Gather Multiplier": 9.0,
+          "Fuel Usage Multiplier": 9.0
+        },
+        {
+          "Required Items": [
+            {
+              "Shortname": "coal",
+              "Skin": 2325420129,
+              "Amount": 140,
+              "Icon URL": ""
+            }
+          ],
+          "Required Currency (0 to disable)": 0,
+          "Capacity": 42,
+          "Gather Multiplier": 9.5,
+          "Fuel Usage Multiplier": 9.5
+        },
+        {
+          "Required Items": [
+            {
+              "Shortname": "coal",
+              "Skin": 2325420129,
+              "Amount": 150,
+              "Icon URL": ""
+            }
+          ],
+          "Required Currency (0 to disable)": 0,
+          "Capacity": 42,
+          "Gather Multiplier": 10.0,
+          "Fuel Usage Multiplier": 10.0
+        }
+      ]
+    }
+  }
+}

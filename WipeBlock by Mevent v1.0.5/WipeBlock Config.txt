@@ -1,0 +1,307 @@
+{
+  "Commands": [
+    "block",
+    "wipeblock"
+  ],
+  "Включить работу с Notify?": true,
+  "Use auto-wipe?": true,
+  "Time Indent (seconds)": 0.0,
+  "Settings": [
+    {
+      "Lang Key": "Weapons",
+      "Items": {
+        "3600": [
+          {
+            "ShortName": "pistol.revolver",
+            "Skin": 0
+          },
+          {
+            "ShortName": "shotgun.double",
+            "Skin": 0
+          }
+        ],
+        "7200": [
+          {
+            "ShortName": "pistol.semiauto",
+            "Skin": 0
+          },
+          {
+            "ShortName": "pistol.python",
+            "Skin": 0
+          },
+          {
+            "ShortName": "shotgun.pump",
+            "Skin": 0
+          }
+        ],
+        "10800": [
+          {
+            "ShortName": "pistol.m92",
+            "Skin": 0
+          },
+          {
+            "ShortName": "shotgun.spas12",
+            "Skin": 0
+          },
+          {
+            "ShortName": "rifle.semiauto",
+            "Skin": 0
+          }
+        ],
+        "14400": [
+          {
+            "ShortName": "smg.2",
+            "Skin": 0
+          },
+          {
+            "ShortName": "smg.mp5",
+            "Skin": 0
+          },
+          {
+            "ShortName": "smg.thompson",
+            "Skin": 0
+          },
+          {
+            "ShortName": "rifle.m39",
+            "Skin": 0
+          }
+        ],
+        "21600": [
+          {
+            "ShortName": "rifle.ak",
+            "Skin": 0
+          },
+          {
+            "ShortName": "rifle.lr300",
+            "Skin": 0
+          },
+          {
+            "ShortName": "rifle.bolt",
+            "Skin": 0
+          },
+          {
+            "ShortName": "rifle.l96",
+            "Skin": 0
+          }
+        ],
+        "86400": [
+          {
+            "ShortName": "lmg.m249",
+            "Skin": 0
+          }
+        ]
+      }
+    },
+    {
+      "Lang Key": "Explosives",
+      "Items": {
+        "14400": [
+          {
+            "ShortName": "grenade.beancan",
+            "Skin": 0
+          }
+        ],
+        "64800": [
+          {
+            "ShortName": "explosive.satchel",
+            "Skin": 0
+          }
+        ],
+        "86400": [
+          {
+            "ShortName": "ammo.rifle.explosive",
+            "Skin": 0
+          },
+          {
+            "ShortName": "explosive.timed",
+            "Skin": 0
+          },
+          {
+            "ShortName": "ammo.grenadelauncher.he",
+            "Skin": 0
+          },
+          {
+            "ShortName": "ammo.rocket.basic",
+            "Skin": 0
+          }
+        ]
+      }
+    },
+    {
+      "Lang Key": "Attire",
+      "Items": {
+        "10800": [
+          {
+            "ShortName": "coffeecan.helmet",
+            "Skin": 0
+          },
+          {
+            "ShortName": "roadsign.jacket",
+            "Skin": 0
+          },
+          {
+            "ShortName": "roadsign.kilt",
+            "Skin": 0
+          }
+        ],
+        "14400": [
+          {
+            "ShortName": "metal.facemask",
+            "Skin": 0
+          },
+          {
+            "ShortName": "metal.plate.torso",
+            "Skin": 0
+          }
+        ],
+        "21600": [
+          {
+            "ShortName": "heavy.plate.helmet",
+            "Skin": 0
+          },
+          {
+            "ShortName": "heavy.plate.jacket",
+            "Skin": 0
+          },
+          {
+            "ShortName": "heavy.plate.pants",
+            "Skin": 0
+          }
+        ],
+        "86400": [
+          {
+            "ShortName": "lmg.m249",
+            "Skin": 0
+          }
+        ]
+      }
+    }
+  ],
+  "Interface": {
+    "Width": 820.0,
+    "Height": 530.0,
+    "Item Height": 70.0,
+    "Item Width": 70.0,
+    "Item X Margin": 7.5,
+    "Item Y Margin": 10.0,
+    "Items On String": 10,
+    "X Indent": 25.0,
+    "Gradients": [
+      "#4B68FF",
+      "#FFD01B",
+      "#FFD01B",
+      "#FFD01B",
+      "#FFD01B",
+      "#FFD01B",
+      "#FFD01B",
+      "#FFD01B",
+      "#FFD01B",
+      "#FFD01B",
+      "#FFD01B",
+      "#FFD01B",
+      "#FFD01B",
+      "#FFD01B",
+      "#FFD01B",
+      "#FFD01B",
+      "#FFD01B",
+      "#FFD01B",
+      "#FFD01B",
+      "#FFD01B",
+      "#FFD01B",
+      "#FFD01B",
+      "#FFD01B",
+      "#FFD01B",
+      "#FFD01B",
+      "#FFD01B",
+      "#FFD01B",
+      "#FFD01B",
+      "#FFD01B",
+      "#FFD01B",
+      "#FFD01B",
+      "#FFD01B",
+      "#FFD01B",
+      "#FFD01B",
+      "#FFD01B",
+      "#FFD01B",
+      "#FFD01B",
+      "#FFD01B",
+      "#FFD01B",
+      "#FFD01B",
+      "#FFD01B",
+      "#FFD01B",
+      "#FFD01B",
+      "#FFD01B",
+      "#FFD01B",
+      "#FFD01B",
+      "#FFD01B",
+      "#FFD01B",
+      "#FFD01B",
+      "#FFD01B",
+      "#FFD01B",
+      "#FF6060",
+      "#FF6060",
+      "#FF6060",
+      "#FF6060",
+      "#FF6060",
+      "#FF6060",
+      "#FF6060",
+      "#FF6060",
+      "#FF6060",
+      "#FF6060",
+      "#FF6060",
+      "#FF6060",
+      "#FF6060",
+      "#FF6060",
+      "#FF6060",
+      "#FF6060",
+      "#FF6060",
+      "#FF6060",
+      "#FF6060",
+      "#FF6060",
+      "#FF6060",
+      "#FF6060",
+      "#FF6060",
+      "#FF6060",
+      "#FF6060",
+      "#FF6060",
+      "#FF6060",
+      "#FF6060",
+      "#FF6060",
+      "#FF6060",
+      "#FF6060",
+      "#FF6060",
+      "#FF6060",
+      "#FF6060",
+      "#FF6060",
+      "#FF6060",
+      "#FF6060",
+      "#FF6060",
+      "#FF6060",
+      "#FF6060",
+      "#FF6060",
+      "#FF6060",
+      "#FF6060",
+      "#FF6060",
+      "#FF6060",
+      "#FF6060",
+      "#FF6060",
+      "#FF6060",
+      "#FF6060",
+      "#FF6060"
+    ],
+    "OnScreen Settings": {
+      "Show on screen?": true,
+      "Position Settings": {
+        "AnchorMin": "1 1",
+        "AnchorMax": "1 1",
+        "OffsetMin": "-150 -40",
+        "OffsetMax": "-20 -10"
+      }
+    }
+  },
+  "Version": {
+    "Major": 1,
+    "Minor": 0,
+    "Patch": 4
+  }
+}

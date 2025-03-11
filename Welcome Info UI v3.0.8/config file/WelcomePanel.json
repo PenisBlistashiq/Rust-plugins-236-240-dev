@@ -1,0 +1,307 @@
+{
+  "General Settings": {
+    "Open when player connected.": true,
+    "Open on tab number.": 1,
+    "Open only once per wipe.": false,
+    "Require permission for each tab.": false,
+    "Custom chat commands (don't delete from list, just rename).": [
+      "info",
+      "wp_tab2",
+      "wp_tab3",
+      "wp_tab4",
+      "wp_tab5",
+      "wp_tab6",
+      "wp_tab7",
+      "wp_tab8",
+      "wp_tab9",
+      "wp_tab10"
+    ]
+  },
+  "Button Settings": {
+    "Button Font Style": "robotocondensed-bold.ttf",
+    "Close Button Text": "✘ CLOSE",
+    "Text Align Inside Button": 4,
+    "Icon Position (parented to button)": [
+      "0 0",
+      "1 1"
+    ]
+  },
+  "Title Settings": {
+    "Title Text": "<size=65>YOURSERVER.NET</size>",
+    "Base Font Color": "1 1 1 1",
+    "Font Style": "robotocondensed-bold.ttf",
+    "Outline Color": "0 0 0 1",
+    "Outline Thickness": "1.5"
+  },
+  "Tab #1 Settings": {
+    "Enabled": true,
+    "Button Title": " HOME",
+    "Button Icon Img": "you can change icons in data/cuiData.json",
+    "Base Text Size": 12,
+    "Base Text Color": "1 1 1 1",
+    "Text Style": "robotocondensed-bold.ttf",
+    "Text Outline Color": "0 0 0 1",
+    "Text Outline Thickness": "0.5",
+    "Text Align": 0,
+    "Text Lines": [
+      "<size=45><color=#4A95CC>RUSTSERVERNAME</color> #4</size> ",
+      "<size=25>WIPE SCHEDULE <color=#83b8c7>WEEKLY</color> @ <color=#83b8c7>4:00PM</color> (CET)</size>",
+      "<size=25>RATES <color=#83b8c7>2x GATHER</color> | <color=#83b8c7>1.5x LOOT</color></size> ",
+      "<size=25>GROUP LIMIT <color=#83b8c7>MAX 5</color></size>",
+      "<size=25>MAPSIZE <color=#83b8c7>3500</color></size> ",
+      "\n",
+      "\n",
+      "<size=15>Server is located in EU. Blueprints are wiped monthly. Feel free to browse our infomation panel to find out more about the server. If you have more questions, please join our discord and we will happy to help you.</size>",
+      "\n",
+      "<size=15><color=#83b8c7>\n This is demo page for Welcome, you can find more examples by checking other tabs.</color></size>"
+    ],
+    "Background Image URL": "",
+    "Background Image Anchoring": [
+      "0 0",
+      "1 1"
+    ]
+  },
+  "Tab #2 Settings": {
+    "Enabled": true,
+    "Button Title": " RULES",
+    "Button Icon Img": "you can change icons in data/cuiData.json",
+    "Base Text Size": 12,
+    "Base Text Color": "1 1 1 1",
+    "Text Style": "robotocondensed-regular.ttf",
+    "Text Outline Color": "0 0 0 1",
+    "Text Outline Thickness": "0.5",
+    "Text Align": 0,
+    "Text Lines": [
+      "<size=45><color=#4A95CC>Text Alignment</color></size>",
+      "",
+      "<size=18>You can set various text alignments inside config file.</size>",
+      "<size=18>There is 9 available settings, each one is defined by number (0 to 8)</size>",
+      "",
+      "<size=17>UpperLeft - <color=#4A95CC>0</color></size>\n<size=17>UpperCenter - <color=#4A95CC>1</color></size>\n<size=17>UpperRight - <color=#4A95CC>2</color></size>",
+      "<size=17>MiddleLeft - <color=#4A95CC>3</color></size>\n<size=17>MiddleCenter - <color=#4A95CC>4</color></size>\n<size=17>MiddleRight - <color=#4A95CC>5</color></size>",
+      "<size=17>LowerLeft - <color=#4A95CC>6</color></size>\n<size=17>LowerCenter - <color=#4A95CC>7</color></size>\n<size=17>LowerRight - <color=#4A95CC>8</color></size>",
+      "",
+      ""
+    ],
+    "Background Image URL": "",
+    "Background Image Anchoring": [
+      "0 0",
+      "1 1"
+    ]
+  },
+  "Tab #3 Settings": {
+    "Enabled": true,
+    "Button Title": "   WIPE CYCLE",
+    "Button Icon Img": "you can change icons in data/cuiData.json",
+    "Base Text Size": 15,
+    "Base Text Color": "1 1 1 1",
+    "Text Style": "robotocondensed-bold.ttf",
+    "Text Outline Color": "0 0 0 1",
+    "Text Outline Thickness": "0",
+    "Text Align": 4,
+    "Text Lines": [
+      "<size=45><color=#4A95CC>Text Style Tags</color></size>",
+      "",
+      "(color=#4A95CC)<color=#FF8000FF>Text Color</color>(/color)",
+      "(size=18)<size=18><color=#4A95CC>Text Size</color></size>(/size)",
+      "(b)<b><color=#4A95CC>Bold Text</color></b>(/b)",
+      "(i)<i><color=#4A95CC>Italic Text</color></i>(/i)",
+      "",
+      "",
+      "<size=18>Replace ( ) with <color=#4A95CC>< ></color> in actual config file, rounded brackets used only as showcase.</size>",
+      ""
+    ],
+    "Background Image URL": "",
+    "Background Image Anchoring": [
+      "0 0",
+      "1 1"
+    ]
+  },
+  "Tab #4 Settings": {
+    "Enabled": true,
+    "Button Title": "   STEAM GROUP",
+    "Button Icon Img": "you can change icons in data/cuiData.json",
+    "Base Text Size": 12,
+    "Base Text Color": "1 1 1 1",
+    "Text Style": "permanentmarker.ttf",
+    "Text Outline Color": "0 0 0 1",
+    "Text Outline Thickness": "1.5",
+    "Text Align": 4,
+    "Text Lines": [
+      "<size=45><color=#4A95CC>RUSTSERVERNAME</color> #4</size> ",
+      "<size=25>WIPE SCHEDULE <color=#83b8c7>WEEKLY</color> @ <color=#83b8c7>4:00PM</color> (CET)</size>",
+      "<size=25>RATES <color=#83b8c7>2x GATHER</color> | <color=#83b8c7>1.5x LOOT</color></size> ",
+      "<size=25>GROUP LIMIT <color=#83b8c7>MAX 5</color></size>",
+      "<size=25>MAPSIZE <color=#83b8c7>3500</color></size> ",
+      "\n",
+      "\n",
+      "<size=15>Server is located in EU. Blueprints are wiped monthly. Feel free to browse our infomation panel to find out more about the server. If you have more questions, please join our discord and we will happy to help you.</size>",
+      "\n",
+      "<size=15><color=#83b8c7>\n This is demo page for Welcome, you can find more examples by checking other tabs.</color></size>"
+    ],
+    "Background Image URL": "",
+    "Background Image Anchoring": [
+      "0 0",
+      "1 1"
+    ]
+  },
+  "Tab #5 Settings": {
+    "Enabled": true,
+    "Button Title": "  DISCORD",
+    "Button Icon Img": "you can change icons in data/cuiData.json",
+    "Base Text Size": 18,
+    "Base Text Color": "1 1 1 1",
+    "Text Style": "robotocondensed-regular.ttf",
+    "Text Outline Color": "0 0 0 1",
+    "Text Outline Thickness": "0.5",
+    "Text Align": 4,
+    "Text Lines": [
+      "<size=45><color=#4A95CC>Available Fonts</color></size>",
+      "",
+      "",
+      "droidsansmono.ttf",
+      "permanentmarker.ttf",
+      "robotocondensed-bold.ttf",
+      "robotocondensed-regular.ttf",
+      ""
+    ],
+    "Background Image URL": "",
+    "Background Image Anchoring": [
+      "0 0",
+      "1 1"
+    ]
+  },
+  "Tab #6 Settings": {
+    "Enabled": true,
+    "Button Title": "  BUG REPORT",
+    "Button Icon Img": "you can change icons in data/cuiData.json",
+    "Base Text Size": 20,
+    "Base Text Color": "1 1 1 1",
+    "Text Style": "permanentmarker.ttf",
+    "Text Outline Color": "0 0 0 1",
+    "Text Outline Thickness": "1.5",
+    "Text Align": 4,
+    "Text Lines": [
+      "Welcome \n",
+      "You can set background image for each tab and also change position/size",
+      ""
+    ],
+    "Background Image URL": "http://333017_web.fakaheda.eu/bgimage.png",
+    "Background Image Anchoring": [
+      "0 0",
+      "1 1"
+    ]
+  },
+  "Tab #7 Settings": {
+    "Enabled": true,
+    "Button Title": " ADMIN",
+    "Button Icon Img": "you can change icons in data/cuiData.json",
+    "Base Text Size": 17,
+    "Base Text Color": "1 1 1 1",
+    "Text Style": "robotocondensed-regular.ttf",
+    "Text Outline Color": "0 0 0 1",
+    "Text Outline Thickness": "1.5",
+    "Text Align": 4,
+    "Text Lines": [
+      "<size=27><color=#4A95CC><i>Thank you for purchasing Welcome</i></color></size>",
+      "",
+      "",
+      "If you found good use of this plugin, please don't forget leave review.",
+      "Suggestions are also welcomed.",
+      "",
+      "<size=11>DISCORD</size> <color=#4A95CC><b>!David#1337</b></color>"
+    ],
+    "Background Image URL": "",
+    "Background Image Anchoring": [
+      "0 0",
+      "1 1"
+    ]
+  },
+  "Tab #8 Settings": {
+    "Enabled": true,
+    "Button Title": " SHOP",
+    "Button Icon Img": "you can change icons in data/cuiData.json",
+    "Base Text Size": 17,
+    "Base Text Color": "1 1 1 1",
+    "Text Style": "robotocondensed-regular.ttf",
+    "Text Outline Color": "0 0 0 1",
+    "Text Outline Thickness": "1.5",
+    "Text Align": 4,
+    "Text Lines": [
+      "<size=27><color=#4A95CC><i>Thank you for purchasing Welcome</i></color></size>",
+      "",
+      "",
+      "If you found good use of this plugin, please don't forget leave review.",
+      "Suggestions are also welcomed.",
+      "",
+      "<size=11>DISCORD</size> <color=#4A95CC><b>!David#1337</b></color>"
+    ],
+    "Background Image URL": "",
+    "Background Image Anchoring": [
+      "0 0",
+      "1 1"
+    ]
+  },
+  "Tab #9 Settings": {
+    "Enabled": true,
+    "Button Title": " VIP",
+    "Button Icon Img": "you can change icons in data/cuiData.json",
+    "Base Text Size": 17,
+    "Base Text Color": "1 1 1 1",
+    "Text Style": "robotocondensed-regular.ttf",
+    "Text Outline Color": "0 0 0 1",
+    "Text Outline Thickness": "1.5",
+    "Text Align": 4,
+    "Text Lines": [
+      "<size=27><color=#4A95CC><i>Thank you for purchasing Welcome</i></color></size>",
+      "",
+      "",
+      "If you found good use of this plugin, please don't forget leave review.",
+      "Suggestions are also welcomed.",
+      "",
+      "<size=11>DISCORD</size> <color=#4A95CC><b>!David#1337</b></color>"
+    ],
+    "Background Image URL": "",
+    "Background Image Anchoring": [
+      "0 0",
+      "1 1"
+    ]
+  },
+  "Tab #10 Settings": {
+    "Enabled": true,
+    "Button Title": " UPDATES",
+    "Button Icon Img": "you can change icons in data/cuiData.json",
+    "Base Text Size": 17,
+    "Base Text Color": "1 1 1 1",
+    "Text Style": "robotocondensed-regular.ttf",
+    "Text Outline Color": "0 0 0 1",
+    "Text Outline Thickness": "1.5",
+    "Text Align": 4,
+    "Text Lines": [
+      "<size=27><color=#4A95CC><i>Thank you for purchasing Welcome</i></color></size>",
+      "",
+      "",
+      "If you found good use of this plugin, please don't forget leave review.",
+      "Suggestions are also welcomed.",
+      "",
+      "<size=11>DISCORD</size> <color=#4A95CC><b>!David#1337</b></color>"
+    ],
+    "Background Image URL": "",
+    "Background Image Anchoring": [
+      "0 0",
+      "1 1"
+    ]
+  },
+  "Addons": {
+    "Tab 1": "null",
+    "Tab 2": "null",
+    "Tab 3": "null",
+    "Tab 4": "null",
+    "Tab 5": "null",
+    "Tab 6": "null",
+    "Tab 7": "null",
+    "Tab 8": "null",
+    "Tab 9": "null",
+    "Tab 10": "null"
+  }
+}

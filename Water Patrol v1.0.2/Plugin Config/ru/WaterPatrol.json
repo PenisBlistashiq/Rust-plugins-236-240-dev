@@ -1,0 +1,1044 @@
+{
+  "Список пресетов патрульных лодок": [
+    {
+      "Дальность погони за целью": 400.0,
+      "Радиус обнаружения цели": 200.0,
+      "Минимальное кол-во": 6,
+      "Максимальное кол-во": 6,
+      "Настройка маркера на карте": {
+        "Включен? [true/false]": false,
+        "Название": "Water Patrol",
+        "Радиус": 0.4,
+        "Прозрачность": 0.6,
+        "Цвет маркера": {
+          "r": 0.81,
+          "g": 0.25,
+          "b": 0.15
+        }
+      },
+      "Мощность двигателя": 2000.0,
+      "Настройка ящика": {
+        "Какую таблицу лута необходимо использовать? (0 - собственную; 1 - таблица предметов объектов Rust; 2 - совместить 1 и 2 методы)": 2,
+        "Таблица предметов из prefab-ов (если тип таблицы предметов - 1 или 2)": {
+          "Минимальное кол-во prefab-ов": 1,
+          "Максимальное кол-во prefab-ов": 1,
+          "Использовать минимальное и максимальное значение? [true/false]": false,
+          "Список prefab-ов": [
+            {
+              "Шанс выпадения [0.0-100.0]": 100.0,
+              "Путь к prefab-у": "assets/rust.ai/agents/npcplayer/humannpc/scientist/scientistnpc_oilrig.prefab"
+            },
+            {
+              "Шанс выпадения [0.0-100.0]": 100.0,
+              "Путь к prefab-у": "assets/bundled/prefabs/radtown/crate_normal_2.prefab"
+            },
+            {
+              "Шанс выпадения [0.0-100.0]": 100.0,
+              "Путь к prefab-у": "assets/bundled/prefabs/radtown/underwater_labs/tech_parts_2.prefab"
+            },
+            {
+              "Шанс выпадения [0.0-100.0]": 100.0,
+              "Путь к prefab-у": "assets/bundled/prefabs/radtown/underwater_labs/crate_fuel.prefab"
+            },
+            {
+              "Шанс выпадения [0.0-100.0]": 100.0,
+              "Путь к prefab-у": "assets/bundled/prefabs/radtown/crate_normal.prefab"
+            }
+          ]
+        },
+        "Собственная таблица предметов (если тип таблицы предметов - 0 или 2)": {
+          "Минимальное кол-во элементов": 1,
+          "Максимальное кол-во элементов": 1,
+          "Использовать минимальное и максимальное значение? [true/false]": false,
+          "Список предметов": [
+            {
+              "ShortName": "diesel_barrel",
+              "Минимальное кол-во": 1,
+              "Максимальное кол-во": 1,
+              "Шанс выпадения предмета [0.0-100.0]": 50.0,
+              "Это чертеж? [true/false]": false,
+              "SkinID (0 - default)": 0,
+              "Название (empty - default)": ""
+            },
+            {
+              "ShortName": "scrap",
+              "Минимальное кол-во": 50,
+              "Максимальное кол-во": 100,
+              "Шанс выпадения предмета [0.0-100.0]": 100.0,
+              "Это чертеж? [true/false]": false,
+              "SkinID (0 - default)": 0,
+              "Название (empty - default)": ""
+            },
+            {
+              "ShortName": "syringe.medical",
+              "Минимальное кол-во": 1,
+              "Максимальное кол-во": 2,
+              "Шанс выпадения предмета [0.0-100.0]": 100.0,
+              "Это чертеж? [true/false]": false,
+              "SkinID (0 - default)": 0,
+              "Название (empty - default)": ""
+            }
+          ]
+        }
+      },
+      "Настройки водителя": {
+        "Название": "Driver",
+        "Кол-во ХП": 200.0,
+        "Одежда": [
+          {
+            "ShortName": "shoes.boots",
+            "SkinID (0 - default)": 826587881
+          },
+          {
+            "ShortName": "pants",
+            "SkinID (0 - default)": 1552705077
+          },
+          {
+            "ShortName": "hoodie",
+            "SkinID (0 - default)": 1552703337
+          },
+          {
+            "ShortName": "burlap.gloves",
+            "SkinID (0 - default)": 1552705918
+          },
+          {
+            "ShortName": "roadsign.kilt",
+            "SkinID (0 - default)": 1624102935
+          },
+          {
+            "ShortName": "metal.plate.torso",
+            "SkinID (0 - default)": 2843462369
+          },
+          {
+            "ShortName": "metal.facemask",
+            "SkinID (0 - default)": 2843464348
+          }
+        ]
+      },
+      "Настройки NPC - 1": {
+        "Название": "Patrolman",
+        "Кол-во ХП": 125.0,
+        "Множитель радиуса атаки": 1.5,
+        "Длительность памяти цели [sec.]": 20.0,
+        "Множитель урона": 0.7,
+        "Множитель разброса": 1.5,
+        "Одежда": [
+          {
+            "ShortName": "shoes.boots",
+            "SkinID (0 - default)": 826587881
+          },
+          {
+            "ShortName": "pants",
+            "SkinID (0 - default)": 1552705077
+          },
+          {
+            "ShortName": "hoodie",
+            "SkinID (0 - default)": 1552703337
+          },
+          {
+            "ShortName": "burlap.gloves",
+            "SkinID (0 - default)": 1552705918
+          },
+          {
+            "ShortName": "roadsign.kilt",
+            "SkinID (0 - default)": 1624102935
+          },
+          {
+            "ShortName": "roadsign.jacket",
+            "SkinID (0 - default)": 1624100124
+          },
+          {
+            "ShortName": "coffeecan.helmet",
+            "SkinID (0 - default)": 1624104393
+          }
+        ],
+        "Быстрые слоты": [
+          {
+            "ShortName": "rifle.lr300",
+            "Кол-во": 1,
+            "SkinID (0 - default)": 0,
+            "Модификации на оружие": [
+              "weapon.mod.flashlight",
+              "weapon.mod.holosight"
+            ],
+            "Боеприпасы": ""
+          },
+          {
+            "ShortName": "rocket.launcher",
+            "Кол-во": 1,
+            "SkinID (0 - default)": 0,
+            "Модификации на оружие": [],
+            "Боеприпасы": ""
+          },
+          {
+            "ShortName": "syringe.medical",
+            "Кол-во": 3,
+            "SkinID (0 - default)": 0,
+            "Модификации на оружие": [],
+            "Боеприпасы": ""
+          }
+        ],
+        "Kit (рекомендуется использовать предыдущие 2 пункта настройки для повышения производительности)": ""
+      },
+      "Настройки NPC - 2": {
+        "Название": "Patrolman",
+        "Кол-во ХП": 125.0,
+        "Множитель радиуса атаки": 1.5,
+        "Длительность памяти цели [sec.]": 20.0,
+        "Множитель урона": 0.7,
+        "Множитель разброса": 1.5,
+        "Одежда": [
+          {
+            "ShortName": "shoes.boots",
+            "SkinID (0 - default)": 826587881
+          },
+          {
+            "ShortName": "pants",
+            "SkinID (0 - default)": 1552705077
+          },
+          {
+            "ShortName": "hoodie",
+            "SkinID (0 - default)": 1552703337
+          },
+          {
+            "ShortName": "burlap.gloves",
+            "SkinID (0 - default)": 1552705918
+          },
+          {
+            "ShortName": "roadsign.kilt",
+            "SkinID (0 - default)": 1624102935
+          },
+          {
+            "ShortName": "roadsign.jacket",
+            "SkinID (0 - default)": 1624100124
+          },
+          {
+            "ShortName": "coffeecan.helmet",
+            "SkinID (0 - default)": 1624104393
+          }
+        ],
+        "Быстрые слоты": [
+          {
+            "ShortName": "rifle.lr300",
+            "Кол-во": 1,
+            "SkinID (0 - default)": 0,
+            "Модификации на оружие": [
+              "weapon.mod.flashlight",
+              "weapon.mod.holosight"
+            ],
+            "Боеприпасы": ""
+          },
+          {
+            "ShortName": "rocket.launcher",
+            "Кол-во": 1,
+            "SkinID (0 - default)": 0,
+            "Модификации на оружие": [],
+            "Боеприпасы": ""
+          },
+          {
+            "ShortName": "syringe.medical",
+            "Кол-во": 3,
+            "SkinID (0 - default)": 0,
+            "Модификации на оружие": [],
+            "Боеприпасы": ""
+          }
+        ],
+        "Kit (рекомендуется использовать предыдущие 2 пункта настройки для повышения производительности)": ""
+      },
+      "Настройки NPC - 3": {
+        "Название": "Patrolman",
+        "Кол-во ХП": 125.0,
+        "Множитель радиуса атаки": 1.5,
+        "Длительность памяти цели [sec.]": 20.0,
+        "Множитель урона": 0.7,
+        "Множитель разброса": 1.5,
+        "Одежда": [
+          {
+            "ShortName": "shoes.boots",
+            "SkinID (0 - default)": 826587881
+          },
+          {
+            "ShortName": "pants",
+            "SkinID (0 - default)": 1552705077
+          },
+          {
+            "ShortName": "hoodie",
+            "SkinID (0 - default)": 1552703337
+          },
+          {
+            "ShortName": "burlap.gloves",
+            "SkinID (0 - default)": 1552705918
+          },
+          {
+            "ShortName": "roadsign.kilt",
+            "SkinID (0 - default)": 1624102935
+          },
+          {
+            "ShortName": "roadsign.jacket",
+            "SkinID (0 - default)": 1624100124
+          },
+          {
+            "ShortName": "coffeecan.helmet",
+            "SkinID (0 - default)": 1624104393
+          }
+        ],
+        "Быстрые слоты": [
+          {
+            "ShortName": "rifle.lr300",
+            "Кол-во": 1,
+            "SkinID (0 - default)": 0,
+            "Модификации на оружие": [
+              "weapon.mod.flashlight",
+              "weapon.mod.holosight"
+            ],
+            "Боеприпасы": ""
+          },
+          {
+            "ShortName": "rocket.launcher",
+            "Кол-во": 1,
+            "SkinID (0 - default)": 0,
+            "Модификации на оружие": [],
+            "Боеприпасы": ""
+          },
+          {
+            "ShortName": "syringe.medical",
+            "Кол-во": 3,
+            "SkinID (0 - default)": 0,
+            "Модификации на оружие": [],
+            "Боеприпасы": ""
+          }
+        ],
+        "Kit (рекомендуется использовать предыдущие 2 пункта настройки для повышения производительности)": ""
+      },
+      "Настройки NPC - 4": {
+        "Название": "Patrolman",
+        "Кол-во ХП": 125.0,
+        "Множитель радиуса атаки": 1.5,
+        "Длительность памяти цели [sec.]": 20.0,
+        "Множитель урона": 0.7,
+        "Множитель разброса": 1.5,
+        "Одежда": [
+          {
+            "ShortName": "shoes.boots",
+            "SkinID (0 - default)": 826587881
+          },
+          {
+            "ShortName": "pants",
+            "SkinID (0 - default)": 1552705077
+          },
+          {
+            "ShortName": "hoodie",
+            "SkinID (0 - default)": 1552703337
+          },
+          {
+            "ShortName": "burlap.gloves",
+            "SkinID (0 - default)": 1552705918
+          },
+          {
+            "ShortName": "roadsign.kilt",
+            "SkinID (0 - default)": 1624102935
+          },
+          {
+            "ShortName": "roadsign.jacket",
+            "SkinID (0 - default)": 1624100124
+          },
+          {
+            "ShortName": "coffeecan.helmet",
+            "SkinID (0 - default)": 1624104393
+          }
+        ],
+        "Быстрые слоты": [
+          {
+            "ShortName": "rifle.lr300",
+            "Кол-во": 1,
+            "SkinID (0 - default)": 0,
+            "Модификации на оружие": [
+              "weapon.mod.flashlight",
+              "weapon.mod.holosight"
+            ],
+            "Боеприпасы": ""
+          },
+          {
+            "ShortName": "rocket.launcher",
+            "Кол-во": 1,
+            "SkinID (0 - default)": 0,
+            "Модификации на оружие": [],
+            "Боеприпасы": ""
+          },
+          {
+            "ShortName": "syringe.medical",
+            "Кол-во": 3,
+            "SkinID (0 - default)": 0,
+            "Модификации на оружие": [],
+            "Боеприпасы": ""
+          }
+        ],
+        "Kit (рекомендуется использовать предыдущие 2 пункта настройки для повышения производительности)": ""
+      },
+      "Настройки NPC - 5": {
+        "Название": "Patrolman",
+        "Кол-во ХП": 125.0,
+        "Множитель радиуса атаки": 1.5,
+        "Длительность памяти цели [sec.]": 20.0,
+        "Множитель урона": 0.7,
+        "Множитель разброса": 1.5,
+        "Одежда": [
+          {
+            "ShortName": "shoes.boots",
+            "SkinID (0 - default)": 826587881
+          },
+          {
+            "ShortName": "pants",
+            "SkinID (0 - default)": 1552705077
+          },
+          {
+            "ShortName": "hoodie",
+            "SkinID (0 - default)": 1552703337
+          },
+          {
+            "ShortName": "burlap.gloves",
+            "SkinID (0 - default)": 1552705918
+          },
+          {
+            "ShortName": "roadsign.kilt",
+            "SkinID (0 - default)": 1624102935
+          },
+          {
+            "ShortName": "roadsign.jacket",
+            "SkinID (0 - default)": 1624100124
+          },
+          {
+            "ShortName": "coffeecan.helmet",
+            "SkinID (0 - default)": 1624104393
+          }
+        ],
+        "Быстрые слоты": [
+          {
+            "ShortName": "rifle.lr300",
+            "Кол-во": 1,
+            "SkinID (0 - default)": 0,
+            "Модификации на оружие": [
+              "weapon.mod.flashlight",
+              "weapon.mod.holosight"
+            ],
+            "Боеприпасы": ""
+          },
+          {
+            "ShortName": "rocket.launcher",
+            "Кол-во": 1,
+            "SkinID (0 - default)": 0,
+            "Модификации на оружие": [],
+            "Боеприпасы": ""
+          },
+          {
+            "ShortName": "syringe.medical",
+            "Кол-во": 3,
+            "SkinID (0 - default)": 0,
+            "Модификации на оружие": [],
+            "Боеприпасы": ""
+          }
+        ],
+        "Kit (рекомендуется использовать предыдущие 2 пункта настройки для повышения производительности)": ""
+      }
+    },
+    {
+      "Дальность погони за целью": 400.0,
+      "Радиус обнаружения цели": 200.0,
+      "Минимальное кол-во": 4,
+      "Максимальное кол-во": 4,
+      "Настройка маркера на карте": {
+        "Включен? [true/false]": false,
+        "Название": "Water Patrol",
+        "Радиус": 0.4,
+        "Прозрачность": 0.6,
+        "Цвет маркера": {
+          "r": 0.81,
+          "g": 0.25,
+          "b": 0.15
+        }
+      },
+      "Мощность двигателя": 2000.0,
+      "Настройка ящика": {
+        "Какую таблицу лута необходимо использовать? (0 - собственную; 1 - таблица предметов объектов Rust; 2 - совместить 1 и 2 методы)": 2,
+        "Таблица предметов из prefab-ов (если тип таблицы предметов - 1 или 2)": {
+          "Минимальное кол-во prefab-ов": 1,
+          "Максимальное кол-во prefab-ов": 1,
+          "Использовать минимальное и максимальное значение? [true/false]": false,
+          "Список prefab-ов": [
+            {
+              "Шанс выпадения [0.0-100.0]": 100.0,
+              "Путь к prefab-у": "assets/rust.ai/agents/npcplayer/humannpc/scientist/scientistnpc_oilrig.prefab"
+            },
+            {
+              "Шанс выпадения [0.0-100.0]": 100.0,
+              "Путь к prefab-у": "assets/bundled/prefabs/radtown/crate_elite.prefab"
+            },
+            {
+              "Шанс выпадения [0.0-100.0]": 100.0,
+              "Путь к prefab-у": "assets/bundled/prefabs/radtown/underwater_labs/tech_parts_2.prefab"
+            },
+            {
+              "Шанс выпадения [0.0-100.0]": 100.0,
+              "Путь к prefab-у": "assets/bundled/prefabs/radtown/underwater_labs/crate_fuel.prefab"
+            },
+            {
+              "Шанс выпадения [0.0-100.0]": 100.0,
+              "Путь к prefab-у": "assets/bundled/prefabs/radtown/crate_normal.prefab"
+            }
+          ]
+        },
+        "Собственная таблица предметов (если тип таблицы предметов - 0 или 2)": {
+          "Минимальное кол-во элементов": 1,
+          "Максимальное кол-во элементов": 1,
+          "Использовать минимальное и максимальное значение? [true/false]": false,
+          "Список предметов": [
+            {
+              "ShortName": "diesel_barrel",
+              "Минимальное кол-во": 1,
+              "Максимальное кол-во": 1,
+              "Шанс выпадения предмета [0.0-100.0]": 100.0,
+              "Это чертеж? [true/false]": false,
+              "SkinID (0 - default)": 0,
+              "Название (empty - default)": ""
+            },
+            {
+              "ShortName": "scrap",
+              "Минимальное кол-во": 50,
+              "Максимальное кол-во": 100,
+              "Шанс выпадения предмета [0.0-100.0]": 100.0,
+              "Это чертеж? [true/false]": false,
+              "SkinID (0 - default)": 0,
+              "Название (empty - default)": ""
+            },
+            {
+              "ShortName": "syringe.medical",
+              "Минимальное кол-во": 1,
+              "Максимальное кол-во": 2,
+              "Шанс выпадения предмета [0.0-100.0]": 100.0,
+              "Это чертеж? [true/false]": false,
+              "SkinID (0 - default)": 0,
+              "Название (empty - default)": ""
+            }
+          ]
+        }
+      },
+      "Настройки водителя": {
+        "Название": "Driver",
+        "Кол-во ХП": 400.0,
+        "Одежда": [
+          {
+            "ShortName": "shoes.boots",
+            "SkinID (0 - default)": 971729488
+          },
+          {
+            "ShortName": "pants",
+            "SkinID (0 - default)": 963501284
+          },
+          {
+            "ShortName": "hoodie",
+            "SkinID (0 - default)": 963496340
+          },
+          {
+            "ShortName": "burlap.gloves",
+            "SkinID (0 - default)": 1552705918
+          },
+          {
+            "ShortName": "roadsign.kilt",
+            "SkinID (0 - default)": 1624102935
+          },
+          {
+            "ShortName": "metal.plate.torso",
+            "SkinID (0 - default)": 1192804139
+          },
+          {
+            "ShortName": "metal.facemask",
+            "SkinID (0 - default)": 1121237616
+          }
+        ]
+      },
+      "Настройки NPC - 1": {
+        "Название": "Patrolman",
+        "Кол-во ХП": 200.0,
+        "Множитель радиуса атаки": 1.5,
+        "Длительность памяти цели [sec.]": 20.0,
+        "Множитель урона": 0.7,
+        "Множитель разброса": 1.5,
+        "Одежда": [
+          {
+            "ShortName": "shoes.boots",
+            "SkinID (0 - default)": 971729488
+          },
+          {
+            "ShortName": "pants",
+            "SkinID (0 - default)": 963501284
+          },
+          {
+            "ShortName": "hoodie",
+            "SkinID (0 - default)": 963496340
+          },
+          {
+            "ShortName": "burlap.gloves",
+            "SkinID (0 - default)": 1552705918
+          },
+          {
+            "ShortName": "roadsign.kilt",
+            "SkinID (0 - default)": 1624102935
+          },
+          {
+            "ShortName": "metal.plate.torso",
+            "SkinID (0 - default)": 1192804139
+          },
+          {
+            "ShortName": "metal.facemask",
+            "SkinID (0 - default)": 1121237616
+          }
+        ],
+        "Быстрые слоты": [
+          {
+            "ShortName": "rifle.ak.ice",
+            "Кол-во": 1,
+            "SkinID (0 - default)": 0,
+            "Модификации на оружие": [
+              "weapon.mod.flashlight",
+              "weapon.mod.holosight"
+            ],
+            "Боеприпасы": ""
+          },
+          {
+            "ShortName": "rocket.launcher",
+            "Кол-во": 1,
+            "SkinID (0 - default)": 0,
+            "Модификации на оружие": [],
+            "Боеприпасы": ""
+          },
+          {
+            "ShortName": "syringe.medical",
+            "Кол-во": 1,
+            "SkinID (0 - default)": 0,
+            "Модификации на оружие": [],
+            "Боеприпасы": ""
+          }
+        ],
+        "Kit (рекомендуется использовать предыдущие 2 пункта настройки для повышения производительности)": ""
+      },
+      "Настройки NPC - 2": {
+        "Название": "Patrolman",
+        "Кол-во ХП": 200.0,
+        "Множитель радиуса атаки": 1.5,
+        "Длительность памяти цели [sec.]": 20.0,
+        "Множитель урона": 0.7,
+        "Множитель разброса": 1.5,
+        "Одежда": [
+          {
+            "ShortName": "shoes.boots",
+            "SkinID (0 - default)": 971729488
+          },
+          {
+            "ShortName": "pants",
+            "SkinID (0 - default)": 963501284
+          },
+          {
+            "ShortName": "hoodie",
+            "SkinID (0 - default)": 963496340
+          },
+          {
+            "ShortName": "burlap.gloves",
+            "SkinID (0 - default)": 1552705918
+          },
+          {
+            "ShortName": "roadsign.kilt",
+            "SkinID (0 - default)": 1624102935
+          },
+          {
+            "ShortName": "metal.plate.torso",
+            "SkinID (0 - default)": 1192804139
+          },
+          {
+            "ShortName": "metal.facemask",
+            "SkinID (0 - default)": 1121237616
+          }
+        ],
+        "Быстрые слоты": [
+          {
+            "ShortName": "rifle.ak.ice",
+            "Кол-во": 1,
+            "SkinID (0 - default)": 0,
+            "Модификации на оружие": [
+              "weapon.mod.flashlight",
+              "weapon.mod.holosight"
+            ],
+            "Боеприпасы": ""
+          },
+          {
+            "ShortName": "rocket.launcher",
+            "Кол-во": 1,
+            "SkinID (0 - default)": 0,
+            "Модификации на оружие": [],
+            "Боеприпасы": ""
+          },
+          {
+            "ShortName": "syringe.medical",
+            "Кол-во": 1,
+            "SkinID (0 - default)": 0,
+            "Модификации на оружие": [],
+            "Боеприпасы": ""
+          }
+        ],
+        "Kit (рекомендуется использовать предыдущие 2 пункта настройки для повышения производительности)": ""
+      },
+      "Настройки NPC - 3": null,
+      "Настройки NPC - 4": {
+        "Название": "Patrolman",
+        "Кол-во ХП": 200.0,
+        "Множитель радиуса атаки": 1.5,
+        "Длительность памяти цели [sec.]": 20.0,
+        "Множитель урона": 0.7,
+        "Множитель разброса": 1.5,
+        "Одежда": [
+          {
+            "ShortName": "shoes.boots",
+            "SkinID (0 - default)": 971729488
+          },
+          {
+            "ShortName": "pants",
+            "SkinID (0 - default)": 963501284
+          },
+          {
+            "ShortName": "hoodie",
+            "SkinID (0 - default)": 963496340
+          },
+          {
+            "ShortName": "burlap.gloves",
+            "SkinID (0 - default)": 1552705918
+          },
+          {
+            "ShortName": "roadsign.kilt",
+            "SkinID (0 - default)": 1624102935
+          },
+          {
+            "ShortName": "metal.plate.torso",
+            "SkinID (0 - default)": 1192804139
+          },
+          {
+            "ShortName": "metal.facemask",
+            "SkinID (0 - default)": 1121237616
+          }
+        ],
+        "Быстрые слоты": [
+          {
+            "ShortName": "multiplegrenadelauncher",
+            "Кол-во": 1,
+            "SkinID (0 - default)": 0,
+            "Модификации на оружие": [
+              "weapon.mod.flashlight",
+              "weapon.mod.holosight"
+            ],
+            "Боеприпасы": ""
+          },
+          {
+            "ShortName": "rocket.launcher",
+            "Кол-во": 1,
+            "SkinID (0 - default)": 0,
+            "Модификации на оружие": [],
+            "Боеприпасы": ""
+          },
+          {
+            "ShortName": "syringe.medical",
+            "Кол-во": 1,
+            "SkinID (0 - default)": 0,
+            "Модификации на оружие": [],
+            "Боеприпасы": ""
+          }
+        ],
+        "Kit (рекомендуется использовать предыдущие 2 пункта настройки для повышения производительности)": ""
+      },
+      "Настройки NPC - 5": null
+    },
+    {
+      "Дальность погони за целью": 200.0,
+      "Радиус обнаружения цели": 100.0,
+      "Минимальное кол-во": 8,
+      "Максимальное кол-во": 8,
+      "Настройка маркера на карте": {
+        "Включен? [true/false]": false,
+        "Название": "Water Patrol",
+        "Радиус": 0.4,
+        "Прозрачность": 0.6,
+        "Цвет маркера": {
+          "r": 0.81,
+          "g": 0.25,
+          "b": 0.15
+        }
+      },
+      "Мощность двигателя": 2000.0,
+      "Настройка ящика": {
+        "Какую таблицу лута необходимо использовать? (0 - собственную; 1 - таблица предметов объектов Rust; 2 - совместить 1 и 2 методы)": 2,
+        "Таблица предметов из prefab-ов (если тип таблицы предметов - 1 или 2)": {
+          "Минимальное кол-во prefab-ов": 1,
+          "Максимальное кол-во prefab-ов": 1,
+          "Использовать минимальное и максимальное значение? [true/false]": false,
+          "Список prefab-ов": [
+            {
+              "Шанс выпадения [0.0-100.0]": 100.0,
+              "Путь к prefab-у": "assets/rust.ai/agents/npcplayer/humannpc/scientist/scientistnpc_oilrig.prefab"
+            },
+            {
+              "Шанс выпадения [0.0-100.0]": 100.0,
+              "Путь к prefab-у": "assets/bundled/prefabs/radtown/crate_normal_2.prefab"
+            },
+            {
+              "Шанс выпадения [0.0-100.0]": 100.0,
+              "Путь к prefab-у": "assets/bundled/prefabs/radtown/underwater_labs/crate_fuel.prefab"
+            },
+            {
+              "Шанс выпадения [0.0-100.0]": 100.0,
+              "Путь к prefab-у": "assets/bundled/prefabs/radtown/crate_tools.prefab"
+            }
+          ]
+        },
+        "Собственная таблица предметов (если тип таблицы предметов - 0 или 2)": {
+          "Минимальное кол-во элементов": 1,
+          "Максимальное кол-во элементов": 1,
+          "Использовать минимальное и максимальное значение? [true/false]": false,
+          "Список предметов": [
+            {
+              "ShortName": "scrap",
+              "Минимальное кол-во": 25,
+              "Максимальное кол-во": 50,
+              "Шанс выпадения предмета [0.0-100.0]": 100.0,
+              "Это чертеж? [true/false]": false,
+              "SkinID (0 - default)": 0,
+              "Название (empty - default)": ""
+            },
+            {
+              "ShortName": "syringe.medical",
+              "Минимальное кол-во": 1,
+              "Максимальное кол-во": 2,
+              "Шанс выпадения предмета [0.0-100.0]": 100.0,
+              "Это чертеж? [true/false]": false,
+              "SkinID (0 - default)": 0,
+              "Название (empty - default)": ""
+            }
+          ]
+        }
+      },
+      "Настройки водителя": {
+        "Название": "Driver",
+        "Кол-во ХП": 150.0,
+        "Одежда": [
+          {
+            "ShortName": "shoes.boots",
+            "SkinID (0 - default)": 826587881
+          },
+          {
+            "ShortName": "pants",
+            "SkinID (0 - default)": 1552705077
+          },
+          {
+            "ShortName": "hoodie",
+            "SkinID (0 - default)": 1552703337
+          },
+          {
+            "ShortName": "burlap.gloves",
+            "SkinID (0 - default)": 1552705918
+          },
+          {
+            "ShortName": "roadsign.kilt",
+            "SkinID (0 - default)": 1624102935
+          },
+          {
+            "ShortName": "metal.plate.torso",
+            "SkinID (0 - default)": 2843462369
+          },
+          {
+            "ShortName": "metal.facemask",
+            "SkinID (0 - default)": 2843464348
+          }
+        ]
+      },
+      "Настройки NPC - 1": {
+        "Название": "Patrolman",
+        "Кол-во ХП": 100.0,
+        "Множитель радиуса атаки": 1.5,
+        "Длительность памяти цели [sec.]": 20.0,
+        "Множитель урона": 0.7,
+        "Множитель разброса": 1.5,
+        "Одежда": [
+          {
+            "ShortName": "shoes.boots",
+            "SkinID (0 - default)": 2570215282
+          },
+          {
+            "ShortName": "burlap.shirt",
+            "SkinID (0 - default)": 2556987808
+          },
+          {
+            "ShortName": "burlap.trousers",
+            "SkinID (0 - default)": 2556988996
+          },
+          {
+            "ShortName": "hat.boonie",
+            "SkinID (0 - default)": 2557702256
+          }
+        ],
+        "Быстрые слоты": [
+          {
+            "ShortName": "smg.thompson",
+            "Кол-во": 1,
+            "SkinID (0 - default)": 0,
+            "Модификации на оружие": [
+              "weapon.mod.flashlight",
+              "weapon.mod.holosight"
+            ],
+            "Боеприпасы": ""
+          },
+          {
+            "ShortName": "rocket.launcher",
+            "Кол-во": 1,
+            "SkinID (0 - default)": 0,
+            "Модификации на оружие": [],
+            "Боеприпасы": ""
+          },
+          {
+            "ShortName": "syringe.medical",
+            "Кол-во": 3,
+            "SkinID (0 - default)": 0,
+            "Модификации на оружие": [],
+            "Боеприпасы": ""
+          }
+        ],
+        "Kit (рекомендуется использовать предыдущие 2 пункта настройки для повышения производительности)": ""
+      },
+      "Настройки NPC - 2": {
+        "Название": "Patrolman",
+        "Кол-во ХП": 100.0,
+        "Множитель радиуса атаки": 1.5,
+        "Длительность памяти цели [sec.]": 20.0,
+        "Множитель урона": 0.7,
+        "Множитель разброса": 1.5,
+        "Одежда": [
+          {
+            "ShortName": "shoes.boots",
+            "SkinID (0 - default)": 2570215282
+          },
+          {
+            "ShortName": "burlap.shirt",
+            "SkinID (0 - default)": 2556987808
+          },
+          {
+            "ShortName": "burlap.trousers",
+            "SkinID (0 - default)": 2556988996
+          },
+          {
+            "ShortName": "hat.boonie",
+            "SkinID (0 - default)": 2557702256
+          }
+        ],
+        "Быстрые слоты": [
+          {
+            "ShortName": "smg.thompson",
+            "Кол-во": 1,
+            "SkinID (0 - default)": 0,
+            "Модификации на оружие": [
+              "weapon.mod.flashlight",
+              "weapon.mod.holosight"
+            ],
+            "Боеприпасы": ""
+          },
+          {
+            "ShortName": "rocket.launcher",
+            "Кол-во": 1,
+            "SkinID (0 - default)": 0,
+            "Модификации на оружие": [],
+            "Боеприпасы": ""
+          },
+          {
+            "ShortName": "syringe.medical",
+            "Кол-во": 3,
+            "SkinID (0 - default)": 0,
+            "Модификации на оружие": [],
+            "Боеприпасы": ""
+          }
+        ],
+        "Kit (рекомендуется использовать предыдущие 2 пункта настройки для повышения производительности)": ""
+      },
+      "Настройки NPC - 3": {
+        "Название": "Patrolman",
+        "Кол-во ХП": 100.0,
+        "Множитель радиуса атаки": 1.5,
+        "Длительность памяти цели [sec.]": 20.0,
+        "Множитель урона": 0.7,
+        "Множитель разброса": 1.5,
+        "Одежда": [
+          {
+            "ShortName": "shoes.boots",
+            "SkinID (0 - default)": 2570215282
+          },
+          {
+            "ShortName": "burlap.shirt",
+            "SkinID (0 - default)": 2556987808
+          },
+          {
+            "ShortName": "burlap.trousers",
+            "SkinID (0 - default)": 2556988996
+          },
+          {
+            "ShortName": "hat.boonie",
+            "SkinID (0 - default)": 2557702256
+          }
+        ],
+        "Быстрые слоты": [
+          {
+            "ShortName": "smg.thompson",
+            "Кол-во": 1,
+            "SkinID (0 - default)": 0,
+            "Модификации на оружие": [
+              "weapon.mod.flashlight",
+              "weapon.mod.holosight"
+            ],
+            "Боеприпасы": ""
+          },
+          {
+            "ShortName": "rocket.launcher",
+            "Кол-во": 1,
+            "SkinID (0 - default)": 0,
+            "Модификации на оружие": [],
+            "Боеприпасы": ""
+          },
+          {
+            "ShortName": "syringe.medical",
+            "Кол-во": 3,
+            "SkinID (0 - default)": 0,
+            "Модификации на оружие": [],
+            "Боеприпасы": ""
+          }
+        ],
+        "Kit (рекомендуется использовать предыдущие 2 пункта настройки для повышения производительности)": ""
+      },
+      "Настройки NPC - 4": null,
+      "Настройки NPC - 5": null
+    }
+  ],
+  "Множитель урона от турелей по NPC": 1.0,
+  "Префикс сообщений в чате": "[WaterPatrol]",
+  "Использовать ли чат? [true/false]": true,
+  "Настройка GUI Announcements": {
+    "Использовать ли GUI Announcements? [true/false]": false,
+    "Цвет баннера": "Orange",
+    "Цвет текста": "White",
+    "Отступ от верхнего края": 0.03
+  },
+  "Настройка Notify": {
+    "Использовать ли Notify? [true/false]": false,
+    "Тип": "0"
+  },
+  "Время до взрыва патрульной лодки при ударе о землю [sec.]": 3.0,
+  "Время существования патрульной лодки до ее уничтожения [sec.]": 120.0,
+  "Запретить игрокам наносить урон по NPC, если они находятся вне радиуса обзора патрульной лодки? [true/false]": true,
+  "Минимальная глубина воды, где может появиться патрульная лодка": 15.0,
+  "Версия конфигурации": {
+    "Major": 1,
+    "Minor": 0,
+    "Patch": 2
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "background": {
+    "anchorMin": "0 0",
+    "anchorMax": "1 1",
+    "color": "0 0 0 0.8",
+    "material": "assets/content/ui/uibackgroundblur.mat",
+    "image": "",
+    "fade": 0.5
+  },
+  "background2": {
+    "anchorMin": "0 0",
+    "anchorMax": "1 1",
+    "color": "0 0 0 0.0",
+    "material": "assets/icons/iconmaterial.mat",
+    "image": "",
+    "fade": 0.0
+  },
+  "offsetContainer": {
+    "anchorMin": "0.5 0.5",
+    "anchorMax": "0.5 0.5",
+    "color": "0 0 0 0.0",
+    "material": "assets/icons/iconmaterial.mat",
+    "image": "",
+    "fade": 0.0
+  },
+  "mainPanel": {
+    "anchorMin": "0.32 0.175",
+    "anchorMax": "0.80 0.748",
+    "color": "0 0 0 0.75",
+    "material": "assets/content/ui/uibackgroundblur.mat",
+    "image": "",
+    "fade": 0.5
+  },
+  "sidePanel": {
+    "anchorMin": "0.185 0.175",
+    "anchorMax": "0.31 0.748",
+    "color": "0 0 0 0.75",
+    "material": "assets/content/ui/uibackgroundblur.mat",
+    "image": "",
+    "fade": 0.5
+  },
+  "titlePanel": {
+    "anchorMin": "0.178 0.745",
+    "anchorMax": "0.9 0.85",
+    "color": "0 0 0 0",
+    "material": "assets/icons/iconmaterial.mat",
+    "image": "",
+    "fade": 0.5
+  },
+  "logoPanel": {
+    "anchorMin": "0.565 0.76",
+    "anchorMax": "0.610 0.833",
+    "color": "0 0 0 0",
+    "material": "assets/icons/iconmaterial.mat",
+    "image": "",
+    "fade": 0.5
+  },
+  "closeButton": {
+    "anchorMin": "0.72 0.115",
+    "anchorMax": "0.80 0.16",
+    "color": "0.56 0.20 0.15 0.9",
+    "material": "assets/content/ui/uibackgroundblur.mat",
+    "image": "",
+    "fade": 0.5
+  },
+  "contentPanel": {
+    "anchorMin": "0.32 0.175",
+    "anchorMax": "0.80 0.748",
+    "color": "0 0 0 0.0",
+    "material": "assets/icons/iconmaterial.mat",
+    "image": "",
+    "fade": 0.5
+  },
+  "highlightBtn": {
+    "anchorMin": "0 0",
+    "anchorMax": "1 1",
+    "color": "0.16 0.34 0.49 1.0",
+    "material": "assets/content/ui/uibackgroundblur.mat",
+    "image": "",
+    "fade": 0.0
+  },
+  "menuBtn1": {
+    "anchorMin": "0.1845 0.700",
+    "anchorMax": "0.3095 0.748",
+    "color": "0 0 0 0",
+    "material": "assets/icons/iconmaterial.mat",
+    "image": "https://rustplugins.net/products/welcomepanel/1/home.png",
+    "fade": 0.0
+  },
+  "menuBtn2": {
+    "anchorMin": "0.1845 0.650",
+    "anchorMax": "0.3095 0.697",
+    "color": "0 0 0 0",
+    "material": "assets/icons/iconmaterial.mat",
+    "image": "https://rustplugins.net/products/welcomepanel/1/rules.png",
+    "fade": 0.0
+  },
+  "menuBtn3": {
+    "anchorMin": "0.1845 0.600",
+    "anchorMax": "0.3095 0.647",
+    "color": "0 0 0 0",
+    "material": "assets/icons/iconmaterial.mat",
+    "image": "https://rustplugins.net/products/welcomepanel/1/wipe.png",
+    "fade": 0.0
+  },
+  "menuBtn4": {
+    "anchorMin": "0.1845 0.550",
+    "anchorMax": "0.3095 0.597",
+    "color": "0 0 0 0",
+    "material": "assets/icons/iconmaterial.mat",
+    "image": "https://rustplugins.net/products/welcomepanel/1/star.png",
+    "fade": 0.0
+  },
+  "menuBtn5": {
+    "anchorMin": "0.1845 0.500",
+    "anchorMax": "0.3095 0.547",
+    "color": "0 0 0 0",
+    "material": "assets/icons/iconmaterial.mat",
+    "image": "https://rustplugins.net/products/welcomepanel/1/discord.png",
+    "fade": 0.0
+  },
+  "menuBtn6": {
+    "anchorMin": "0.1845 0.450",
+    "anchorMax": "0.3095 0.497",
+    "color": "0 0 0 0",
+    "material": "assets/icons/iconmaterial.mat",
+    "image": "https://rustplugins.net/products/welcomepanel/1/bug.png",
+    "fade": 0.0
+  },
+  "menuBtn7": {
+    "anchorMin": "0.1845 0.400",
+    "anchorMax": "0.3095 0.447",
+    "color": "0 0 0 0",
+    "material": "assets/icons/iconmaterial.mat",
+    "image": "https://rustplugins.net/products/welcomepanel/1/admin.png",
+    "fade": 0.0
+  },
+  "menuBtn8": {
+    "anchorMin": "0.1845 0.350",
+    "anchorMax": "0.3095 0.397",
+    "color": "0 0 0 0",
+    "material": "assets/icons/iconmaterial.mat",
+    "image": "https://rustplugins.net/products/welcomepanel/1/shop.png",
+    "fade": 0.0
+  },
+  "menuBtn9": {
+    "anchorMin": "0.1845 0.300",
+    "anchorMax": "0.3095 0.347",
+    "color": "0 0 0 0",
+    "material": "assets/icons/iconmaterial.mat",
+    "image": "https://rustplugins.net/products/welcomepanel/1/star.png",
+    "fade": 0.0
+  },
+  "menuBtn10": {
+    "anchorMin": "0.1845 0.250",
+    "anchorMax": "0.3095 0.297",
+    "color": "0 0 0 0",
+    "material": "assets/icons/iconmaterial.mat",
+    "image": "https://rustplugins.net/products/welcomepanel/1/rules.png",
+    "fade": 0.0
+  },
+  "nextButton": {
+    "anchorMin": "0.95 0.013",
+    "anchorMax": "0.99 0.06",
+    "color": "0.16 0.34 0.49 0.6",
+    "material": "assets/icons/iconmaterial.mat",
+    "image": "https://rustplugins.net/products/welcomepanel/3/page-next.png",
+    "fade": 0.0
+  },
+  "previousButton": {
+    "anchorMin": "0.9 0.013",
+    "anchorMax": "0.94 0.06",
+    "color": "0.16 0.34 0.49 0.6",
+    "material": "assets/icons/iconmaterial.mat",
+    "image": "https://rustplugins.net/products/welcomepanel/3/page-prev.png",
+    "fade": 0.0
+  }
+}

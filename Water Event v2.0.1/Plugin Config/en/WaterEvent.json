@@ -1,0 +1,3128 @@
+{
+  "Minimum time between events [sec.]": 10800.0,
+  "Maximum time between events [sec.]": 10800.0,
+  "Is active the timer on to start the event? [true/false]": true,
+  "Duration of the event [sec.]": 5400,
+  "Time before the starting of the event after receiving a chat message [sec.]": 600.0,
+  "Notification time until the end of the event [sec.]": 300,
+  "Time to spawn each object during a submarine appears on the map [sec.]": 0.001,
+  "Deployed Crates setting": [
+    {
+      "Prefab": "assets/prefabs/deployable/locker/locker.deployed.prefab",
+      "Is it necessary for loot to appear in the container? [true/false]": false,
+      "Own loot table": {
+        "Minimum numbers of items": 0,
+        "Maximum numbers of items": 1,
+        "Use minimum and maximum values? [true/false]": false,
+        "List of items": [
+          {
+            "ShortName": "scrap",
+            "Minimum": 100,
+            "Maximum": 200,
+            "Chance [0.0-100.0]": 50.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": ""
+          }
+        ]
+      }
+    },
+    {
+      "Prefab": "assets/prefabs/deployable/large wood storage/box.wooden.large.prefab",
+      "Is it necessary for loot to appear in the container? [true/false]": false,
+      "Own loot table": {
+        "Minimum numbers of items": 1,
+        "Maximum numbers of items": 1,
+        "Use minimum and maximum values? [true/false]": false,
+        "List of items": [
+          {
+            "ShortName": "scrap",
+            "Minimum": 100,
+            "Maximum": 200,
+            "Chance [0.0-100.0]": 50.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": ""
+          }
+        ]
+      }
+    },
+    {
+      "Prefab": "assets/prefabs/deployable/woodenbox/woodbox_deployed.prefab",
+      "Is it necessary for loot to appear in the container? [true/false]": false,
+      "Own loot table": {
+        "Minimum numbers of items": 1,
+        "Maximum numbers of items": 1,
+        "Use minimum and maximum values? [true/false]": false,
+        "List of items": [
+          {
+            "ShortName": "scrap",
+            "Minimum": 100,
+            "Maximum": 200,
+            "Chance [0.0-100.0]": 50.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": ""
+          }
+        ]
+      }
+    }
+  ],
+  "Crates setting": [
+    {
+      "Prefab": "assets/bundled/prefabs/radtown/underwater_labs/tech_parts_1.prefab",
+      "Which loot table should the plugin use? (0 - default; 1 - own; 2 - AlphaLoot; 3 - CustomLoot; 4 - loot table of the Rust objects; 5 - combine the 1 and 4 methods)": 5,
+      "Loot table from prefabs (if the loot table type is 4 or 5)": {
+        "Minimum numbers of prefabs": 1,
+        "Maximum numbers of prefabs": 1,
+        "Use minimum and maximum values? [true/false]": true,
+        "List of prefabs": [
+          {
+            "Chance [0.0-100.0]": 50.0,
+            "The path to the prefab": "assets/bundled/prefabs/radtown/underwater_labs/tech_parts_1.prefab"
+          }
+        ]
+      },
+      "Own loot table (if the loot table type is 1 or 5)": {
+        "Minimum numbers of items": 3,
+        "Maximum numbers of items": 3,
+        "Use minimum and maximum values? [true/false]": true,
+        "List of items": [
+          {
+            "ShortName": "explosive.timed",
+            "Minimum": 1,
+            "Maximum": 2,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": ""
+          },
+          {
+            "ShortName": "ammo.rocket.basic",
+            "Minimum": 2,
+            "Maximum": 4,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": ""
+          },
+          {
+            "ShortName": "scrap",
+            "Minimum": 8,
+            "Maximum": 8,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": ""
+          }
+        ]
+      },
+      "Item Multipliers": {
+        "explosive.timed": 1.0
+      }
+    },
+    {
+      "Prefab": "assets/bundled/prefabs/radtown/underwater_labs/tech_parts_2.prefab",
+      "Which loot table should the plugin use? (0 - default; 1 - own; 2 - AlphaLoot; 3 - CustomLoot; 4 - loot table of the Rust objects; 5 - combine the 1 and 4 methods)": 5,
+      "Loot table from prefabs (if the loot table type is 4 or 5)": {
+        "Minimum numbers of prefabs": 1,
+        "Maximum numbers of prefabs": 1,
+        "Use minimum and maximum values? [true/false]": true,
+        "List of prefabs": [
+          {
+            "Chance [0.0-100.0]": 100.0,
+            "The path to the prefab": "assets/bundled/prefabs/radtown/underwater_labs/tech_parts_2.prefab"
+          }
+        ]
+      },
+      "Own loot table (if the loot table type is 1 or 5)": {
+        "Minimum numbers of items": 3,
+        "Maximum numbers of items": 3,
+        "Use minimum and maximum values? [true/false]": true,
+        "List of items": [
+          {
+            "ShortName": "explosive.timed",
+            "Minimum": 1,
+            "Maximum": 2,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": ""
+          },
+          {
+            "ShortName": "ammo.rocket.basic",
+            "Minimum": 2,
+            "Maximum": 4,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": ""
+          },
+          {
+            "ShortName": "scrap",
+            "Minimum": 8,
+            "Maximum": 8,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": ""
+          }
+        ]
+      },
+      "Item Multipliers": {
+        "explosive.timed": 1.0
+      }
+    },
+    {
+      "Prefab": "assets/bundled/prefabs/radtown/underwater_labs/crate_ammunition.prefab",
+      "Which loot table should the plugin use? (0 - default; 1 - own; 2 - AlphaLoot; 3 - CustomLoot; 4 - loot table of the Rust objects; 5 - combine the 1 and 4 methods)": 5,
+      "Loot table from prefabs (if the loot table type is 4 or 5)": {
+        "Minimum numbers of prefabs": 1,
+        "Maximum numbers of prefabs": 1,
+        "Use minimum and maximum values? [true/false]": true,
+        "List of prefabs": [
+          {
+            "Chance [0.0-100.0]": 100.0,
+            "The path to the prefab": "assets/bundled/prefabs/radtown/underwater_labs/crate_ammunition.prefab"
+          }
+        ]
+      },
+      "Own loot table (if the loot table type is 1 or 5)": {
+        "Minimum numbers of items": 2,
+        "Maximum numbers of items": 2,
+        "Use minimum and maximum values? [true/false]": true,
+        "List of items": [
+          {
+            "ShortName": "explosive.timed",
+            "Minimum": 1,
+            "Maximum": 2,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": ""
+          },
+          {
+            "ShortName": "ammo.rocket.basic",
+            "Minimum": 2,
+            "Maximum": 4,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": ""
+          }
+        ]
+      },
+      "Item Multipliers": {
+        "explosive.timed": 1.0
+      }
+    },
+    {
+      "Prefab": "assets/bundled/prefabs/radtown/underwater_labs/crate_fuel.prefab",
+      "Which loot table should the plugin use? (0 - default; 1 - own; 2 - AlphaLoot; 3 - CustomLoot; 4 - loot table of the Rust objects; 5 - combine the 1 and 4 methods)": 5,
+      "Loot table from prefabs (if the loot table type is 4 or 5)": {
+        "Minimum numbers of prefabs": 1,
+        "Maximum numbers of prefabs": 1,
+        "Use minimum and maximum values? [true/false]": true,
+        "List of prefabs": [
+          {
+            "Chance [0.0-100.0]": 100.0,
+            "The path to the prefab": "assets/bundled/prefabs/radtown/underwater_labs/crate_fuel.prefab"
+          }
+        ]
+      },
+      "Own loot table (if the loot table type is 1 or 5)": {
+        "Minimum numbers of items": 2,
+        "Maximum numbers of items": 2,
+        "Use minimum and maximum values? [true/false]": true,
+        "List of items": [
+          {
+            "ShortName": "explosive.timed",
+            "Minimum": 1,
+            "Maximum": 2,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": ""
+          },
+          {
+            "ShortName": "ammo.rocket.basic",
+            "Minimum": 2,
+            "Maximum": 4,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": ""
+          }
+        ]
+      },
+      "Item Multipliers": {
+        "explosive.timed": 1.0
+      }
+    },
+    {
+      "Prefab": "assets/bundled/prefabs/radtown/underwater_labs/crate_tools.prefab",
+      "Which loot table should the plugin use? (0 - default; 1 - own; 2 - AlphaLoot; 3 - CustomLoot; 4 - loot table of the Rust objects; 5 - combine the 1 and 4 methods)": 5,
+      "Loot table from prefabs (if the loot table type is 4 or 5)": {
+        "Minimum numbers of prefabs": 1,
+        "Maximum numbers of prefabs": 1,
+        "Use minimum and maximum values? [true/false]": true,
+        "List of prefabs": [
+          {
+            "Chance [0.0-100.0]": 100.0,
+            "The path to the prefab": "assets/bundled/prefabs/radtown/underwater_labs/crate_tools.prefab"
+          }
+        ]
+      },
+      "Own loot table (if the loot table type is 1 or 5)": {
+        "Minimum numbers of items": 3,
+        "Maximum numbers of items": 3,
+        "Use minimum and maximum values? [true/false]": true,
+        "List of items": [
+          {
+            "ShortName": "explosive.timed",
+            "Minimum": 1,
+            "Maximum": 2,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": ""
+          },
+          {
+            "ShortName": "ammo.rocket.basic",
+            "Minimum": 2,
+            "Maximum": 4,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": ""
+          },
+          {
+            "ShortName": "scrap",
+            "Minimum": 5,
+            "Maximum": 5,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": ""
+          }
+        ]
+      },
+      "Item Multipliers": {
+        "explosive.timed": 1.0
+      }
+    },
+    {
+      "Prefab": "assets/bundled/prefabs/radtown/crate_underwater_basic.prefab",
+      "Which loot table should the plugin use? (0 - default; 1 - own; 2 - AlphaLoot; 3 - CustomLoot; 4 - loot table of the Rust objects; 5 - combine the 1 and 4 methods)": 5,
+      "Loot table from prefabs (if the loot table type is 4 or 5)": {
+        "Minimum numbers of prefabs": 1,
+        "Maximum numbers of prefabs": 1,
+        "Use minimum and maximum values? [true/false]": true,
+        "List of prefabs": [
+          {
+            "Chance [0.0-100.0]": 100.0,
+            "The path to the prefab": "assets/bundled/prefabs/radtown/crate_underwater_basic.prefab"
+          }
+        ]
+      },
+      "Own loot table (if the loot table type is 1 or 5)": {
+        "Minimum numbers of items": 2,
+        "Maximum numbers of items": 2,
+        "Use minimum and maximum values? [true/false]": true,
+        "List of items": [
+          {
+            "ShortName": "explosive.timed",
+            "Minimum": 1,
+            "Maximum": 2,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": ""
+          },
+          {
+            "ShortName": "ammo.rocket.basic",
+            "Minimum": 2,
+            "Maximum": 4,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": ""
+          }
+        ]
+      },
+      "Item Multipliers": {
+        "explosive.timed": 1.0
+      }
+    },
+    {
+      "Prefab": "assets/bundled/prefabs/radtown/crate_underwater_advanced.prefab",
+      "Which loot table should the plugin use? (0 - default; 1 - own; 2 - AlphaLoot; 3 - CustomLoot; 4 - loot table of the Rust objects; 5 - combine the 1 and 4 methods)": 5,
+      "Loot table from prefabs (if the loot table type is 4 or 5)": {
+        "Minimum numbers of prefabs": 1,
+        "Maximum numbers of prefabs": 1,
+        "Use minimum and maximum values? [true/false]": true,
+        "List of prefabs": [
+          {
+            "Chance [0.0-100.0]": 100.0,
+            "The path to the prefab": "assets/bundled/prefabs/radtown/crate_underwater_advanced.prefab"
+          }
+        ]
+      },
+      "Own loot table (if the loot table type is 1 or 5)": {
+        "Minimum numbers of items": 2,
+        "Maximum numbers of items": 2,
+        "Use minimum and maximum values? [true/false]": true,
+        "List of items": [
+          {
+            "ShortName": "explosive.timed",
+            "Minimum": 1,
+            "Maximum": 2,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": ""
+          },
+          {
+            "ShortName": "ammo.rocket.basic",
+            "Minimum": 2,
+            "Maximum": 4,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": ""
+          }
+        ]
+      },
+      "Item Multipliers": {
+        "explosive.timed": 1.0
+      }
+    },
+    {
+      "Prefab": "assets/bundled/prefabs/radtown/underwater_labs/crate_medical.prefab",
+      "Which loot table should the plugin use? (0 - default; 1 - own; 2 - AlphaLoot; 3 - CustomLoot; 4 - loot table of the Rust objects; 5 - combine the 1 and 4 methods)": 5,
+      "Loot table from prefabs (if the loot table type is 4 or 5)": {
+        "Minimum numbers of prefabs": 1,
+        "Maximum numbers of prefabs": 1,
+        "Use minimum and maximum values? [true/false]": true,
+        "List of prefabs": [
+          {
+            "Chance [0.0-100.0]": 100.0,
+            "The path to the prefab": "assets/bundled/prefabs/radtown/underwater_labs/crate_medical.prefab"
+          }
+        ]
+      },
+      "Own loot table (if the loot table type is 1 or 5)": {
+        "Minimum numbers of items": 2,
+        "Maximum numbers of items": 2,
+        "Use minimum and maximum values? [true/false]": true,
+        "List of items": [
+          {
+            "ShortName": "explosive.timed",
+            "Minimum": 1,
+            "Maximum": 2,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": ""
+          },
+          {
+            "ShortName": "ammo.rocket.basic",
+            "Minimum": 2,
+            "Maximum": 4,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": ""
+          }
+        ]
+      },
+      "Item Multipliers": {
+        "explosive.timed": 1.0
+      }
+    },
+    {
+      "Prefab": "assets/bundled/prefabs/radtown/crate_elite.prefab",
+      "Which loot table should the plugin use? (0 - default; 1 - own; 2 - AlphaLoot; 3 - CustomLoot; 4 - loot table of the Rust objects; 5 - combine the 1 and 4 methods)": 5,
+      "Loot table from prefabs (if the loot table type is 4 or 5)": {
+        "Minimum numbers of prefabs": 1,
+        "Maximum numbers of prefabs": 1,
+        "Use minimum and maximum values? [true/false]": true,
+        "List of prefabs": [
+          {
+            "Chance [0.0-100.0]": 100.0,
+            "The path to the prefab": "assets/bundled/prefabs/radtown/crate_elite.prefab"
+          }
+        ]
+      },
+      "Own loot table (if the loot table type is 1 or 5)": {
+        "Minimum numbers of items": 3,
+        "Maximum numbers of items": 3,
+        "Use minimum and maximum values? [true/false]": true,
+        "List of items": [
+          {
+            "ShortName": "explosive.timed",
+            "Minimum": 2,
+            "Maximum": 4,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": ""
+          },
+          {
+            "ShortName": "ammo.rocket.basic",
+            "Minimum": 4,
+            "Maximum": 8,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": ""
+          },
+          {
+            "ShortName": "scrap",
+            "Minimum": 25,
+            "Maximum": 25,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": ""
+          }
+        ]
+      },
+      "Item Multipliers": {
+        "explosive.timed": 1.0
+      }
+    },
+    {
+      "Prefab": "assets/bundled/prefabs/radtown/underwater_labs/crate_elite.prefab",
+      "Which loot table should the plugin use? (0 - default; 1 - own; 2 - AlphaLoot; 3 - CustomLoot; 4 - loot table of the Rust objects; 5 - combine the 1 and 4 methods)": 5,
+      "Loot table from prefabs (if the loot table type is 4 or 5)": {
+        "Minimum numbers of prefabs": 1,
+        "Maximum numbers of prefabs": 1,
+        "Use minimum and maximum values? [true/false]": true,
+        "List of prefabs": [
+          {
+            "Chance [0.0-100.0]": 100.0,
+            "The path to the prefab": "assets/bundled/prefabs/radtown/underwater_labs/crate_elite.prefab"
+          }
+        ]
+      },
+      "Own loot table (if the loot table type is 1 or 5)": {
+        "Minimum numbers of items": 3,
+        "Maximum numbers of items": 3,
+        "Use minimum and maximum values? [true/false]": true,
+        "List of items": [
+          {
+            "ShortName": "explosive.timed",
+            "Minimum": 2,
+            "Maximum": 4,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": ""
+          },
+          {
+            "ShortName": "ammo.rocket.basic",
+            "Minimum": 4,
+            "Maximum": 8,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": ""
+          },
+          {
+            "ShortName": "scrap",
+            "Minimum": 25,
+            "Maximum": 25,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": ""
+          }
+        ]
+      },
+      "Item Multipliers": {
+        "explosive.timed": 1.0
+      }
+    },
+    {
+      "Prefab": "assets/bundled/prefabs/radtown/underwater_labs/crate_food_1.prefab",
+      "Which loot table should the plugin use? (0 - default; 1 - own; 2 - AlphaLoot; 3 - CustomLoot; 4 - loot table of the Rust objects; 5 - combine the 1 and 4 methods)": 5,
+      "Loot table from prefabs (if the loot table type is 4 or 5)": {
+        "Minimum numbers of prefabs": 1,
+        "Maximum numbers of prefabs": 1,
+        "Use minimum and maximum values? [true/false]": true,
+        "List of prefabs": [
+          {
+            "Chance [0.0-100.0]": 100.0,
+            "The path to the prefab": "assets/bundled/prefabs/radtown/underwater_labs/crate_food_1.prefab"
+          }
+        ]
+      },
+      "Own loot table (if the loot table type is 1 or 5)": {
+        "Minimum numbers of items": 2,
+        "Maximum numbers of items": 2,
+        "Use minimum and maximum values? [true/false]": true,
+        "List of items": [
+          {
+            "ShortName": "explosive.timed",
+            "Minimum": 1,
+            "Maximum": 2,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": ""
+          },
+          {
+            "ShortName": "ammo.rocket.basic",
+            "Minimum": 2,
+            "Maximum": 4,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": ""
+          }
+        ]
+      },
+      "Item Multipliers": {
+        "explosive.timed": 1.0
+      }
+    },
+    {
+      "Prefab": "assets/bundled/prefabs/radtown/underwater_labs/crate_food_2.prefab",
+      "Which loot table should the plugin use? (0 - default; 1 - own; 2 - AlphaLoot; 3 - CustomLoot; 4 - loot table of the Rust objects; 5 - combine the 1 and 4 methods)": 5,
+      "Loot table from prefabs (if the loot table type is 4 or 5)": {
+        "Minimum numbers of prefabs": 1,
+        "Maximum numbers of prefabs": 1,
+        "Use minimum and maximum values? [true/false]": true,
+        "List of prefabs": [
+          {
+            "Chance [0.0-100.0]": 100.0,
+            "The path to the prefab": "assets/bundled/prefabs/radtown/underwater_labs/crate_food_2.prefab"
+          }
+        ]
+      },
+      "Own loot table (if the loot table type is 1 or 5)": {
+        "Minimum numbers of items": 2,
+        "Maximum numbers of items": 2,
+        "Use minimum and maximum values? [true/false]": true,
+        "List of items": [
+          {
+            "ShortName": "explosive.timed",
+            "Minimum": 1,
+            "Maximum": 2,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": ""
+          },
+          {
+            "ShortName": "ammo.rocket.basic",
+            "Minimum": 2,
+            "Maximum": 4,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": ""
+          }
+        ]
+      },
+      "Item Multipliers": {
+        "explosive.timed": 1.0
+      }
+    },
+    {
+      "Prefab": "assets/bundled/prefabs/radtown/crate_normal.prefab",
+      "Which loot table should the plugin use? (0 - default; 1 - own; 2 - AlphaLoot; 3 - CustomLoot; 4 - loot table of the Rust objects; 5 - combine the 1 and 4 methods)": 5,
+      "Loot table from prefabs (if the loot table type is 4 or 5)": {
+        "Minimum numbers of prefabs": 1,
+        "Maximum numbers of prefabs": 1,
+        "Use minimum and maximum values? [true/false]": true,
+        "List of prefabs": [
+          {
+            "Chance [0.0-100.0]": 100.0,
+            "The path to the prefab": "assets/bundled/prefabs/radtown/crate_normal.prefab"
+          }
+        ]
+      },
+      "Own loot table (if the loot table type is 1 or 5)": {
+        "Minimum numbers of items": 3,
+        "Maximum numbers of items": 3,
+        "Use minimum and maximum values? [true/false]": true,
+        "List of items": [
+          {
+            "ShortName": "explosive.timed",
+            "Minimum": 1,
+            "Maximum": 2,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": ""
+          },
+          {
+            "ShortName": "ammo.rocket.basic",
+            "Minimum": 2,
+            "Maximum": 4,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": ""
+          },
+          {
+            "ShortName": "scrap",
+            "Minimum": 5,
+            "Maximum": 5,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": ""
+          }
+        ]
+      },
+      "Item Multipliers": {
+        "explosive.timed": 1.0
+      }
+    },
+    {
+      "Prefab": "assets/bundled/prefabs/radtown/underwater_labs/crate_normal.prefab",
+      "Which loot table should the plugin use? (0 - default; 1 - own; 2 - AlphaLoot; 3 - CustomLoot; 4 - loot table of the Rust objects; 5 - combine the 1 and 4 methods)": 5,
+      "Loot table from prefabs (if the loot table type is 4 or 5)": {
+        "Minimum numbers of prefabs": 1,
+        "Maximum numbers of prefabs": 1,
+        "Use minimum and maximum values? [true/false]": true,
+        "List of prefabs": [
+          {
+            "Chance [0.0-100.0]": 100.0,
+            "The path to the prefab": "assets/bundled/prefabs/radtown/underwater_labs/crate_normal.prefab"
+          }
+        ]
+      },
+      "Own loot table (if the loot table type is 1 or 5)": {
+        "Minimum numbers of items": 3,
+        "Maximum numbers of items": 3,
+        "Use minimum and maximum values? [true/false]": true,
+        "List of items": [
+          {
+            "ShortName": "explosive.timed",
+            "Minimum": 1,
+            "Maximum": 2,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": ""
+          },
+          {
+            "ShortName": "ammo.rocket.basic",
+            "Minimum": 2,
+            "Maximum": 4,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": ""
+          },
+          {
+            "ShortName": "scrap",
+            "Minimum": 8,
+            "Maximum": 8,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": ""
+          }
+        ]
+      },
+      "Item Multipliers": {
+        "explosive.timed": 1.0
+      }
+    },
+    {
+      "Prefab": "assets/bundled/prefabs/radtown/crate_normal_2.prefab",
+      "Which loot table should the plugin use? (0 - default; 1 - own; 2 - AlphaLoot; 3 - CustomLoot; 4 - loot table of the Rust objects; 5 - combine the 1 and 4 methods)": 5,
+      "Loot table from prefabs (if the loot table type is 4 or 5)": {
+        "Minimum numbers of prefabs": 1,
+        "Maximum numbers of prefabs": 1,
+        "Use minimum and maximum values? [true/false]": true,
+        "List of prefabs": [
+          {
+            "Chance [0.0-100.0]": 100.0,
+            "The path to the prefab": "assets/bundled/prefabs/radtown/crate_normal_2.prefab"
+          }
+        ]
+      },
+      "Own loot table (if the loot table type is 1 or 5)": {
+        "Minimum numbers of items": 3,
+        "Maximum numbers of items": 3,
+        "Use minimum and maximum values? [true/false]": true,
+        "List of items": [
+          {
+            "ShortName": "explosive.timed",
+            "Minimum": 1,
+            "Maximum": 2,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": ""
+          },
+          {
+            "ShortName": "ammo.rocket.basic",
+            "Minimum": 2,
+            "Maximum": 4,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": ""
+          },
+          {
+            "ShortName": "scrap",
+            "Minimum": 8,
+            "Maximum": 8,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": ""
+          }
+        ]
+      },
+      "Item Multipliers": {
+        "explosive.timed": 1.0
+      }
+    },
+    {
+      "Prefab": "assets/bundled/prefabs/radtown/underwater_labs/crate_normal_2.prefab",
+      "Which loot table should the plugin use? (0 - default; 1 - own; 2 - AlphaLoot; 3 - CustomLoot; 4 - loot table of the Rust objects; 5 - combine the 1 and 4 methods)": 5,
+      "Loot table from prefabs (if the loot table type is 4 or 5)": {
+        "Minimum numbers of prefabs": 1,
+        "Maximum numbers of prefabs": 1,
+        "Use minimum and maximum values? [true/false]": true,
+        "List of prefabs": [
+          {
+            "Chance [0.0-100.0]": 100.0,
+            "The path to the prefab": "assets/bundled/prefabs/radtown/underwater_labs/crate_normal_2.prefab"
+          }
+        ]
+      },
+      "Own loot table (if the loot table type is 1 or 5)": {
+        "Minimum numbers of items": 3,
+        "Maximum numbers of items": 3,
+        "Use minimum and maximum values? [true/false]": true,
+        "List of items": [
+          {
+            "ShortName": "explosive.timed",
+            "Minimum": 1,
+            "Maximum": 2,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": ""
+          },
+          {
+            "ShortName": "ammo.rocket.basic",
+            "Minimum": 2,
+            "Maximum": 4,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": ""
+          },
+          {
+            "ShortName": "scrap",
+            "Minimum": 5,
+            "Maximum": 5,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": ""
+          }
+        ]
+      },
+      "Item Multipliers": {
+        "explosive.timed": 1.0
+      }
+    },
+    {
+      "Prefab": "assets/bundled/prefabs/radtown/crate_normal_2_food.prefab",
+      "Which loot table should the plugin use? (0 - default; 1 - own; 2 - AlphaLoot; 3 - CustomLoot; 4 - loot table of the Rust objects; 5 - combine the 1 and 4 methods)": 5,
+      "Loot table from prefabs (if the loot table type is 4 or 5)": {
+        "Minimum numbers of prefabs": 1,
+        "Maximum numbers of prefabs": 1,
+        "Use minimum and maximum values? [true/false]": true,
+        "List of prefabs": [
+          {
+            "Chance [0.0-100.0]": 100.0,
+            "The path to the prefab": "assets/bundled/prefabs/radtown/crate_normal_2_food.prefab"
+          }
+        ]
+      },
+      "Own loot table (if the loot table type is 1 or 5)": {
+        "Minimum numbers of items": 2,
+        "Maximum numbers of items": 2,
+        "Use minimum and maximum values? [true/false]": true,
+        "List of items": [
+          {
+            "ShortName": "explosive.timed",
+            "Minimum": 1,
+            "Maximum": 2,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": ""
+          },
+          {
+            "ShortName": "ammo.rocket.basic",
+            "Minimum": 2,
+            "Maximum": 4,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": ""
+          }
+        ]
+      },
+      "Item Multipliers": {
+        "explosive.timed": 1.0
+      }
+    },
+    {
+      "Prefab": "assets/bundled/prefabs/radtown/crate_normal_2_medical.prefab",
+      "Which loot table should the plugin use? (0 - default; 1 - own; 2 - AlphaLoot; 3 - CustomLoot; 4 - loot table of the Rust objects; 5 - combine the 1 and 4 methods)": 5,
+      "Loot table from prefabs (if the loot table type is 4 or 5)": {
+        "Minimum numbers of prefabs": 1,
+        "Maximum numbers of prefabs": 1,
+        "Use minimum and maximum values? [true/false]": true,
+        "List of prefabs": [
+          {
+            "Chance [0.0-100.0]": 100.0,
+            "The path to the prefab": "assets/bundled/prefabs/radtown/crate_normal_2_medical.prefab"
+          }
+        ]
+      },
+      "Own loot table (if the loot table type is 1 or 5)": {
+        "Minimum numbers of items": 2,
+        "Maximum numbers of items": 2,
+        "Use minimum and maximum values? [true/false]": true,
+        "List of items": [
+          {
+            "ShortName": "explosive.timed",
+            "Minimum": 1,
+            "Maximum": 2,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": ""
+          },
+          {
+            "ShortName": "ammo.rocket.basic",
+            "Minimum": 2,
+            "Maximum": 4,
+            "Chance [0.0-100.0]": 100.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": ""
+          }
+        ]
+      },
+      "Item Multipliers": {
+        "explosive.timed": 1.0
+      }
+    }
+  ],
+  "Locked Crates setting": {
+    "Location of all Crates": [
+      {
+        "Position": "(-3.768, 3.1, 22.509)",
+        "Rotation": "(0, 90, 0)"
+      },
+      {
+        "Position": "(3.028, 0.082, 5.223)",
+        "Rotation": "(0, 0, 0)"
+      }
+    ],
+    "Time to unlock the Crates [sec.]": 600.0,
+    "Increase the event time if it's not enough to unlock the locked crate? [true/false]": true,
+    "Which loot table should the plugin use? (0 - default; 1 - own; 2 - AlphaLoot; 3 - CustomLoot; 4 - loot table of the Rust objects; 5 - combine the 1 and 4 methods)": 5,
+    "Loot table from prefabs (if the loot table type is 4 or 5)": {
+      "Minimum numbers of prefabs": 1,
+      "Maximum numbers of prefabs": 1,
+      "Use minimum and maximum values? [true/false]": true,
+      "List of prefabs": [
+        {
+          "Chance [0.0-100.0]": 100.0,
+          "The path to the prefab": "assets/prefabs/deployable/chinooklockedcrate/codelockedhackablecrate.prefab"
+        }
+      ]
+    },
+    "Own loot table (if the loot table type is 1 or 5)": {
+      "Minimum numbers of items": 2,
+      "Maximum numbers of items": 2,
+      "Use minimum and maximum values? [true/false]": true,
+      "List of items": [
+        {
+          "ShortName": "explosive.timed",
+          "Minimum": 4,
+          "Maximum": 8,
+          "Chance [0.0-100.0]": 100.0,
+          "Is this a blueprint? [true/false]": false,
+          "SkinID (0 - default)": 0,
+          "Name (empty - default)": ""
+        },
+        {
+          "ShortName": "ammo.rocket.basic",
+          "Minimum": 8,
+          "Maximum": 16,
+          "Chance [0.0-100.0]": 100.0,
+          "Is this a blueprint? [true/false]": false,
+          "SkinID (0 - default)": 0,
+          "Name (empty - default)": ""
+        }
+      ]
+    },
+    "Item Multipliers": {
+      "explosive.timed": 1.0
+    }
+  },
+  "Marker configuration on the map": {
+    "Name": "WaterEvent ({time} sec.)",
+    "Radius": 0.4,
+    "Alpha": 0.6,
+    "Marker color": {
+      "r": 0.81,
+      "g": 0.25,
+      "b": 0.15
+    }
+  },
+  "Prefix of chat messages": "[WaterEvent]",
+  "Do you use the chat? [true/false]": true,
+  "GUI setting": {
+    "Do you use the countdown GUI? [true/false]": true,
+    "OffsetMin Y": "-56"
+  },
+  "GUI Announcements setting": {
+    "Do you use the GUI Announcements? [true/false]": false,
+    "Banner color": "Orange",
+    "Text color": "White",
+    "Adjust Vertical Position": 0.03
+  },
+  "Notify setting": {
+    "Do you use the Notify? [true/false]": false,
+    "Type": "0"
+  },
+  "Discord setting (only for users DiscordMessages plugin)": {
+    "Do you use the Discord? [true/false]": false,
+    "Webhook URL": "https://support.discordapp.com/hc/en-us/articles/228383668-Intro-to-Webhooks",
+    "Embed Color (DECIMAL)": 13516583,
+    "Keys of required messages": [
+      "PreStart",
+      "Start",
+      "PreFinish",
+      "Finish",
+      "OpenBlueDoor",
+      "OpenRedDoor",
+      "HackCrate"
+    ]
+  },
+  "Do you create a PVP zone in the event area? (only for users TruePVE plugin) [true/false]": false,
+  "PVE Mode Setting (only for users PveMode plugin)": {
+    "Use the PVE mode of the plugin? [true/false]": false,
+    "The amount of damage that the player has to do to become the Event Owner": 500.0,
+    "Damage coefficients for calculate to become the Event Owner": [
+      {
+        "Type of target": "NPC",
+        "Damage Multiplier": 1.0
+      }
+    ],
+    "Can the non-owner of the event loot the crates? [true/false]": false,
+    "Can the non-owner of the event hack locked crates? [true/false]": false,
+    "Can the non-owner of the event loot NPC corpses? [true/false]": false,
+    "Can the non-owner of the event deal damage to the NPC? [true/false]": false,
+    "Can an Npc attack a non-owner of the event? [true/false]": false,
+    "Allow the non-owner of the event to enter the event zone? [true/false]": false,
+    "Allow a player who has an active cooldown of the Event Owner to enter the event zone? [true/false]": true,
+    "The time that the Event Owner may not be inside the event zone [sec.]": 450,
+    "The time until the end of Event Owner status when it is necessary to warn the player [sec.]": 120,
+    "Prevent the actions of the RestoreUponDeath plugin in the event zone? [true/false]": true,
+    "The time that the player can`t become the Event Owner, after the end of the event and the player was its owner [sec.]": 86400.0,
+    "Darkening the dome (0 - disables the dome)": 12
+  },
+  "Interrupt the teleport in a submarine? (only for users NTeleportation plugin) [true/false]": false,
+  "NPCs setting outside": [
+    {
+      "Minimum": 4,
+      "Maximum": 4,
+      "List of locations": [
+        "(0.0, 8.8, -9.1)",
+        "(2.4, 8.4, 19.5)",
+        "(-2.2, 8.4, 19.4)",
+        "(0.1, 8.8, -18.3)",
+        "(-0.1, 8.8, 39.7)",
+        "(-0.1, 8.8, 0.1)"
+      ],
+      "NPCs setting": {
+        "Name": "SeaDevil",
+        "Health": 120.0,
+        "Attack Range Multiplier": 5.0,
+        "Sense Range": 75.0,
+        "Target Memory Duration [sec.]": 20.0,
+        "Scale damage": 0.7,
+        "Aim Cone Scale": 0.0,
+        "Detect the target only in the NPC's viewing vision cone? [true/false]": false,
+        "Vision Cone": 135.0,
+        "Disable radio effects? [true/false]": true,
+        "Remove a corpse after death? (it is recommended to use the true value to improve performance) [true/false]": true,
+        "Wear items": [
+          {
+            "ShortName": "burlap.shirt",
+            "SkinID (0 - default)": 2216143685
+          },
+          {
+            "ShortName": "burlap.trousers",
+            "SkinID (0 - default)": 2216144342
+          },
+          {
+            "ShortName": "shoes.boots",
+            "SkinID (0 - default)": 0
+          },
+          {
+            "ShortName": "burlap.gloves",
+            "SkinID (0 - default)": 0
+          },
+          {
+            "ShortName": "hat.dragonmask",
+            "SkinID (0 - default)": 0
+          }
+        ],
+        "Belt items": [
+          {
+            "ShortName": "rifle.m39",
+            "Amount": 1,
+            "SkinID (0 - default)": 0,
+            "Mods": [
+              "weapon.mod.flashlight",
+              "weapon.mod.small.scope",
+              "weapon.mod.silencer"
+            ],
+            "Ammo": ""
+          },
+          {
+            "ShortName": "syringe.medical",
+            "Amount": 5,
+            "SkinID (0 - default)": 0,
+            "Mods": [],
+            "Ammo": ""
+          },
+          {
+            "ShortName": "grenade.f1",
+            "Amount": 2,
+            "SkinID (0 - default)": 0,
+            "Mods": [],
+            "Ammo": ""
+          },
+          {
+            "ShortName": "grenade.smoke",
+            "Amount": 1,
+            "SkinID (0 - default)": 0,
+            "Mods": [],
+            "Ammo": ""
+          }
+        ],
+        "Kit (it is recommended to use the previous 2 settings to improve performance)": ""
+      },
+      "Which loot table should the plugin use? (0 - default; 1 - own; 2 - AlphaLoot; 3 - CustomLoot; 4 - loot table of the Rust objects; 5 - combine the 1 and 4 methods)": 5,
+      "Loot table from prefabs (if the loot table type is 4 or 5)": {
+        "Minimum numbers of prefabs": 1,
+        "Maximum numbers of prefabs": 1,
+        "Use minimum and maximum values? [true/false]": true,
+        "List of prefabs": [
+          {
+            "Chance [0.0-100.0]": 100.0,
+            "The path to the prefab": "assets/rust.ai/agents/npcplayer/humannpc/scientist/scientistnpc_oilrig.prefab"
+          }
+        ]
+      },
+      "Own loot table (if the loot table type is 1 or 5)": {
+        "Minimum numbers of items": 1,
+        "Maximum numbers of items": 1,
+        "Use minimum and maximum values? [true/false]": true,
+        "List of items": [
+          {
+            "ShortName": "scrap",
+            "Minimum": 5,
+            "Maximum": 10,
+            "Chance [0.0-100.0]": 50.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": ""
+          },
+          {
+            "ShortName": "syringe.medical",
+            "Minimum": 1,
+            "Maximum": 2,
+            "Chance [0.0-100.0]": 70.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": ""
+          }
+        ]
+      }
+    },
+    {
+      "Minimum": 1,
+      "Maximum": 1,
+      "List of locations": [
+        "(12.3, 0.6, -0.7)",
+        "(-12.3, 0.6, -0.9)"
+      ],
+      "NPCs setting": {
+        "Name": "SeaDevil",
+        "Health": 200.0,
+        "Attack Range Multiplier": 5.0,
+        "Sense Range": 150.0,
+        "Target Memory Duration [sec.]": 10.0,
+        "Scale damage": 0.2,
+        "Aim Cone Scale": 0.0,
+        "Detect the target only in the NPC's viewing vision cone? [true/false]": false,
+        "Vision Cone": 135.0,
+        "Disable radio effects? [true/false]": true,
+        "Remove a corpse after death? (it is recommended to use the true value to improve performance) [true/false]": true,
+        "Wear items": [
+          {
+            "ShortName": "burlap.shirt",
+            "SkinID (0 - default)": 2216143685
+          },
+          {
+            "ShortName": "burlap.trousers",
+            "SkinID (0 - default)": 2216144342
+          },
+          {
+            "ShortName": "shoes.boots",
+            "SkinID (0 - default)": 0
+          },
+          {
+            "ShortName": "burlap.gloves",
+            "SkinID (0 - default)": 0
+          },
+          {
+            "ShortName": "hat.dragonmask",
+            "SkinID (0 - default)": 0
+          }
+        ],
+        "Belt items": [
+          {
+            "ShortName": "rifle.bolt",
+            "Amount": 1,
+            "SkinID (0 - default)": 0,
+            "Mods": [
+              "weapon.mod.flashlight",
+              "weapon.mod.small.scope",
+              "weapon.mod.silencer"
+            ],
+            "Ammo": ""
+          }
+        ],
+        "Kit (it is recommended to use the previous 2 settings to improve performance)": ""
+      },
+      "Which loot table should the plugin use? (0 - default; 1 - own; 2 - AlphaLoot; 3 - CustomLoot; 4 - loot table of the Rust objects; 5 - combine the 1 and 4 methods)": 5,
+      "Loot table from prefabs (if the loot table type is 4 or 5)": {
+        "Minimum numbers of prefabs": 1,
+        "Maximum numbers of prefabs": 1,
+        "Use minimum and maximum values? [true/false]": true,
+        "List of prefabs": [
+          {
+            "Chance [0.0-100.0]": 100.0,
+            "The path to the prefab": "assets/rust.ai/agents/npcplayer/humannpc/scientist/scientistnpc_oilrig.prefab"
+          }
+        ]
+      },
+      "Own loot table (if the loot table type is 1 or 5)": {
+        "Minimum numbers of items": 1,
+        "Maximum numbers of items": 1,
+        "Use minimum and maximum values? [true/false]": true,
+        "List of items": [
+          {
+            "ShortName": "scrap",
+            "Minimum": 5,
+            "Maximum": 10,
+            "Chance [0.0-100.0]": 50.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": ""
+          },
+          {
+            "ShortName": "syringe.medical",
+            "Minimum": 1,
+            "Maximum": 2,
+            "Chance [0.0-100.0]": 70.0,
+            "Is this a blueprint? [true/false]": false,
+            "SkinID (0 - default)": 0,
+            "Name (empty - default)": ""
+          }
+        ]
+      }
+    }
+  ],
+  "List of doors and NPCs inside the submarine": [
+    {
+      "Position of doors (not edited)": [
+        "(-6.568, 5.511, -19.545)",
+        "(-1.5, 3, -18)"
+      ],
+      "NPCs setting": [
+        {
+          "Minimum": 1,
+          "Maximum": 1,
+          "List of locations": [
+            "(-3.0, 3.1, -18.3)"
+          ],
+          "NPCs setting": {
+            "Name": "Mariner",
+            "Health": 125.0,
+            "Attack Range Multiplier": 1.0,
+            "Sense Range": 30.0,
+            "Target Memory Duration [sec.]": 20.0,
+            "Scale damage": 1.35,
+            "Aim Cone Scale": 1.0,
+            "Detect the target only in the NPC's viewing vision cone? [true/false]": false,
+            "Vision Cone": 135.0,
+            "Disable radio effects? [true/false]": true,
+            "Remove a corpse after death? (it is recommended to use the true value to improve performance) [true/false]": true,
+            "Wear items": [
+              {
+                "ShortName": "metal.facemask",
+                "SkinID (0 - default)": 2296503845
+              },
+              {
+                "ShortName": "hoodie",
+                "SkinID (0 - default)": 2304560839
+              },
+              {
+                "ShortName": "pants",
+                "SkinID (0 - default)": 2304559261
+              },
+              {
+                "ShortName": "shoes.boots",
+                "SkinID (0 - default)": 0
+              }
+            ],
+            "Belt items": [
+              {
+                "ShortName": "rifle.lr300",
+                "Amount": 1,
+                "SkinID (0 - default)": 0,
+                "Mods": [
+                  "weapon.mod.flashlight",
+                  "weapon.mod.holosight"
+                ],
+                "Ammo": ""
+              },
+              {
+                "ShortName": "syringe.medical",
+                "Amount": 5,
+                "SkinID (0 - default)": 0,
+                "Mods": [],
+                "Ammo": ""
+              },
+              {
+                "ShortName": "grenade.f1",
+                "Amount": 1,
+                "SkinID (0 - default)": 0,
+                "Mods": [],
+                "Ammo": ""
+              }
+            ],
+            "Kit (it is recommended to use the previous 2 settings to improve performance)": ""
+          },
+          "Which loot table should the plugin use? (0 - default; 1 - own; 2 - AlphaLoot; 3 - CustomLoot; 4 - loot table of the Rust objects; 5 - combine the 1 and 4 methods)": 5,
+          "Loot table from prefabs (if the loot table type is 4 or 5)": {
+            "Minimum numbers of prefabs": 1,
+            "Maximum numbers of prefabs": 1,
+            "Use minimum and maximum values? [true/false]": true,
+            "List of prefabs": [
+              {
+                "Chance [0.0-100.0]": 100.0,
+                "The path to the prefab": "assets/rust.ai/agents/npcplayer/humannpc/scientist/scientistnpc_oilrig.prefab"
+              }
+            ]
+          },
+          "Own loot table (if the loot table type is 1 or 5)": {
+            "Minimum numbers of items": 1,
+            "Maximum numbers of items": 1,
+            "Use minimum and maximum values? [true/false]": true,
+            "List of items": [
+              {
+                "ShortName": "scrap",
+                "Minimum": 5,
+                "Maximum": 10,
+                "Chance [0.0-100.0]": 50.0,
+                "Is this a blueprint? [true/false]": false,
+                "SkinID (0 - default)": 0,
+                "Name (empty - default)": ""
+              },
+              {
+                "ShortName": "syringe.medical",
+                "Minimum": 1,
+                "Maximum": 2,
+                "Chance [0.0-100.0]": 70.0,
+                "Is this a blueprint? [true/false]": false,
+                "SkinID (0 - default)": 0,
+                "Name (empty - default)": ""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "Position of doors (not edited)": [
+        "(-1.5, 3, -18)",
+        "(1.5, 3, -18)",
+        "(0, 3, -16.5)"
+      ],
+      "NPCs setting": [
+        {
+          "Minimum": 1,
+          "Maximum": 1,
+          "List of locations": [
+            "(0.0, 3.1, -17.9)"
+          ],
+          "NPCs setting": {
+            "Name": "Mariner",
+            "Health": 125.0,
+            "Attack Range Multiplier": 1.0,
+            "Sense Range": 30.0,
+            "Target Memory Duration [sec.]": 20.0,
+            "Scale damage": 1.35,
+            "Aim Cone Scale": 1.0,
+            "Detect the target only in the NPC's viewing vision cone? [true/false]": false,
+            "Vision Cone": 135.0,
+            "Disable radio effects? [true/false]": true,
+            "Remove a corpse after death? (it is recommended to use the true value to improve performance) [true/false]": true,
+            "Wear items": [
+              {
+                "ShortName": "metal.facemask",
+                "SkinID (0 - default)": 2296503845
+              },
+              {
+                "ShortName": "hoodie",
+                "SkinID (0 - default)": 2304560839
+              },
+              {
+                "ShortName": "pants",
+                "SkinID (0 - default)": 2304559261
+              },
+              {
+                "ShortName": "shoes.boots",
+                "SkinID (0 - default)": 0
+              }
+            ],
+            "Belt items": [
+              {
+                "ShortName": "rifle.lr300",
+                "Amount": 1,
+                "SkinID (0 - default)": 0,
+                "Mods": [
+                  "weapon.mod.flashlight",
+                  "weapon.mod.holosight"
+                ],
+                "Ammo": ""
+              },
+              {
+                "ShortName": "syringe.medical",
+                "Amount": 5,
+                "SkinID (0 - default)": 0,
+                "Mods": [],
+                "Ammo": ""
+              },
+              {
+                "ShortName": "grenade.f1",
+                "Amount": 1,
+                "SkinID (0 - default)": 0,
+                "Mods": [],
+                "Ammo": ""
+              }
+            ],
+            "Kit (it is recommended to use the previous 2 settings to improve performance)": ""
+          },
+          "Which loot table should the plugin use? (0 - default; 1 - own; 2 - AlphaLoot; 3 - CustomLoot; 4 - loot table of the Rust objects; 5 - combine the 1 and 4 methods)": 5,
+          "Loot table from prefabs (if the loot table type is 4 or 5)": {
+            "Minimum numbers of prefabs": 1,
+            "Maximum numbers of prefabs": 1,
+            "Use minimum and maximum values? [true/false]": true,
+            "List of prefabs": [
+              {
+                "Chance [0.0-100.0]": 100.0,
+                "The path to the prefab": "assets/rust.ai/agents/npcplayer/humannpc/scientist/scientistnpc_oilrig.prefab"
+              }
+            ]
+          },
+          "Own loot table (if the loot table type is 1 or 5)": {
+            "Minimum numbers of items": 1,
+            "Maximum numbers of items": 1,
+            "Use minimum and maximum values? [true/false]": true,
+            "List of items": [
+              {
+                "ShortName": "scrap",
+                "Minimum": 5,
+                "Maximum": 10,
+                "Chance [0.0-100.0]": 50.0,
+                "Is this a blueprint? [true/false]": false,
+                "SkinID (0 - default)": 0,
+                "Name (empty - default)": ""
+              },
+              {
+                "ShortName": "syringe.medical",
+                "Minimum": 1,
+                "Maximum": 2,
+                "Chance [0.0-100.0]": 70.0,
+                "Is this a blueprint? [true/false]": false,
+                "SkinID (0 - default)": 0,
+                "Name (empty - default)": ""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "Position of doors (not edited)": [
+        "(1.5, 3, -18)",
+        "(6.568, 5.511, -19.5)"
+      ],
+      "NPCs setting": [
+        {
+          "Minimum": 1,
+          "Maximum": 1,
+          "List of locations": [
+            "(2.9, 3.1, -18.3)"
+          ],
+          "NPCs setting": {
+            "Name": "Mariner",
+            "Health": 125.0,
+            "Attack Range Multiplier": 1.0,
+            "Sense Range": 30.0,
+            "Target Memory Duration [sec.]": 20.0,
+            "Scale damage": 1.35,
+            "Aim Cone Scale": 1.0,
+            "Detect the target only in the NPC's viewing vision cone? [true/false]": false,
+            "Vision Cone": 135.0,
+            "Disable radio effects? [true/false]": true,
+            "Remove a corpse after death? (it is recommended to use the true value to improve performance) [true/false]": true,
+            "Wear items": [
+              {
+                "ShortName": "metal.facemask",
+                "SkinID (0 - default)": 2296503845
+              },
+              {
+                "ShortName": "hoodie",
+                "SkinID (0 - default)": 2304560839
+              },
+              {
+                "ShortName": "pants",
+                "SkinID (0 - default)": 2304559261
+              },
+              {
+                "ShortName": "shoes.boots",
+                "SkinID (0 - default)": 0
+              }
+            ],
+            "Belt items": [
+              {
+                "ShortName": "rifle.lr300",
+                "Amount": 1,
+                "SkinID (0 - default)": 0,
+                "Mods": [
+                  "weapon.mod.flashlight",
+                  "weapon.mod.holosight"
+                ],
+                "Ammo": ""
+              },
+              {
+                "ShortName": "syringe.medical",
+                "Amount": 5,
+                "SkinID (0 - default)": 0,
+                "Mods": [],
+                "Ammo": ""
+              },
+              {
+                "ShortName": "grenade.f1",
+                "Amount": 1,
+                "SkinID (0 - default)": 0,
+                "Mods": [],
+                "Ammo": ""
+              }
+            ],
+            "Kit (it is recommended to use the previous 2 settings to improve performance)": ""
+          },
+          "Which loot table should the plugin use? (0 - default; 1 - own; 2 - AlphaLoot; 3 - CustomLoot; 4 - loot table of the Rust objects; 5 - combine the 1 and 4 methods)": 5,
+          "Loot table from prefabs (if the loot table type is 4 or 5)": {
+            "Minimum numbers of prefabs": 1,
+            "Maximum numbers of prefabs": 1,
+            "Use minimum and maximum values? [true/false]": true,
+            "List of prefabs": [
+              {
+                "Chance [0.0-100.0]": 100.0,
+                "The path to the prefab": "assets/rust.ai/agents/npcplayer/humannpc/scientist/scientistnpc_oilrig.prefab"
+              }
+            ]
+          },
+          "Own loot table (if the loot table type is 1 or 5)": {
+            "Minimum numbers of items": 1,
+            "Maximum numbers of items": 1,
+            "Use minimum and maximum values? [true/false]": true,
+            "List of items": [
+              {
+                "ShortName": "scrap",
+                "Minimum": 5,
+                "Maximum": 10,
+                "Chance [0.0-100.0]": 50.0,
+                "Is this a blueprint? [true/false]": false,
+                "SkinID (0 - default)": 0,
+                "Name (empty - default)": ""
+              },
+              {
+                "ShortName": "syringe.medical",
+                "Minimum": 1,
+                "Maximum": 2,
+                "Chance [0.0-100.0]": 70.0,
+                "Is this a blueprint? [true/false]": false,
+                "SkinID (0 - default)": 0,
+                "Name (empty - default)": ""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "Position of doors (not edited)": [
+        "(0, 3, -16.5)",
+        "(0, 3, -7.5)",
+        "(0, 3, -10.5)"
+      ],
+      "NPCs setting": [
+        {
+          "Minimum": 3,
+          "Maximum": 3,
+          "List of locations": [
+            "(-3.1, 3.1, -14.5)",
+            "(3.5, 3.1, -14.5)",
+            "(0.0, 3.1, -9.2)"
+          ],
+          "NPCs setting": {
+            "Name": "Mariner",
+            "Health": 125.0,
+            "Attack Range Multiplier": 1.0,
+            "Sense Range": 30.0,
+            "Target Memory Duration [sec.]": 20.0,
+            "Scale damage": 1.35,
+            "Aim Cone Scale": 1.0,
+            "Detect the target only in the NPC's viewing vision cone? [true/false]": false,
+            "Vision Cone": 135.0,
+            "Disable radio effects? [true/false]": true,
+            "Remove a corpse after death? (it is recommended to use the true value to improve performance) [true/false]": true,
+            "Wear items": [
+              {
+                "ShortName": "metal.facemask",
+                "SkinID (0 - default)": 2296503845
+              },
+              {
+                "ShortName": "hoodie",
+                "SkinID (0 - default)": 2304560839
+              },
+              {
+                "ShortName": "pants",
+                "SkinID (0 - default)": 2304559261
+              },
+              {
+                "ShortName": "shoes.boots",
+                "SkinID (0 - default)": 0
+              }
+            ],
+            "Belt items": [
+              {
+                "ShortName": "rifle.lr300",
+                "Amount": 1,
+                "SkinID (0 - default)": 0,
+                "Mods": [
+                  "weapon.mod.flashlight",
+                  "weapon.mod.holosight"
+                ],
+                "Ammo": ""
+              },
+              {
+                "ShortName": "syringe.medical",
+                "Amount": 5,
+                "SkinID (0 - default)": 0,
+                "Mods": [],
+                "Ammo": ""
+              },
+              {
+                "ShortName": "grenade.f1",
+                "Amount": 1,
+                "SkinID (0 - default)": 0,
+                "Mods": [],
+                "Ammo": ""
+              }
+            ],
+            "Kit (it is recommended to use the previous 2 settings to improve performance)": ""
+          },
+          "Which loot table should the plugin use? (0 - default; 1 - own; 2 - AlphaLoot; 3 - CustomLoot; 4 - loot table of the Rust objects; 5 - combine the 1 and 4 methods)": 5,
+          "Loot table from prefabs (if the loot table type is 4 or 5)": {
+            "Minimum numbers of prefabs": 1,
+            "Maximum numbers of prefabs": 1,
+            "Use minimum and maximum values? [true/false]": true,
+            "List of prefabs": [
+              {
+                "Chance [0.0-100.0]": 100.0,
+                "The path to the prefab": "assets/rust.ai/agents/npcplayer/humannpc/scientist/scientistnpc_oilrig.prefab"
+              }
+            ]
+          },
+          "Own loot table (if the loot table type is 1 or 5)": {
+            "Minimum numbers of items": 1,
+            "Maximum numbers of items": 1,
+            "Use minimum and maximum values? [true/false]": true,
+            "List of items": [
+              {
+                "ShortName": "scrap",
+                "Minimum": 5,
+                "Maximum": 10,
+                "Chance [0.0-100.0]": 50.0,
+                "Is this a blueprint? [true/false]": false,
+                "SkinID (0 - default)": 0,
+                "Name (empty - default)": ""
+              },
+              {
+                "ShortName": "syringe.medical",
+                "Minimum": 1,
+                "Maximum": 2,
+                "Chance [0.0-100.0]": 70.0,
+                "Is this a blueprint? [true/false]": false,
+                "SkinID (0 - default)": 0,
+                "Name (empty - default)": ""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "Position of doors (not edited)": [
+        "(0, 3, -7.5)",
+        "(0, 3, 28.5)"
+      ],
+      "NPCs setting": [
+        {
+          "Minimum": 6,
+          "Maximum": 6,
+          "List of locations": [
+            "(-2.9, 3.1, -6.1)",
+            "(-2.7, 3.1, 11.4)",
+            "(2.7, 3.1, 12.3)",
+            "(-1.2, 3.1, 16.9)",
+            "(-1.3, 3.1, 22.5)",
+            "(3.0, 3.1, 27.2)"
+          ],
+          "NPCs setting": {
+            "Name": "Mariner",
+            "Health": 125.0,
+            "Attack Range Multiplier": 1.0,
+            "Sense Range": 30.0,
+            "Target Memory Duration [sec.]": 20.0,
+            "Scale damage": 1.35,
+            "Aim Cone Scale": 1.0,
+            "Detect the target only in the NPC's viewing vision cone? [true/false]": false,
+            "Vision Cone": 135.0,
+            "Disable radio effects? [true/false]": true,
+            "Remove a corpse after death? (it is recommended to use the true value to improve performance) [true/false]": true,
+            "Wear items": [
+              {
+                "ShortName": "metal.facemask",
+                "SkinID (0 - default)": 2296503845
+              },
+              {
+                "ShortName": "hoodie",
+                "SkinID (0 - default)": 2304560839
+              },
+              {
+                "ShortName": "pants",
+                "SkinID (0 - default)": 2304559261
+              },
+              {
+                "ShortName": "shoes.boots",
+                "SkinID (0 - default)": 0
+              }
+            ],
+            "Belt items": [
+              {
+                "ShortName": "rifle.lr300",
+                "Amount": 1,
+                "SkinID (0 - default)": 0,
+                "Mods": [
+                  "weapon.mod.flashlight",
+                  "weapon.mod.holosight"
+                ],
+                "Ammo": ""
+              },
+              {
+                "ShortName": "syringe.medical",
+                "Amount": 5,
+                "SkinID (0 - default)": 0,
+                "Mods": [],
+                "Ammo": ""
+              },
+              {
+                "ShortName": "grenade.f1",
+                "Amount": 1,
+                "SkinID (0 - default)": 0,
+                "Mods": [],
+                "Ammo": ""
+              }
+            ],
+            "Kit (it is recommended to use the previous 2 settings to improve performance)": ""
+          },
+          "Which loot table should the plugin use? (0 - default; 1 - own; 2 - AlphaLoot; 3 - CustomLoot; 4 - loot table of the Rust objects; 5 - combine the 1 and 4 methods)": 5,
+          "Loot table from prefabs (if the loot table type is 4 or 5)": {
+            "Minimum numbers of prefabs": 1,
+            "Maximum numbers of prefabs": 1,
+            "Use minimum and maximum values? [true/false]": true,
+            "List of prefabs": [
+              {
+                "Chance [0.0-100.0]": 100.0,
+                "The path to the prefab": "assets/rust.ai/agents/npcplayer/humannpc/scientist/scientistnpc_oilrig.prefab"
+              }
+            ]
+          },
+          "Own loot table (if the loot table type is 1 or 5)": {
+            "Minimum numbers of items": 1,
+            "Maximum numbers of items": 1,
+            "Use minimum and maximum values? [true/false]": true,
+            "List of items": [
+              {
+                "ShortName": "scrap",
+                "Minimum": 5,
+                "Maximum": 10,
+                "Chance [0.0-100.0]": 50.0,
+                "Is this a blueprint? [true/false]": false,
+                "SkinID (0 - default)": 0,
+                "Name (empty - default)": ""
+              },
+              {
+                "ShortName": "syringe.medical",
+                "Minimum": 1,
+                "Maximum": 2,
+                "Chance [0.0-100.0]": 70.0,
+                "Is this a blueprint? [true/false]": false,
+                "SkinID (0 - default)": 0,
+                "Name (empty - default)": ""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "Position of doors (not edited)": [
+        "(-1.5, 3, 0)",
+        "(-1.5, 3, 3)"
+      ],
+      "NPCs setting": [
+        {
+          "Minimum": 3,
+          "Maximum": 3,
+          "List of locations": [
+            "(1.8, 3.1, -1.8)",
+            "(1.9, 3.1, 3.2)",
+            "(1.5, 3.1, 7.8)"
+          ],
+          "NPCs setting": {
+            "Name": "Mariner",
+            "Health": 125.0,
+            "Attack Range Multiplier": 1.0,
+            "Sense Range": 30.0,
+            "Target Memory Duration [sec.]": 20.0,
+            "Scale damage": 1.35,
+            "Aim Cone Scale": 1.0,
+            "Detect the target only in the NPC's viewing vision cone? [true/false]": false,
+            "Vision Cone": 135.0,
+            "Disable radio effects? [true/false]": true,
+            "Remove a corpse after death? (it is recommended to use the true value to improve performance) [true/false]": true,
+            "Wear items": [
+              {
+                "ShortName": "metal.facemask",
+                "SkinID (0 - default)": 2296503845
+              },
+              {
+                "ShortName": "hoodie",
+                "SkinID (0 - default)": 2304560839
+              },
+              {
+                "ShortName": "pants",
+                "SkinID (0 - default)": 2304559261
+              },
+              {
+                "ShortName": "shoes.boots",
+                "SkinID (0 - default)": 0
+              }
+            ],
+            "Belt items": [
+              {
+                "ShortName": "rifle.lr300",
+                "Amount": 1,
+                "SkinID (0 - default)": 0,
+                "Mods": [
+                  "weapon.mod.flashlight",
+                  "weapon.mod.holosight"
+                ],
+                "Ammo": ""
+              },
+              {
+                "ShortName": "syringe.medical",
+                "Amount": 5,
+                "SkinID (0 - default)": 0,
+                "Mods": [],
+                "Ammo": ""
+              },
+              {
+                "ShortName": "grenade.f1",
+                "Amount": 1,
+                "SkinID (0 - default)": 0,
+                "Mods": [],
+                "Ammo": ""
+              }
+            ],
+            "Kit (it is recommended to use the previous 2 settings to improve performance)": ""
+          },
+          "Which loot table should the plugin use? (0 - default; 1 - own; 2 - AlphaLoot; 3 - CustomLoot; 4 - loot table of the Rust objects; 5 - combine the 1 and 4 methods)": 5,
+          "Loot table from prefabs (if the loot table type is 4 or 5)": {
+            "Minimum numbers of prefabs": 1,
+            "Maximum numbers of prefabs": 1,
+            "Use minimum and maximum values? [true/false]": true,
+            "List of prefabs": [
+              {
+                "Chance [0.0-100.0]": 100.0,
+                "The path to the prefab": "assets/rust.ai/agents/npcplayer/humannpc/scientist/scientistnpc_oilrig.prefab"
+              }
+            ]
+          },
+          "Own loot table (if the loot table type is 1 or 5)": {
+            "Minimum numbers of items": 1,
+            "Maximum numbers of items": 1,
+            "Use minimum and maximum values? [true/false]": true,
+            "List of items": [
+              {
+                "ShortName": "scrap",
+                "Minimum": 5,
+                "Maximum": 10,
+                "Chance [0.0-100.0]": 50.0,
+                "Is this a blueprint? [true/false]": false,
+                "SkinID (0 - default)": 0,
+                "Name (empty - default)": ""
+              },
+              {
+                "ShortName": "syringe.medical",
+                "Minimum": 1,
+                "Maximum": 2,
+                "Chance [0.0-100.0]": 70.0,
+                "Is this a blueprint? [true/false]": false,
+                "SkinID (0 - default)": 0,
+                "Name (empty - default)": ""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "Position of doors (not edited)": [
+        "(0, 3, 28.5)",
+        "(0, 3, 37.5)",
+        "(0, 3, 31.5)"
+      ],
+      "NPCs setting": [
+        {
+          "Minimum": 2,
+          "Maximum": 2,
+          "List of locations": [
+            "(2.9, 3.1, 30.3)",
+            "(-3.3, 3.1, 34.5)"
+          ],
+          "NPCs setting": {
+            "Name": "Mariner",
+            "Health": 125.0,
+            "Attack Range Multiplier": 1.0,
+            "Sense Range": 30.0,
+            "Target Memory Duration [sec.]": 20.0,
+            "Scale damage": 1.35,
+            "Aim Cone Scale": 1.0,
+            "Detect the target only in the NPC's viewing vision cone? [true/false]": false,
+            "Vision Cone": 135.0,
+            "Disable radio effects? [true/false]": true,
+            "Remove a corpse after death? (it is recommended to use the true value to improve performance) [true/false]": true,
+            "Wear items": [
+              {
+                "ShortName": "metal.facemask",
+                "SkinID (0 - default)": 2296503845
+              },
+              {
+                "ShortName": "hoodie",
+                "SkinID (0 - default)": 2304560839
+              },
+              {
+                "ShortName": "pants",
+                "SkinID (0 - default)": 2304559261
+              },
+              {
+                "ShortName": "shoes.boots",
+                "SkinID (0 - default)": 0
+              }
+            ],
+            "Belt items": [
+              {
+                "ShortName": "rifle.lr300",
+                "Amount": 1,
+                "SkinID (0 - default)": 0,
+                "Mods": [
+                  "weapon.mod.flashlight",
+                  "weapon.mod.holosight"
+                ],
+                "Ammo": ""
+              },
+              {
+                "ShortName": "syringe.medical",
+                "Amount": 5,
+                "SkinID (0 - default)": 0,
+                "Mods": [],
+                "Ammo": ""
+              },
+              {
+                "ShortName": "grenade.f1",
+                "Amount": 1,
+                "SkinID (0 - default)": 0,
+                "Mods": [],
+                "Ammo": ""
+              }
+            ],
+            "Kit (it is recommended to use the previous 2 settings to improve performance)": ""
+          },
+          "Which loot table should the plugin use? (0 - default; 1 - own; 2 - AlphaLoot; 3 - CustomLoot; 4 - loot table of the Rust objects; 5 - combine the 1 and 4 methods)": 5,
+          "Loot table from prefabs (if the loot table type is 4 or 5)": {
+            "Minimum numbers of prefabs": 1,
+            "Maximum numbers of prefabs": 1,
+            "Use minimum and maximum values? [true/false]": true,
+            "List of prefabs": [
+              {
+                "Chance [0.0-100.0]": 100.0,
+                "The path to the prefab": "assets/rust.ai/agents/npcplayer/humannpc/scientist/scientistnpc_oilrig.prefab"
+              }
+            ]
+          },
+          "Own loot table (if the loot table type is 1 or 5)": {
+            "Minimum numbers of items": 1,
+            "Maximum numbers of items": 1,
+            "Use minimum and maximum values? [true/false]": true,
+            "List of items": [
+              {
+                "ShortName": "scrap",
+                "Minimum": 5,
+                "Maximum": 10,
+                "Chance [0.0-100.0]": 50.0,
+                "Is this a blueprint? [true/false]": false,
+                "SkinID (0 - default)": 0,
+                "Name (empty - default)": ""
+              },
+              {
+                "ShortName": "syringe.medical",
+                "Minimum": 1,
+                "Maximum": 2,
+                "Chance [0.0-100.0]": 70.0,
+                "Is this a blueprint? [true/false]": false,
+                "SkinID (0 - default)": 0,
+                "Name (empty - default)": ""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "Position of doors (not edited)": [
+        "(0, 3, 37.5)",
+        "(1.5, 3, 39)",
+        "(-1.5, 3, 39)"
+      ],
+      "NPCs setting": [
+        {
+          "Minimum": 1,
+          "Maximum": 1,
+          "List of locations": [
+            "(0.0, 3.1, 39.0)"
+          ],
+          "NPCs setting": {
+            "Name": "Mariner",
+            "Health": 125.0,
+            "Attack Range Multiplier": 1.0,
+            "Sense Range": 30.0,
+            "Target Memory Duration [sec.]": 20.0,
+            "Scale damage": 1.35,
+            "Aim Cone Scale": 1.0,
+            "Detect the target only in the NPC's viewing vision cone? [true/false]": false,
+            "Vision Cone": 135.0,
+            "Disable radio effects? [true/false]": true,
+            "Remove a corpse after death? (it is recommended to use the true value to improve performance) [true/false]": true,
+            "Wear items": [
+              {
+                "ShortName": "metal.facemask",
+                "SkinID (0 - default)": 2296503845
+              },
+              {
+                "ShortName": "hoodie",
+                "SkinID (0 - default)": 2304560839
+              },
+              {
+                "ShortName": "pants",
+                "SkinID (0 - default)": 2304559261
+              },
+              {
+                "ShortName": "shoes.boots",
+                "SkinID (0 - default)": 0
+              }
+            ],
+            "Belt items": [
+              {
+                "ShortName": "rifle.lr300",
+                "Amount": 1,
+                "SkinID (0 - default)": 0,
+                "Mods": [
+                  "weapon.mod.flashlight",
+                  "weapon.mod.holosight"
+                ],
+                "Ammo": ""
+              },
+              {
+                "ShortName": "syringe.medical",
+                "Amount": 5,
+                "SkinID (0 - default)": 0,
+                "Mods": [],
+                "Ammo": ""
+              },
+              {
+                "ShortName": "grenade.f1",
+                "Amount": 1,
+                "SkinID (0 - default)": 0,
+                "Mods": [],
+                "Ammo": ""
+              }
+            ],
+            "Kit (it is recommended to use the previous 2 settings to improve performance)": ""
+          },
+          "Which loot table should the plugin use? (0 - default; 1 - own; 2 - AlphaLoot; 3 - CustomLoot; 4 - loot table of the Rust objects; 5 - combine the 1 and 4 methods)": 5,
+          "Loot table from prefabs (if the loot table type is 4 or 5)": {
+            "Minimum numbers of prefabs": 1,
+            "Maximum numbers of prefabs": 1,
+            "Use minimum and maximum values? [true/false]": true,
+            "List of prefabs": [
+              {
+                "Chance [0.0-100.0]": 100.0,
+                "The path to the prefab": "assets/rust.ai/agents/npcplayer/humannpc/scientist/scientistnpc_oilrig.prefab"
+              }
+            ]
+          },
+          "Own loot table (if the loot table type is 1 or 5)": {
+            "Minimum numbers of items": 1,
+            "Maximum numbers of items": 1,
+            "Use minimum and maximum values? [true/false]": true,
+            "List of items": [
+              {
+                "ShortName": "scrap",
+                "Minimum": 5,
+                "Maximum": 10,
+                "Chance [0.0-100.0]": 50.0,
+                "Is this a blueprint? [true/false]": false,
+                "SkinID (0 - default)": 0,
+                "Name (empty - default)": ""
+              },
+              {
+                "ShortName": "syringe.medical",
+                "Minimum": 1,
+                "Maximum": 2,
+                "Chance [0.0-100.0]": 70.0,
+                "Is this a blueprint? [true/false]": false,
+                "SkinID (0 - default)": 0,
+                "Name (empty - default)": ""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "Position of doors (not edited)": [
+        "(-1.5, 3, 39)",
+        "(-6.568, 5.511, 37.541)"
+      ],
+      "NPCs setting": [
+        {
+          "Minimum": 1,
+          "Maximum": 1,
+          "List of locations": [
+            "(-3.0, 3.1, 39.4)"
+          ],
+          "NPCs setting": {
+            "Name": "Mariner",
+            "Health": 125.0,
+            "Attack Range Multiplier": 1.0,
+            "Sense Range": 30.0,
+            "Target Memory Duration [sec.]": 20.0,
+            "Scale damage": 1.35,
+            "Aim Cone Scale": 1.0,
+            "Detect the target only in the NPC's viewing vision cone? [true/false]": false,
+            "Vision Cone": 135.0,
+            "Disable radio effects? [true/false]": true,
+            "Remove a corpse after death? (it is recommended to use the true value to improve performance) [true/false]": true,
+            "Wear items": [
+              {
+                "ShortName": "metal.facemask",
+                "SkinID (0 - default)": 2296503845
+              },
+              {
+                "ShortName": "hoodie",
+                "SkinID (0 - default)": 2304560839
+              },
+              {
+                "ShortName": "pants",
+                "SkinID (0 - default)": 2304559261
+              },
+              {
+                "ShortName": "shoes.boots",
+                "SkinID (0 - default)": 0
+              }
+            ],
+            "Belt items": [
+              {
+                "ShortName": "rifle.lr300",
+                "Amount": 1,
+                "SkinID (0 - default)": 0,
+                "Mods": [
+                  "weapon.mod.flashlight",
+                  "weapon.mod.holosight"
+                ],
+                "Ammo": ""
+              },
+              {
+                "ShortName": "syringe.medical",
+                "Amount": 5,
+                "SkinID (0 - default)": 0,
+                "Mods": [],
+                "Ammo": ""
+              },
+              {
+                "ShortName": "grenade.f1",
+                "Amount": 1,
+                "SkinID (0 - default)": 0,
+                "Mods": [],
+                "Ammo": ""
+              }
+            ],
+            "Kit (it is recommended to use the previous 2 settings to improve performance)": ""
+          },
+          "Which loot table should the plugin use? (0 - default; 1 - own; 2 - AlphaLoot; 3 - CustomLoot; 4 - loot table of the Rust objects; 5 - combine the 1 and 4 methods)": 5,
+          "Loot table from prefabs (if the loot table type is 4 or 5)": {
+            "Minimum numbers of prefabs": 1,
+            "Maximum numbers of prefabs": 1,
+            "Use minimum and maximum values? [true/false]": true,
+            "List of prefabs": [
+              {
+                "Chance [0.0-100.0]": 100.0,
+                "The path to the prefab": "assets/rust.ai/agents/npcplayer/humannpc/scientist/scientistnpc_oilrig.prefab"
+              }
+            ]
+          },
+          "Own loot table (if the loot table type is 1 or 5)": {
+            "Minimum numbers of items": 1,
+            "Maximum numbers of items": 1,
+            "Use minimum and maximum values? [true/false]": true,
+            "List of items": [
+              {
+                "ShortName": "scrap",
+                "Minimum": 5,
+                "Maximum": 10,
+                "Chance [0.0-100.0]": 50.0,
+                "Is this a blueprint? [true/false]": false,
+                "SkinID (0 - default)": 0,
+                "Name (empty - default)": ""
+              },
+              {
+                "ShortName": "syringe.medical",
+                "Minimum": 1,
+                "Maximum": 2,
+                "Chance [0.0-100.0]": 70.0,
+                "Is this a blueprint? [true/false]": false,
+                "SkinID (0 - default)": 0,
+                "Name (empty - default)": ""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "Position of doors (not edited)": [
+        "(1.5, 3, 39)",
+        "(6.568, 5.511, 37.5)"
+      ],
+      "NPCs setting": [
+        {
+          "Minimum": 1,
+          "Maximum": 1,
+          "List of locations": [
+            "(3.4, 3.1, 39.2)"
+          ],
+          "NPCs setting": {
+            "Name": "Mariner",
+            "Health": 125.0,
+            "Attack Range Multiplier": 1.0,
+            "Sense Range": 30.0,
+            "Target Memory Duration [sec.]": 20.0,
+            "Scale damage": 1.35,
+            "Aim Cone Scale": 1.0,
+            "Detect the target only in the NPC's viewing vision cone? [true/false]": false,
+            "Vision Cone": 135.0,
+            "Disable radio effects? [true/false]": true,
+            "Remove a corpse after death? (it is recommended to use the true value to improve performance) [true/false]": true,
+            "Wear items": [
+              {
+                "ShortName": "metal.facemask",
+                "SkinID (0 - default)": 2296503845
+              },
+              {
+                "ShortName": "hoodie",
+                "SkinID (0 - default)": 2304560839
+              },
+              {
+                "ShortName": "pants",
+                "SkinID (0 - default)": 2304559261
+              },
+              {
+                "ShortName": "shoes.boots",
+                "SkinID (0 - default)": 0
+              }
+            ],
+            "Belt items": [
+              {
+                "ShortName": "rifle.lr300",
+                "Amount": 1,
+                "SkinID (0 - default)": 0,
+                "Mods": [
+                  "weapon.mod.flashlight",
+                  "weapon.mod.holosight"
+                ],
+                "Ammo": ""
+              },
+              {
+                "ShortName": "syringe.medical",
+                "Amount": 5,
+                "SkinID (0 - default)": 0,
+                "Mods": [],
+                "Ammo": ""
+              },
+              {
+                "ShortName": "grenade.f1",
+                "Amount": 1,
+                "SkinID (0 - default)": 0,
+                "Mods": [],
+                "Ammo": ""
+              }
+            ],
+            "Kit (it is recommended to use the previous 2 settings to improve performance)": ""
+          },
+          "Which loot table should the plugin use? (0 - default; 1 - own; 2 - AlphaLoot; 3 - CustomLoot; 4 - loot table of the Rust objects; 5 - combine the 1 and 4 methods)": 5,
+          "Loot table from prefabs (if the loot table type is 4 or 5)": {
+            "Minimum numbers of prefabs": 1,
+            "Maximum numbers of prefabs": 1,
+            "Use minimum and maximum values? [true/false]": true,
+            "List of prefabs": [
+              {
+                "Chance [0.0-100.0]": 100.0,
+                "The path to the prefab": "assets/rust.ai/agents/npcplayer/humannpc/scientist/scientistnpc_oilrig.prefab"
+              }
+            ]
+          },
+          "Own loot table (if the loot table type is 1 or 5)": {
+            "Minimum numbers of items": 1,
+            "Maximum numbers of items": 1,
+            "Use minimum and maximum values? [true/false]": true,
+            "List of items": [
+              {
+                "ShortName": "scrap",
+                "Minimum": 5,
+                "Maximum": 10,
+                "Chance [0.0-100.0]": 50.0,
+                "Is this a blueprint? [true/false]": false,
+                "SkinID (0 - default)": 0,
+                "Name (empty - default)": ""
+              },
+              {
+                "ShortName": "syringe.medical",
+                "Minimum": 1,
+                "Maximum": 2,
+                "Chance [0.0-100.0]": 70.0,
+                "Is this a blueprint? [true/false]": false,
+                "SkinID (0 - default)": 0,
+                "Name (empty - default)": ""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "Position of doors (not edited)": [
+        "(-3, 0, -16.5)",
+        "(0, 0, -16.5)",
+        "(3, 0, -16.5)",
+        "(0, 0, -10.5)",
+        "(6, 0, -7.5)",
+        "(0, 0, -7.5)"
+      ],
+      "NPCs setting": [
+        {
+          "Minimum": 4,
+          "Maximum": 4,
+          "List of locations": [
+            "(-5.6, 0.1, -14.7)",
+            "(5.7, 0.1, -14.4)",
+            "(-5.5, 0.1, -9.5)",
+            "(5.6, 0.1, -9.5)"
+          ],
+          "NPCs setting": {
+            "Name": "Mariner",
+            "Health": 125.0,
+            "Attack Range Multiplier": 1.0,
+            "Sense Range": 30.0,
+            "Target Memory Duration [sec.]": 20.0,
+            "Scale damage": 1.35,
+            "Aim Cone Scale": 1.0,
+            "Detect the target only in the NPC's viewing vision cone? [true/false]": false,
+            "Vision Cone": 135.0,
+            "Disable radio effects? [true/false]": true,
+            "Remove a corpse after death? (it is recommended to use the true value to improve performance) [true/false]": true,
+            "Wear items": [
+              {
+                "ShortName": "metal.facemask",
+                "SkinID (0 - default)": 2296503845
+              },
+              {
+                "ShortName": "hoodie",
+                "SkinID (0 - default)": 2304560839
+              },
+              {
+                "ShortName": "pants",
+                "SkinID (0 - default)": 2304559261
+              },
+              {
+                "ShortName": "shoes.boots",
+                "SkinID (0 - default)": 0
+              }
+            ],
+            "Belt items": [
+              {
+                "ShortName": "rifle.lr300",
+                "Amount": 1,
+                "SkinID (0 - default)": 0,
+                "Mods": [
+                  "weapon.mod.flashlight",
+                  "weapon.mod.holosight"
+                ],
+                "Ammo": ""
+              },
+              {
+                "ShortName": "syringe.medical",
+                "Amount": 5,
+                "SkinID (0 - default)": 0,
+                "Mods": [],
+                "Ammo": ""
+              },
+              {
+                "ShortName": "grenade.f1",
+                "Amount": 1,
+                "SkinID (0 - default)": 0,
+                "Mods": [],
+                "Ammo": ""
+              }
+            ],
+            "Kit (it is recommended to use the previous 2 settings to improve performance)": ""
+          },
+          "Which loot table should the plugin use? (0 - default; 1 - own; 2 - AlphaLoot; 3 - CustomLoot; 4 - loot table of the Rust objects; 5 - combine the 1 and 4 methods)": 5,
+          "Loot table from prefabs (if the loot table type is 4 or 5)": {
+            "Minimum numbers of prefabs": 1,
+            "Maximum numbers of prefabs": 1,
+            "Use minimum and maximum values? [true/false]": true,
+            "List of prefabs": [
+              {
+                "Chance [0.0-100.0]": 100.0,
+                "The path to the prefab": "assets/rust.ai/agents/npcplayer/humannpc/scientist/scientistnpc_oilrig.prefab"
+              }
+            ]
+          },
+          "Own loot table (if the loot table type is 1 or 5)": {
+            "Minimum numbers of items": 1,
+            "Maximum numbers of items": 1,
+            "Use minimum and maximum values? [true/false]": true,
+            "List of items": [
+              {
+                "ShortName": "scrap",
+                "Minimum": 5,
+                "Maximum": 10,
+                "Chance [0.0-100.0]": 50.0,
+                "Is this a blueprint? [true/false]": false,
+                "SkinID (0 - default)": 0,
+                "Name (empty - default)": ""
+              },
+              {
+                "ShortName": "syringe.medical",
+                "Minimum": 1,
+                "Maximum": 2,
+                "Chance [0.0-100.0]": 70.0,
+                "Is this a blueprint? [true/false]": false,
+                "SkinID (0 - default)": 0,
+                "Name (empty - default)": ""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "Position of doors (not edited)": [
+        "(0, 0, -7.5)",
+        "(0, 0, 1.5)",
+        "(4.5, 0, -3)"
+      ],
+      "NPCs setting": [
+        {
+          "Minimum": 2,
+          "Maximum": 2,
+          "List of locations": [
+            "(-4.0, 0.1, -3.0)",
+            "(0.1, 0.1, -2.6)"
+          ],
+          "NPCs setting": {
+            "Name": "Mariner",
+            "Health": 125.0,
+            "Attack Range Multiplier": 1.0,
+            "Sense Range": 30.0,
+            "Target Memory Duration [sec.]": 20.0,
+            "Scale damage": 1.35,
+            "Aim Cone Scale": 1.0,
+            "Detect the target only in the NPC's viewing vision cone? [true/false]": false,
+            "Vision Cone": 135.0,
+            "Disable radio effects? [true/false]": true,
+            "Remove a corpse after death? (it is recommended to use the true value to improve performance) [true/false]": true,
+            "Wear items": [
+              {
+                "ShortName": "metal.facemask",
+                "SkinID (0 - default)": 2296503845
+              },
+              {
+                "ShortName": "hoodie",
+                "SkinID (0 - default)": 2304560839
+              },
+              {
+                "ShortName": "pants",
+                "SkinID (0 - default)": 2304559261
+              },
+              {
+                "ShortName": "shoes.boots",
+                "SkinID (0 - default)": 0
+              }
+            ],
+            "Belt items": [
+              {
+                "ShortName": "rifle.lr300",
+                "Amount": 1,
+                "SkinID (0 - default)": 0,
+                "Mods": [
+                  "weapon.mod.flashlight",
+                  "weapon.mod.holosight"
+                ],
+                "Ammo": ""
+              },
+              {
+                "ShortName": "syringe.medical",
+                "Amount": 5,
+                "SkinID (0 - default)": 0,
+                "Mods": [],
+                "Ammo": ""
+              },
+              {
+                "ShortName": "grenade.f1",
+                "Amount": 1,
+                "SkinID (0 - default)": 0,
+                "Mods": [],
+                "Ammo": ""
+              }
+            ],
+            "Kit (it is recommended to use the previous 2 settings to improve performance)": ""
+          },
+          "Which loot table should the plugin use? (0 - default; 1 - own; 2 - AlphaLoot; 3 - CustomLoot; 4 - loot table of the Rust objects; 5 - combine the 1 and 4 methods)": 5,
+          "Loot table from prefabs (if the loot table type is 4 or 5)": {
+            "Minimum numbers of prefabs": 1,
+            "Maximum numbers of prefabs": 1,
+            "Use minimum and maximum values? [true/false]": true,
+            "List of prefabs": [
+              {
+                "Chance [0.0-100.0]": 100.0,
+                "The path to the prefab": "assets/rust.ai/agents/npcplayer/humannpc/scientist/scientistnpc_oilrig.prefab"
+              }
+            ]
+          },
+          "Own loot table (if the loot table type is 1 or 5)": {
+            "Minimum numbers of items": 1,
+            "Maximum numbers of items": 1,
+            "Use minimum and maximum values? [true/false]": true,
+            "List of items": [
+              {
+                "ShortName": "scrap",
+                "Minimum": 5,
+                "Maximum": 10,
+                "Chance [0.0-100.0]": 50.0,
+                "Is this a blueprint? [true/false]": false,
+                "SkinID (0 - default)": 0,
+                "Name (empty - default)": ""
+              },
+              {
+                "ShortName": "syringe.medical",
+                "Minimum": 1,
+                "Maximum": 2,
+                "Chance [0.0-100.0]": 70.0,
+                "Is this a blueprint? [true/false]": false,
+                "SkinID (0 - default)": 0,
+                "Name (empty - default)": ""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "Position of doors (not edited)": [
+        "(6, 0, -7.5)",
+        "(0, 0, 1.5)",
+        "(4.5, 0, -3)",
+        "(-3, 0, 4.5)"
+      ],
+      "NPCs setting": [
+        {
+          "Minimum": 2,
+          "Maximum": 2,
+          "List of locations": [
+            "(6.0, 0.1, -3.9)",
+            "(5.9, 0.1, 2.6)"
+          ],
+          "NPCs setting": {
+            "Name": "Mariner",
+            "Health": 125.0,
+            "Attack Range Multiplier": 1.0,
+            "Sense Range": 30.0,
+            "Target Memory Duration [sec.]": 20.0,
+            "Scale damage": 1.35,
+            "Aim Cone Scale": 1.0,
+            "Detect the target only in the NPC's viewing vision cone? [true/false]": false,
+            "Vision Cone": 135.0,
+            "Disable radio effects? [true/false]": true,
+            "Remove a corpse after death? (it is recommended to use the true value to improve performance) [true/false]": true,
+            "Wear items": [
+              {
+                "ShortName": "metal.facemask",
+                "SkinID (0 - default)": 2296503845
+              },
+              {
+                "ShortName": "hoodie",
+                "SkinID (0 - default)": 2304560839
+              },
+              {
+                "ShortName": "pants",
+                "SkinID (0 - default)": 2304559261
+              },
+              {
+                "ShortName": "shoes.boots",
+                "SkinID (0 - default)": 0
+              }
+            ],
+            "Belt items": [
+              {
+                "ShortName": "rifle.lr300",
+                "Amount": 1,
+                "SkinID (0 - default)": 0,
+                "Mods": [
+                  "weapon.mod.flashlight",
+                  "weapon.mod.holosight"
+                ],
+                "Ammo": ""
+              },
+              {
+                "ShortName": "syringe.medical",
+                "Amount": 5,
+                "SkinID (0 - default)": 0,
+                "Mods": [],
+                "Ammo": ""
+              },
+              {
+                "ShortName": "grenade.f1",
+                "Amount": 1,
+                "SkinID (0 - default)": 0,
+                "Mods": [],
+                "Ammo": ""
+              }
+            ],
+            "Kit (it is recommended to use the previous 2 settings to improve performance)": ""
+          },
+          "Which loot table should the plugin use? (0 - default; 1 - own; 2 - AlphaLoot; 3 - CustomLoot; 4 - loot table of the Rust objects; 5 - combine the 1 and 4 methods)": 5,
+          "Loot table from prefabs (if the loot table type is 4 or 5)": {
+            "Minimum numbers of prefabs": 1,
+            "Maximum numbers of prefabs": 1,
+            "Use minimum and maximum values? [true/false]": true,
+            "List of prefabs": [
+              {
+                "Chance [0.0-100.0]": 100.0,
+                "The path to the prefab": "assets/rust.ai/agents/npcplayer/humannpc/scientist/scientistnpc_oilrig.prefab"
+              }
+            ]
+          },
+          "Own loot table (if the loot table type is 1 or 5)": {
+            "Minimum numbers of items": 1,
+            "Maximum numbers of items": 1,
+            "Use minimum and maximum values? [true/false]": true,
+            "List of items": [
+              {
+                "ShortName": "scrap",
+                "Minimum": 5,
+                "Maximum": 10,
+                "Chance [0.0-100.0]": 50.0,
+                "Is this a blueprint? [true/false]": false,
+                "SkinID (0 - default)": 0,
+                "Name (empty - default)": ""
+              },
+              {
+                "ShortName": "syringe.medical",
+                "Minimum": 1,
+                "Maximum": 2,
+                "Chance [0.0-100.0]": 70.0,
+                "Is this a blueprint? [true/false]": false,
+                "SkinID (0 - default)": 0,
+                "Name (empty - default)": ""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "Position of doors (not edited)": [
+        "(-3, 0, 4.5)",
+        "(-3, 0, 28.5)"
+      ],
+      "NPCs setting": [
+        {
+          "Minimum": 5,
+          "Maximum": 5,
+          "List of locations": [
+            "(-5.3, 0.1, 5.9)",
+            "(2.9, 0.1, 9.1)",
+            "(6.7, 0.1, 15.0)",
+            "(-6.1, 0.1, 25.6)",
+            "(3.0, 0.1, 27.0)"
+          ],
+          "NPCs setting": {
+            "Name": "Mariner",
+            "Health": 125.0,
+            "Attack Range Multiplier": 1.0,
+            "Sense Range": 30.0,
+            "Target Memory Duration [sec.]": 20.0,
+            "Scale damage": 1.35,
+            "Aim Cone Scale": 1.0,
+            "Detect the target only in the NPC's viewing vision cone? [true/false]": false,
+            "Vision Cone": 135.0,
+            "Disable radio effects? [true/false]": true,
+            "Remove a corpse after death? (it is recommended to use the true value to improve performance) [true/false]": true,
+            "Wear items": [
+              {
+                "ShortName": "metal.facemask",
+                "SkinID (0 - default)": 2296503845
+              },
+              {
+                "ShortName": "hoodie",
+                "SkinID (0 - default)": 2304560839
+              },
+              {
+                "ShortName": "pants",
+                "SkinID (0 - default)": 2304559261
+              },
+              {
+                "ShortName": "shoes.boots",
+                "SkinID (0 - default)": 0
+              }
+            ],
+            "Belt items": [
+              {
+                "ShortName": "rifle.lr300",
+                "Amount": 1,
+                "SkinID (0 - default)": 0,
+                "Mods": [
+                  "weapon.mod.flashlight",
+                  "weapon.mod.holosight"
+                ],
+                "Ammo": ""
+              },
+              {
+                "ShortName": "syringe.medical",
+                "Amount": 5,
+                "SkinID (0 - default)": 0,
+                "Mods": [],
+                "Ammo": ""
+              },
+              {
+                "ShortName": "grenade.f1",
+                "Amount": 1,
+                "SkinID (0 - default)": 0,
+                "Mods": [],
+                "Ammo": ""
+              }
+            ],
+            "Kit (it is recommended to use the previous 2 settings to improve performance)": ""
+          },
+          "Which loot table should the plugin use? (0 - default; 1 - own; 2 - AlphaLoot; 3 - CustomLoot; 4 - loot table of the Rust objects; 5 - combine the 1 and 4 methods)": 5,
+          "Loot table from prefabs (if the loot table type is 4 or 5)": {
+            "Minimum numbers of prefabs": 1,
+            "Maximum numbers of prefabs": 1,
+            "Use minimum and maximum values? [true/false]": true,
+            "List of prefabs": [
+              {
+                "Chance [0.0-100.0]": 100.0,
+                "The path to the prefab": "assets/rust.ai/agents/npcplayer/humannpc/scientist/scientistnpc_oilrig.prefab"
+              }
+            ]
+          },
+          "Own loot table (if the loot table type is 1 or 5)": {
+            "Minimum numbers of items": 1,
+            "Maximum numbers of items": 1,
+            "Use minimum and maximum values? [true/false]": true,
+            "List of items": [
+              {
+                "ShortName": "scrap",
+                "Minimum": 5,
+                "Maximum": 10,
+                "Chance [0.0-100.0]": 50.0,
+                "Is this a blueprint? [true/false]": false,
+                "SkinID (0 - default)": 0,
+                "Name (empty - default)": ""
+              },
+              {
+                "ShortName": "syringe.medical",
+                "Minimum": 1,
+                "Maximum": 2,
+                "Chance [0.0-100.0]": 70.0,
+                "Is this a blueprint? [true/false]": false,
+                "SkinID (0 - default)": 0,
+                "Name (empty - default)": ""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "Position of doors (not edited)": [
+        "(-3, 0, 28.5)",
+        "(0, 0, 31.5)",
+        "(-3, 0, 37.5)",
+        "(0, 0, 37.5)"
+      ],
+      "NPCs setting": [
+        {
+          "Minimum": 3,
+          "Maximum": 3,
+          "List of locations": [
+            "(5.5, 0.1, 31.1)",
+            "(3.8, 0.1, 35.4)",
+            "(-2.7, 0.1, 35.5)"
+          ],
+          "NPCs setting": {
+            "Name": "Mariner",
+            "Health": 125.0,
+            "Attack Range Multiplier": 1.0,
+            "Sense Range": 30.0,
+            "Target Memory Duration [sec.]": 20.0,
+            "Scale damage": 1.35,
+            "Aim Cone Scale": 1.0,
+            "Detect the target only in the NPC's viewing vision cone? [true/false]": false,
+            "Vision Cone": 135.0,
+            "Disable radio effects? [true/false]": true,
+            "Remove a corpse after death? (it is recommended to use the true value to improve performance) [true/false]": true,
+            "Wear items": [
+              {
+                "ShortName": "metal.facemask",
+                "SkinID (0 - default)": 2296503845
+              },
+              {
+                "ShortName": "hoodie",
+                "SkinID (0 - default)": 2304560839
+              },
+              {
+                "ShortName": "pants",
+                "SkinID (0 - default)": 2304559261
+              },
+              {
+                "ShortName": "shoes.boots",
+                "SkinID (0 - default)": 0
+              }
+            ],
+            "Belt items": [
+              {
+                "ShortName": "rifle.lr300",
+                "Amount": 1,
+                "SkinID (0 - default)": 0,
+                "Mods": [
+                  "weapon.mod.flashlight",
+                  "weapon.mod.holosight"
+                ],
+                "Ammo": ""
+              },
+              {
+                "ShortName": "syringe.medical",
+                "Amount": 5,
+                "SkinID (0 - default)": 0,
+                "Mods": [],
+                "Ammo": ""
+              },
+              {
+                "ShortName": "grenade.f1",
+                "Amount": 1,
+                "SkinID (0 - default)": 0,
+                "Mods": [],
+                "Ammo": ""
+              }
+            ],
+            "Kit (it is recommended to use the previous 2 settings to improve performance)": ""
+          },
+          "Which loot table should the plugin use? (0 - default; 1 - own; 2 - AlphaLoot; 3 - CustomLoot; 4 - loot table of the Rust objects; 5 - combine the 1 and 4 methods)": 5,
+          "Loot table from prefabs (if the loot table type is 4 or 5)": {
+            "Minimum numbers of prefabs": 1,
+            "Maximum numbers of prefabs": 1,
+            "Use minimum and maximum values? [true/false]": true,
+            "List of prefabs": [
+              {
+                "Chance [0.0-100.0]": 100.0,
+                "The path to the prefab": "assets/rust.ai/agents/npcplayer/humannpc/scientist/scientistnpc_oilrig.prefab"
+              }
+            ]
+          },
+          "Own loot table (if the loot table type is 1 or 5)": {
+            "Minimum numbers of items": 1,
+            "Maximum numbers of items": 1,
+            "Use minimum and maximum values? [true/false]": true,
+            "List of items": [
+              {
+                "ShortName": "scrap",
+                "Minimum": 5,
+                "Maximum": 10,
+                "Chance [0.0-100.0]": 50.0,
+                "Is this a blueprint? [true/false]": false,
+                "SkinID (0 - default)": 0,
+                "Name (empty - default)": ""
+              },
+              {
+                "ShortName": "syringe.medical",
+                "Minimum": 1,
+                "Maximum": 2,
+                "Chance [0.0-100.0]": 70.0,
+                "Is this a blueprint? [true/false]": false,
+                "SkinID (0 - default)": 0,
+                "Name (empty - default)": ""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "Position of doors (not edited)": [
+        "(-4.5, 0, 36)"
+      ],
+      "NPCs setting": [
+        {
+          "Minimum": 1,
+          "Maximum": 1,
+          "List of locations": [
+            "(-5.2, 0.1, 30.4)"
+          ],
+          "NPCs setting": {
+            "Name": "Mariner",
+            "Health": 125.0,
+            "Attack Range Multiplier": 1.0,
+            "Sense Range": 30.0,
+            "Target Memory Duration [sec.]": 20.0,
+            "Scale damage": 1.35,
+            "Aim Cone Scale": 1.0,
+            "Detect the target only in the NPC's viewing vision cone? [true/false]": false,
+            "Vision Cone": 135.0,
+            "Disable radio effects? [true/false]": true,
+            "Remove a corpse after death? (it is recommended to use the true value to improve performance) [true/false]": true,
+            "Wear items": [
+              {
+                "ShortName": "metal.facemask",
+                "SkinID (0 - default)": 2296503845
+              },
+              {
+                "ShortName": "hoodie",
+                "SkinID (0 - default)": 2304560839
+              },
+              {
+                "ShortName": "pants",
+                "SkinID (0 - default)": 2304559261
+              },
+              {
+                "ShortName": "shoes.boots",
+                "SkinID (0 - default)": 0
+              }
+            ],
+            "Belt items": [
+              {
+                "ShortName": "rifle.lr300",
+                "Amount": 1,
+                "SkinID (0 - default)": 0,
+                "Mods": [
+                  "weapon.mod.flashlight",
+                  "weapon.mod.holosight"
+                ],
+                "Ammo": ""
+              },
+              {
+                "ShortName": "syringe.medical",
+                "Amount": 5,
+                "SkinID (0 - default)": 0,
+                "Mods": [],
+                "Ammo": ""
+              },
+              {
+                "ShortName": "grenade.f1",
+                "Amount": 1,
+                "SkinID (0 - default)": 0,
+                "Mods": [],
+                "Ammo": ""
+              }
+            ],
+            "Kit (it is recommended to use the previous 2 settings to improve performance)": ""
+          },
+          "Which loot table should the plugin use? (0 - default; 1 - own; 2 - AlphaLoot; 3 - CustomLoot; 4 - loot table of the Rust objects; 5 - combine the 1 and 4 methods)": 5,
+          "Loot table from prefabs (if the loot table type is 4 or 5)": {
+            "Minimum numbers of prefabs": 1,
+            "Maximum numbers of prefabs": 1,
+            "Use minimum and maximum values? [true/false]": true,
+            "List of prefabs": [
+              {
+                "Chance [0.0-100.0]": 100.0,
+                "The path to the prefab": "assets/rust.ai/agents/npcplayer/humannpc/scientist/scientistnpc_oilrig.prefab"
+              }
+            ]
+          },
+          "Own loot table (if the loot table type is 1 or 5)": {
+            "Minimum numbers of items": 1,
+            "Maximum numbers of items": 1,
+            "Use minimum and maximum values? [true/false]": true,
+            "List of items": [
+              {
+                "ShortName": "scrap",
+                "Minimum": 5,
+                "Maximum": 10,
+                "Chance [0.0-100.0]": 50.0,
+                "Is this a blueprint? [true/false]": false,
+                "SkinID (0 - default)": 0,
+                "Name (empty - default)": ""
+              },
+              {
+                "ShortName": "syringe.medical",
+                "Minimum": 1,
+                "Maximum": 2,
+                "Chance [0.0-100.0]": 70.0,
+                "Is this a blueprint? [true/false]": false,
+                "SkinID (0 - default)": 0,
+                "Name (empty - default)": ""
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "Economy setting (total values will be added up and rewarded at the end of the event)": {
+    "Which economy plugins do you want to use? (Economics, Server Rewards, IQEconomic)": [
+      "Economics",
+      "Server Rewards",
+      "IQEconomic"
+    ],
+    "The minimum value that a player must collect to get points for the economy": 0.0,
+    "Looting of crates": {
+      "tech_parts_1": 0.1,
+      "tech_parts_2": 0.1,
+      "crate_ammunition": 0.2,
+      "crate_fuel": 0.1,
+      "crate_tools": 0.1,
+      "crate_underwater_basic": 0.2,
+      "crate_underwater_advanced": 0.3,
+      "crate_medical": 0.1,
+      "crate_elite": 0.4,
+      "crate_food_1": 0.1,
+      "crate_food_2": 0.1,
+      "crate_normal": 0.2,
+      "crate_normal_2": 0.1,
+      "crate_normal_2_food": 0.1,
+      "crate_normal_2_medical": 0.1
+    },
+    "Destruction of doors": {
+      "door.double.hinged.toptier": 0.4,
+      "door.hinged.toptier": 0.4,
+      "wall.frame.cell.gate": 0.2
+    },
+    "Killing an NPC": 0.3,
+    "Hacking a locked crate": 0.5,
+    "Opening a security door with a card": {
+      "blue": 0.4,
+      "red": 0.5
+    },
+    "List of commands that are executed in the console at the end of the event ({steamid} - the player who collected the highest number of points)": []
+  },
+  "Setting the doors damage coefficient": {
+    "torpedostraight": 1.0,
+    "explosive.timed.deployed": 2.0,
+    "explosive.satchel.deployed": 1.0,
+    "rocket_basic": 2.0,
+    "40mm_grenade_he": 1.0,
+    "grenade.f1.deployed": 1.0,
+    "grenade.beancan.deployed": 1.0,
+    "rocket_hv": 1.0,
+    "lr300.entity": 1.0,
+    "m249.entity": 1.0,
+    "ak47u.entity": 1.0,
+    "m39.entity": 1.0,
+    "semi_auto_rifle.entity": 1.0
+  },
+  "Door Health": 800.0,
+  "Distance from the submarine to the building block": 0.0,
+  "Do Workbenches work in a submarine? [true/false]": true,
+  "Do Repair Bench work in a submarine? [true/false]": false,
+  "Do Research Table work in a submarine? [true/false]": false,
+  "Do Mixing Table work in a submarine? [true/false]": false,
+  "Do Locker work in a submarine? [true/false]": false,
+  "Do Storage Box work in a submarine? [true/false]": false,
+  "Setting AutoTurrets": {
+    "Can Auto Turret appear? [true/false]": true,
+    "Health": 500.0,
+    "Weapon ShortName": "rifle.ak",
+    "Ammo ShortName": "ammo.rifle",
+    "Number of ammo": 150
+  },
+  "Configuration version": {
+    "Major": 2,
+    "Minor": 0,
+    "Patch": 3
+  }
+}
